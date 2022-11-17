@@ -33,7 +33,7 @@ vecID_dynamicarea_counter_dictionary = {}
 
 
 def load_dynamicarea_counter_dictionary(val):
-    for vecID in getvehicleXML():
+    for vecID in get_vehicleXML():
         vecID_dynamicarea_counter_dictionary[vecID] = (val, 0)
 
 
@@ -50,7 +50,7 @@ def reset_dynamicarea_counter(vecID):
 """ * ********************************************************************************************************************************************************************* * """
 
 
-def getCoordinateCartesianeEdges(destEdgeID, curr_lane_index):
+def get_start_coordinate_cartesiane_edges(destEdgeID, curr_lane_index):
     index_calculated = get_index_calculated(destEdgeID, curr_lane_index)
     tuplaXY = traci.simulation.convert2D(destEdgeID, 0.0, index_calculated, False)
     return tuplaXY
@@ -59,7 +59,7 @@ def getCoordinateCartesianeEdges(destEdgeID, curr_lane_index):
 """ * ********************************************************************************************************************************************************************* * """
 
 
-def getvehicleXML():
+def get_vehicleXML():
     tree = ElementTree.parse('san_francisco.rou.xml')
     root = tree.getroot()
     listvec_xml = []
@@ -202,7 +202,7 @@ def send_to_departXML(vecID):
 
 def assign_coordinate_todestinationXML(vecID, curr_lane_index):
     if destedges_tupleposXY_dictionary.get(vecID) is None:
-        tuplaXY = getCoordinateCartesianeEdges(get_destinationXML(vecID), curr_lane_index)
+        tuplaXY = get_start_coordinate_cartesiane_edges(get_destinationXML(vecID), curr_lane_index)
         destedges_tupleposXY_dictionary[vecID] = tuplaXY
 
 
@@ -248,38 +248,42 @@ def check_timeslice(vecID, count):
 """ * ********************************************************************************************************************************************************************* * """
 
 
-def get_available_edges(list_tuple_links, vecID, currLaneIndex, laneID):
+def get_available_edges(list_tuple_links, vecID, currLaneIndex, laneID, curr_laneID, is_critical):
     tupla_vec = vecID_dynamicarea_counter_dictionary.get(vecID)
     curr_area = tupla_vec[0]
 
     destedges_posXY = destedges_tupleposXY_dictionary.get(vecID)
-    limitInfX = destedges_posXY[0] - curr_area / 2
-    limitInfY = destedges_posXY[1] - curr_area / 2
-    limitSupX = destedges_posXY[0] + curr_area / 2
-    limitSupY = destedges_posXY[1] + curr_area / 2
+    limit_infX = destedges_posXY[0] - curr_area / 2
+    limit_infY = destedges_posXY[1] - curr_area / 2
+    limit_supX = destedges_posXY[0] + curr_area / 2
+    limit_supY = destedges_posXY[1] + curr_area / 2
 
     list_available = []
+
     for i in range(0, len(list_tuple_links)):
         temp_tuple = list_tuple_links[i]
         temp_lane = temp_tuple[0]
+        temp_edge = ""
 
-        if temp_lane != laneID:
-            temp_edge = traci.lane.getEdgeID(temp_lane)
+        if is_critical is True:
+            if temp_lane != laneID and temp_lane != curr_laneID:
+                temp_edge = traci.lane.getEdgeID(temp_lane)
+        else:
+            if temp_lane != laneID and laneID == curr_laneID:
+                temp_edge = traci.lane.getEdgeID(temp_lane)
 
-            # Recupero le coordinate di currEdg che sto esaminando
-            curr_tupleXY = getCoordinateCartesianeEdges(temp_edge, currLaneIndex)
+        if temp_edge != "":
+            curr_tupleXY = get_start_coordinate_cartesiane_edges(temp_edge, currLaneIndex)
             currX = curr_tupleXY[0]
             currY = curr_tupleXY[1]
 
-            if limitInfX <= currX <= limitSupX and limitInfY <= currY <= limitSupY:
+            if limit_infX <= currX <= limit_supX and limit_infY <= currY <= limit_supY:
                 list_available.append(temp_edge)
-        else:
-            continue
 
     return list_available
 
 
-def search_random_edge_for_parking(laneID, vecID, curr_lane_index, curr_laneID):
+def search_random_edge_for_parking(laneID, vecID, curr_lane_index, curr_laneID, is_critical):
     # Veicolo alla ricerca di un parcheggio
     traci.vehicle.setColor(vecID, (255, 0, 0))
 
@@ -290,7 +294,7 @@ def search_random_edge_for_parking(laneID, vecID, curr_lane_index, curr_laneID):
     list_tuple_links = traci.lane.getLinks(laneID)  # Una lista di tuple
 
     if num_links >= 1:
-        list_available_edgs = get_available_edges(list_tuple_links, vecID, curr_lane_index, curr_laneID)
+        list_available_edgs = get_available_edges(list_tuple_links, vecID, curr_lane_index, laneID, curr_laneID, is_critical)
 
         if len(list_available_edgs) > 0:
             random_edgID = random.choice(list_available_edgs)
@@ -304,7 +308,7 @@ def search_random_edge_for_parking(laneID, vecID, curr_lane_index, curr_laneID):
                 update_dynamicarea_counter(vecID, vecID_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
                 update_vec_searchtime_dictionary(vecID, 0, True)
 
-                list_available_edgs = get_available_edges(list_tuple_links, vecID, curr_lane_index, curr_laneID)
+                list_available_edgs = get_available_edges(list_tuple_links, vecID, curr_lane_index, laneID, curr_laneID, is_critical)
 
                 if len(list_available_edgs) > 0:
                     random_edgID = random.choice(list_available_edgs)
@@ -367,13 +371,13 @@ def critical_routine(vecID, set_vec_parking_destinationXML, curr_edgeID, curr_la
                     reset_vec_searchtime_dictionary(vecID)
                 except traci.TraCIException as e:
                     print("     Non è riuscito a parcheggiare a causa di un'eccezione", e)
-                    search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID)
+                    search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID, True)
             else:
                 print("     Non è riuscito a parcheggiare a causa della disponibilità")
-                search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID)
+                search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID, True)
         else:
             print("     Il veicolo non ha trovato parcheggio nella strada " + str(curr_last_edgeID) + " , alla lane " + str(curr_last_laneID))
-            search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID)
+            search_random_edge_for_parking(curr_last_laneID, vecID, curr_lane_index, curr_laneID, True)
 
 
 """ * ********************************************************************************************************************************************************************* * """
@@ -419,13 +423,13 @@ def normal_routine(vecID, set_vec_parking_destinationXML, curr_edgeID, curr_lane
 
                 except traci.TraCIException as e:
                     print("     Non è riuscito a parcheggiare a causa di un'eccezione", e)
-                    search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID)
+                    search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID, False)
             else:
                 print("     Non è riuscito a parcheggiare a causa della disponibilità")
-                search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID)
+                search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID, False)
         else:
             print("     Il veicolo non ha trovato parcheggio nella strada " + curr_edgeID + " , alla lane " + curr_laneID)
-            search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID)
+            search_random_edge_for_parking(curr_laneID, vecID, curr_lane_index, curr_laneID, False)
 
 
 """ * ********************************************************************************************************************************************************************* * """
@@ -439,7 +443,7 @@ def run():
 
     step = traci.simulation.getTime()  # step = 0.0
 
-    while traci.simulation.getMinExpectedNumber() != 0 and step <= 500:
+    while traci.simulation.getMinExpectedNumber() != 0:
 
         check_exit_vec(step)
         curr_vehicles_List = traci.vehicle.getIDList()
