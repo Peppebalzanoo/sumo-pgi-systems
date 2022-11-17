@@ -11,7 +11,7 @@ AREA_INIT = 1000
 TIME_SLICE = 10
 
 # (destEdgeID, tuplaXY)
-destedges_tupleposXY_dictionary = {}
+destedges_positionXY_dictionary = {}
 
 """ * ********************************************************************************************************************************************************************* * """
 
@@ -62,11 +62,11 @@ def get_start_coordinate_cartesiane_edges(destEdgeID, curr_lane_index):
 def get_vehicleXML():
     tree = ElementTree.parse('san_francisco.rou.xml')
     root = tree.getroot()
-    listvec_xml = []
+    list_vec_xml = []
     for elem in root.findall(".//vehicle"):
         vec_xml = elem.attrib['id']
-        listvec_xml.append(vec_xml)
-    return listvec_xml
+        list_vec_xml.append(vec_xml)
+    return list_vec_xml
 
 
 """ * ********************************************************************************************************************************************************************* * """
@@ -200,10 +200,10 @@ def send_to_departXML(vecID):
         traci.vehicle.setColor(vecID, (255, 255, 0))
 
 
-def assign_coordinate_todestinationXML(vecID, curr_lane_index):
-    if destedges_tupleposXY_dictionary.get(vecID) is None:
+def assign_coordinate_destinationXML(vecID, curr_lane_index):
+    if destedges_positionXY_dictionary.get(vecID) is None:
         tuplaXY = get_start_coordinate_cartesiane_edges(get_destinationXML(vecID), curr_lane_index)
-        destedges_tupleposXY_dictionary[vecID] = tuplaXY
+        destedges_positionXY_dictionary[vecID] = tuplaXY
 
 
 """ * ********************************************************************************************************************************************************************* * """
@@ -252,7 +252,7 @@ def get_available_edges(list_tuple_links, vecID, currLaneIndex, laneID, curr_lan
     tupla_vec = vecID_dynamicarea_counter_dictionary.get(vecID)
     curr_area = tupla_vec[0]
 
-    destedges_posXY = destedges_tupleposXY_dictionary.get(vecID)
+    destedges_posXY = destedges_positionXY_dictionary.get(vecID)
     limit_infX = destedges_posXY[0] - curr_area / 2
     limit_infY = destedges_posXY[1] - curr_area / 2
     limit_supX = destedges_posXY[0] + curr_area / 2
@@ -335,7 +335,7 @@ def critical_routine(vecID, set_vec_parking_destinationXML, curr_edgeID, curr_la
     print("    # [CRITICAL ROUTINE] >>> Il veicolo è arrivato a destinazione", curr_edgeID, " == (", curr_last_edgeID, ") ***")
 
     # Assegno al veicolo le coordinate (X,Y) del suo indirizzo di destinazione XML
-    assign_coordinate_todestinationXML(vecID, curr_lane_index)
+    assign_coordinate_destinationXML(vecID, curr_lane_index)
 
     # Controllo se il veicolo ha trovato parcheggio nella strada di destinazione XML e se è tornato al suo indirizzo di partenza XML
     if vecID in set_vec_parking_destinationXML and curr_last_edgeID == get_departXML(vecID):
@@ -387,7 +387,7 @@ def normal_routine(vecID, set_vec_parking_destinationXML, curr_edgeID, curr_lane
     print("    # [NORMAL ROUTINE] >>> Il veicolo è arrivato a destinazione (" + curr_edgeID + ") ***")
 
     # Assegno al veicolo le coordinate (X,Y) del suo indirizzo di destinazione XML
-    assign_coordinate_todestinationXML(vecID, curr_lane_index)
+    assign_coordinate_destinationXML(vecID, curr_lane_index)
 
     # Controllo se il veicolo ha trovato parcheggio nella strada di destinazione XML e se è tornato al suo indirizzo di partenza XML
     if vecID in set_vec_parking_destinationXML and curr_edgeID == get_departXML(vecID):
