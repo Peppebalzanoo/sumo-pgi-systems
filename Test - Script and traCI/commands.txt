@@ -1,0 +1,10 @@
+createVehTypeDistribution.py -o additional.add.xml -n cartype_ -s 3 conf_passenger.txt
+createVehTypeDistribution.py -o additional.add.xml -n bustype_ -s 2 conf_bus.txt
+
+randomTrips.py -n network.net.xml -o trip.trips.xml
+randomTrips.py -n network.net.xml -o trip.trips.xml -b 0 -e 5000 -p 100
+
+randomTrips.py -n network.net.xml -r elem.rou.xml -o trip.trips.xml -b 0 -e 20000 -p 1 --vehicle-class passenger
+randomTrips.py -n network.net.xml -r elem.rou.xml -o trip.trips.xml -b 0 -e 20000 -p 1 --vehicle-class passenger --trip-attributes="departLane=\"best\" departSpeed=\"max\" departPos=\"random\""
+
+generateParkingAreas.py -n network.net.xml -o parking.xml

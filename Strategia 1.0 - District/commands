@@ -1,0 +1,7 @@
+generateParkingAreas.py -n network.net.xml -o parking.xml -r --random
+
+randomTrips.py -n network.net.xml -r elem.rou.xml -o trip.trips.xml -b 0 -e 1000 -p 1 --random --vehicle-class passenger --trip-attributes="departEdge=\"random\" departLane=\"best\""
+randomTrips.py -n network.net.xml -r elem.rou.xml -o trip.trips.xml -b 0 -e 100 -p 1 --random --vehicle-class passenger --trip-attributes="departLane=\"best\""
+randomTrips.py -n network.net.xml -r elem.rou.xml  -b 0 -e 100 -p 1 --random --vehicle-class passenger
+
+edgesInDistricts.py -n network.net.xml -t poly.xml

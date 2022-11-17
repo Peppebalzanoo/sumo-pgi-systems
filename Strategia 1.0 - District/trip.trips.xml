@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-10-21 14:53:32.145107 by randomTrips.py v1_14_1+0000-f654d7b963e
+<configuration>
+    <begin value="0"/>
+    <end value="100"/>
+    <net-file value="network1_3.net.xml"/>
+    <period value="1.0"/>
+    <random value="True"/>
+    <route-file value="elem.rou.xml"/>
+    <trip-attributes value="departLane=&quot;best&quot;"/>
+    <output-trip-file value="trip.trips.xml"/>
+    <vehicle-class value="passenger"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="passenger" vClass="passenger"/>
+    <trip id="0" depart="0.00" from="E4.36" to="-E70" departLane="best" type="passenger"/>
+    <trip id="1" depart="1.00" from="-E18.37" to="E10" departLane="best" type="passenger"/>
+    <trip id="2" depart="2.00" from="-E19.124" to="E5.52" departLane="best" type="passenger"/>
+    <trip id="3" depart="3.00" from="E2.45" to="-E7.390" departLane="best" type="passenger"/>
+    <trip id="4" depart="4.00" from="-E19" to="-E70" departLane="best" type="passenger"/>
+    <trip id="5" depart="5.00" from="-E25.31" to="-E19.124" departLane="best" type="passenger"/>
+    <trip id="6" depart="6.00" from="-E25" to="E19.155" departLane="best" type="passenger"/>
+    <trip id="7" depart="7.00" from="E7" to="E26.34" departLane="best" type="passenger"/>
+    <trip id="8" depart="8.00" from="E5" to="E27.20" departLane="best" type="passenger"/>
+    <trip id="9" depart="9.00" from="-E2" to="E27.38" departLane="best" type="passenger"/>
+    <trip id="10" depart="10.00" from="-E5.37" to="E24" departLane="best" type="passenger"/>
+    <trip id="11" depart="11.00" from="E21" to="E16" departLane="best" type="passenger"/>
+    <trip id="12" depart="12.00" from="-E4" to="E19.93" departLane="best" type="passenger"/>
+    <trip id="13" depart="13.00" from="-E70" to="E18.18" departLane="best" type="passenger"/>
+    <trip id="14" depart="14.00" from="-E10.16" to="E7.74" departLane="best" type="passenger"/>
+    <trip id="15" depart="15.00" from="E13.31" to="E7" departLane="best" type="passenger"/>
+    <trip id="16" depart="16.00" from="-E7.74" to="E13.20" departLane="best" type="passenger"/>
+    <trip id="17" depart="17.00" from="-E5" to="E1" departLane="best" type="passenger"/>
+    <trip id="18" depart="18.00" from="E19" to="-E7.26" departLane="best" type="passenger"/>
+    <trip id="19" depart="19.00" from="E23" to="-E7.26" departLane="best" type="passenger"/>
+    <trip id="20" depart="20.00" from="-E7.74" to="E22" departLane="best" type="passenger"/>
+    <trip id="21" depart="21.00" from="-E19.93" to="-E19" departLane="best" type="passenger"/>
+    <trip id="22" depart="22.00" from="-E5.37" to="-E7.26" departLane="best" type="passenger"/>
+    <trip id="23" depart="23.00" from="E32" to="E1" departLane="best" type="passenger"/>
+    <trip id="24" depart="24.00" from="-E18.18" to="-E7.26" departLane="best" type="passenger"/>
+    <trip id="25" depart="25.00" from="-E25.140" to="E13.31" departLane="best" type="passenger"/>
+    <trip id="26" depart="26.00" from="E25" to="-E2.26" departLane="best" type="passenger"/>
+    <trip id="27" depart="27.00" from="-E4" to="-E25.310" departLane="best" type="passenger"/>
+    <trip id="28" depart="28.00" from="E3.50" to="E3.50" departLane="best" type="passenger"/>
+    <trip id="29" depart="29.00" from="-E25.311" to="-E7.74" departLane="best" type="passenger"/>
+    <trip id="30" depart="30.00" from="E15" to="-E7.390" departLane="best" type="passenger"/>
+    <trip id="31" depart="31.00" from="E13.31" to="-E10.33" departLane="best" type="passenger"/>
+    <trip id="32" depart="32.00" from="-E7.26" to="-E1.43" departLane="best" type="passenger"/>
+    <trip id="33" depart="33.00" from="E18.18" to="-E1" departLane="best" type="passenger"/>
+    <trip id="34" depart="34.00" from="E13.31" to="E5.37" departLane="best" type="passenger"/>
+    <trip id="35" depart="35.00" from="E25.14" to="E20" departLane="best" type="passenger"/>
+    <trip id="36" depart="36.00" from="E5.37" to="E13.20" departLane="best" type="passenger"/>
+    <trip id="37" depart="37.00" from="E34" to="E19.124" departLane="best" type="passenger"/>
+    <trip id="38" depart="38.00" from="E7.26" to="E20" departLane="best" type="passenger"/>
+    <trip id="39" depart="39.00" from="E18.18" to="-E25.311" departLane="best" type="passenger"/>
+    <trip id="40" depart="40.00" from="E4" to="-E4" departLane="best" type="passenger"/>
+    <trip id="41" depart="41.00" from="-E6" to="-E25" departLane="best" type="passenger"/>
+    <trip id="42" depart="42.00" from="E25.31" to="-E2.45" departLane="best" type="passenger"/>
+    <trip id="43" depart="43.00" from="E21" to="-E25.311" departLane="best" type="passenger"/>
+    <trip id="44" depart="44.00" from="-E5.20" to="-E5" departLane="best" type="passenger"/>
+    <trip id="45" depart="45.00" from="E36" to="E5.37" departLane="best" type="passenger"/>
+    <trip id="46" depart="46.00" from="-E5" to="-E1.43" departLane="best" type="passenger"/>
+    <trip id="47" depart="47.00" from="E37" to="-E30" departLane="best" type="passenger"/>
+    <trip id="48" depart="48.00" from="-E10.33" to="-E7" departLane="best" type="passenger"/>
+    <trip id="49" depart="49.00" from="E18" to="E24.40" departLane="best" type="passenger"/>
+    <trip id="50" depart="50.00" from="-E2.26" to="-E5.37" departLane="best" type="passenger"/>
+    <trip id="51" depart="51.00" from="E4" to="-E7" departLane="best" type="passenger"/>
+    <trip id="52" depart="52.00" from="E7.74" to="E23" departLane="best" type="passenger"/>
+    <trip id="53" depart="53.00" from="-E25" to="E16" departLane="best" type="passenger"/>
+    <trip id="54" depart="54.00" from="E16" to="E5" departLane="best" type="passenger"/>
+    <trip id="55" depart="55.00" from="-E10" to="E27.38" departLane="best" type="passenger"/>
+    <trip id="56" depart="56.00" from="E3" to="E3" departLane="best" type="passenger"/>
+    <trip id="57" depart="57.00" from="E5.52" to="E3.50" departLane="best" type="passenger"/>
+    <trip id="58" depart="58.00" from="E19.93" to="-E5.67" departLane="best" type="passenger"/>
+    <trip id="59" depart="59.00" from="E30" to="-E1.43" departLane="best" type="passenger"/>
+    <trip id="60" depart="60.00" from="E3" to="E19.93" departLane="best" type="passenger"/>
+    <trip id="61" depart="61.00" from="-E7.39" to="-E19.93" departLane="best" type="passenger"/>
+    <trip id="62" depart="62.00" from="-E4.36" to="E25.14" departLane="best" type="passenger"/>
+    <trip id="63" depart="63.00" from="-E2" to="-E10.33" departLane="best" type="passenger"/>
+    <trip id="64" depart="64.00" from="-E18.37" to="-E2.26" departLane="best" type="passenger"/>
+    <trip id="65" depart="65.00" from="E30" to="-E19.124" departLane="best" type="passenger"/>
+    <trip id="66" depart="66.00" from="E18.18" to="-E25.310" departLane="best" type="passenger"/>
+    <trip id="67" depart="67.00" from="E22" to="E34" departLane="best" type="passenger"/>
+    <trip id="68" depart="68.00" from="E22" to="-E2.26" departLane="best" type="passenger"/>
+    <trip id="69" depart="69.00" from="E35" to="-E7.740" departLane="best" type="passenger"/>
+    <trip id="70" depart="70.00" from="-E5.37" to="E25.14" departLane="best" type="passenger"/>
+    <trip id="71" depart="71.00" from="E19.155" to="E18" departLane="best" type="passenger"/>
+    <trip id="72" depart="72.00" from="-E1.43" to="E2.45" departLane="best" type="passenger"/>
+    <trip id="73" depart="73.00" from="E4.36" to="-E6" departLane="best" type="passenger"/>
+    <trip id="74" depart="74.00" from="-E10.33" to="E5.67" departLane="best" type="passenger"/>
+    <trip id="75" depart="75.00" from="-E4.36" to="E7.55" departLane="best" type="passenger"/>
+    <trip id="76" depart="76.00" from="E2.45" to="-E5.67" departLane="best" type="passenger"/>
+    <trip id="77" depart="77.00" from="-E25.310" to="-E19.124" departLane="best" type="passenger"/>
+    <trip id="78" depart="78.00" from="E15" to="E18.37" departLane="best" type="passenger"/>
+    <trip id="79" depart="79.00" from="-E7.74" to="E6" departLane="best" type="passenger"/>
+    <trip id="80" depart="80.00" from="E19.46" to="-E25.141" departLane="best" type="passenger"/>
+    <trip id="81" depart="81.00" from="E10" to="-E10.16" departLane="best" type="passenger"/>
+    <trip id="82" depart="82.00" from="-E25.31" to="E7" departLane="best" type="passenger"/>
+    <trip id="83" depart="83.00" from="-E7.74" to="E5" departLane="best" type="passenger"/>
+    <trip id="84" depart="84.00" from="E23" to="E6" departLane="best" type="passenger"/>
+    <trip id="85" depart="85.00" from="E32" to="E16" departLane="best" type="passenger"/>
+    <trip id="86" depart="86.00" from="-E7.74" to="-E25.31" departLane="best" type="passenger"/>
+    <trip id="87" depart="87.00" from="E1.43" to="-E4.36" departLane="best" type="passenger"/>
+    <trip id="88" depart="88.00" from="E10.16" to="-E7.74" departLane="best" type="passenger"/>
+    <trip id="89" depart="89.00" from="E4.36" to="-E2.26" departLane="best" type="passenger"/>
+    <trip id="90" depart="90.00" from="-E19.93" to="-E18.18" departLane="best" type="passenger"/>
+    <trip id="91" depart="91.00" from="-E25.14" to="-E25.310" departLane="best" type="passenger"/>
+    <trip id="92" depart="92.00" from="E32" to="-E19.124" departLane="best" type="passenger"/>
+    <trip id="93" depart="93.00" from="-E7.260" to="-E25.310" departLane="best" type="passenger"/>
+    <trip id="94" depart="94.00" from="-E25" to="E10" departLane="best" type="passenger"/>
+    <trip id="95" depart="95.00" from="E18.18" to="-E7.74" departLane="best" type="passenger"/>
+    <trip id="96" depart="96.00" from="E24" to="E33" departLane="best" type="passenger"/>
+    <trip id="97" depart="97.00" from="E28" to="-E2.26" departLane="best" type="passenger"/>
+    <trip id="98" depart="98.00" from="-E1" to="E30" departLane="best" type="passenger"/>
+    <trip id="99" depart="99.00" from="E36" to="E1.43" departLane="best" type="passenger"/>
+</routes>

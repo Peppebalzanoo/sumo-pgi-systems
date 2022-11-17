@@ -1,0 +1,67 @@
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+  
+  <route id="route_yellow" edges="edge0 edge1 edge2 edge3">
+      <stop parkingArea="paedge2" duration="50"/>
+  </route>
+
+  <route id="route_red" edges="edge0 edge4">
+    <stop parkingArea="paedge4" duration="30"/>
+  </route>
+
+  <route id="3_to_start" edges="edge3 edge0"/>
+  <route id="4_to_start" edges="edge4 edge5 edge2 edge3 edge0"/>
+
+  
+
+  <rerouter id="rr_yellow" edges="edge0" vTypes="auto_yellow">
+    <interval begin="0" end="1000">
+      <routeProbReroute id="route_yellow" probability="0.9"/>
+    </interval>
+  </rerouter>
+
+  <rerouter id="rr_yellow" edges="edge3" vTypes="auto_yellow">
+    <interval begin="0" end="1000">
+       <routeProbReroute id="3_to_start" probability="0.9"/>
+    </interval>
+  </rerouter>
+
+
+
+  <rerouter id="rr_red" edges="edge4" vTypes="auto_red">
+    <interval begin="0" end="1000">
+      <routeProbReroute id="4_to_start" probability="1"/>
+    </interval>
+  </rerouter>
+
+  <rerouter id="rr_red" edges="edge0" vTypes="auto_red">
+    <interval begin="0" end="1000">
+      <routeProbReroute id="route_red" probability="1"/>
+    </interval>
+  </rerouter>
+  
+
+
+  <rerouter id="rr_blue" edges="edge0" vTypes="bus">
+    <interval begin="0" end="1000">
+      <destProbReroute id="edge3" probability="0.5"/>
+      <destProbReroute id="edge5" probability="0.5"/>
+    </interval>
+  </rerouter>
+
+  <rerouter id="rr_blue" edges="edge5" vTypes="bus">
+    <interval begin="0" end="1000">
+      <destProbReroute id="edge3" probability="1"/>
+    </interval>
+  </rerouter>
+
+  <rerouter id="rr_blue" edges="edge3" vTypes="bus">
+    <interval begin="0" end="1000">
+      <destProbReroute id="edge0" probability="1"/>
+    </interval>
+  </rerouter>
+
+
+  
+
+
+</additional>

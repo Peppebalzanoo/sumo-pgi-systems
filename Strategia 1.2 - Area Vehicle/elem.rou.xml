@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-10-24 12:23:34.080968 by randomTrips.py v1_14_1+0000-f654d7b963e
+<configuration>
+    <begin value="0"/>
+    <end value="100"/>
+    <net-file value="network1_3.net.xml"/>
+    <period value="1.0"/>
+    <random value="True"/>
+    <route-file value="elem.rou.xml"/>
+    <trip-attributes value="departLane=&quot;best&quot;"/>
+    <output-trip-file value="trip.trips.xml"/>
+    <vehicle-class value="passenger"/>
+</configuration>
+-->
+
+<!-- generated on 2022-10-24 12:23:34 by Eclipse SUMO duarouter Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="network1_3.net.xml"/>
+        <route-files value="trip.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="elem.rou.xml"/>
+        <alternatives-output value="NUL"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="100"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="passenger" vClass="passenger"/>
+    <vehicle id="0" type="passenger" depart="0.00" departLane="best">
+        <route edges="E13 E14 E9 E4 E7"/>
+    </vehicle>
+
+    <vehicle id="1" type="passenger" depart="1.00" departLane="best">
+        <route edges="-E15 E14 E9 -E6 E1 E2"/>
+    </vehicle>
+    <vehicle id="2" type="passenger" depart="2.00" departLane="best">
+        <route edges="-E0 -E5 E7 E12"/>
+    </vehicle>
+    <vehicle id="3" type="passenger" depart="3.00" departLane="best">
+        <route edges="-E8 -E7 -E4 -E6 -E0"/>
+    </vehicle>
+    <vehicle id="4" type="passenger" depart="4.00" departLane="best">
+        <route edges="-E8 -E7 -E4 -E9 -E14"/>
+    </vehicle>
+    <vehicle id="5" type="passenger" depart="5.00" departLane="best">
+        <route edges="-E1 E6 -E9 E10"/>
+    </vehicle>
+    <vehicle id="6" type="passenger" depart="6.00" departLane="best">
+        <route edges="-E2 -E1 E6 -E9"/>
+    </vehicle>
+    <vehicle id="7" type="passenger" depart="7.00" departLane="best">
+        <route edges="-E7 -E4 -E9 -E8"/>
+    </vehicle>
+   <vehicle id="8" type="passenger" depart="8.00" departLane="best">
+        <route edges="-E9 E10 E11 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="9" type="passenger" depart="9.00" departLane="best">
+        <route edges="-E16 -E15 E14 E9 E4 E7"/>
+    </vehicle>
+
+    <vehicle id="10" type="passenger" depart="10.00" departLane="best">
+        <route edges="E8 E9 E4 E7 E12"/>
+    </vehicle>
+    <vehicle id="11" type="passenger" depart="11.00" departLane="best">
+        <route edges="-E9 E10 E11 -E2 -E1 -E0 -E5"/>
+    </vehicle>
+    <vehicle id="12" type="passenger" depart="12.00" departLane="best">
+        <route edges="E7 E8 E9 -E6 E1 E2"/>
+    </vehicle>
+    <vehicle id="13" type="passenger" depart="13.00" departLane="best">
+        <route edges="-E6 -E0 -E5 E7 E12 E13"/>
+    </vehicle>
+    <vehicle id="14" type="passenger" depart="14.00" departLane="best">
+        <route edges="-E7 -E4 -E9 -E14 -E13"/>
+    </vehicle>
+
+    <!--
+    <vehicle id="15" type="passenger" depart="15.00" departLane="best">
+        <route edges="-E14 -E13 -E12 -E7 -E4 -E9"/>
+    </vehicle>
+    <vehicle id="16" type="passenger" depart="16.00" departLane="best">
+        <route edges="-E10 E9 -E6 -E0"/>
+    </vehicle>
+    <vehicle id="17" type="passenger" depart="17.00" departLane="best">
+        <route edges="E5 E0 E6 -E9 -E14 -E13"/>
+    </vehicle>
+    <vehicle id="18" type="passenger" depart="18.00" departLane="best">
+        <route edges="-E11 -E10 -E8"/>
+    </vehicle>
+    <vehicle id="19" type="passenger" depart="19.00" departLane="best">
+        <route edges="-E5 E7 E8 E10"/>
+    </vehicle>
+    <vehicle id="20" type="passenger" depart="20.00" departLane="best">
+        <route edges="E0 E1 E2 E3"/>
+    </vehicle>-->
+    <!--
+    <vehicle id="21" type="passenger" depart="21.00" departLane="best">
+        <route edges="-E8 -E7 -E4 -E3 -E11 -E10"/>
+    </vehicle>
+    <vehicle id="22" type="passenger" depart="22.00" departLane="best">
+        <route edges="E13 E14 E10 -E16 -E15"/>
+    </vehicle>
+    <vehicle id="23" type="passenger" depart="23.00" departLane="best">
+        <route edges="E9 -E3 -E11 -E10 -E14"/>
+    </vehicle>
+    <vehicle id="24" type="passenger" depart="24.00" departLane="best">
+        <route edges="E5 E0 E6 E4"/>
+    </vehicle>
+    <vehicle id="25" type="passenger" depart="25.00" departLane="best">
+        <route edges="-E10 E9 E4 E7"/>
+    </vehicle>
+    <vehicle id="26" type="passenger" depart="26.00" departLane="best">
+        <route edges="E11 E3"/>
+    </vehicle>
+    <vehicle id="27" type="passenger" depart="27.00" departLane="best">
+        <route edges="-E9 -E14"/>
+    </vehicle>
+    <vehicle id="28" type="passenger" depart="28.00" departLane="best">
+        <route edges="-E4 -E6 -E0"/>
+    </vehicle>
+    <vehicle id="29" type="passenger" depart="29.00" departLane="best">
+        <route edges="-E0 -E5 -E4"/>
+    </vehicle>
+    <vehicle id="30" type="passenger" depart="30.00" departLane="best">
+        <route edges="-E12 -E7 E5"/>
+    </vehicle>
+    <vehicle id="31" type="passenger" depart="31.00" departLane="best">
+        <route edges="E14 -E8 E12"/>
+    </vehicle>
+    <vehicle id="32" type="passenger" depart="32.00" departLane="best">
+        <route edges="E13 E14 E9 -E6"/>
+    </vehicle>
+    <vehicle id="33" type="passenger" depart="33.00" departLane="best">
+        <route edges="-E7 -E4 -E9 -E14 E15 E16"/>
+    </vehicle>
+    <vehicle id="34" type="passenger" depart="34.00" departLane="best">
+        <route edges="-E12 -E7 E5 E0 E6"/>
+    </vehicle>
+    <vehicle id="35" type="passenger" depart="35.00" departLane="best">
+        <route edges="-E3 -E11 -E10 E9"/>
+    </vehicle>
+    <vehicle id="36" type="passenger" depart="36.00" departLane="best">
+        <route edges="-E3 -E11 -E10 E9 -E6 E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="37" type="passenger" depart="37.00" departLane="best">
+        <route edges="E6 -E9 -E14 -E13"/>
+    </vehicle>
+    <vehicle id="38" type="passenger" depart="38.00" departLane="best">
+        <route edges="E1 E2 -E11 -E10 -E8 -E7"/>
+    </vehicle>
+    <vehicle id="39" type="passenger" depart="39.00" departLane="best">
+        <route edges="E14 -E8 -E7 -E4 -E9 -E14"/>
+    </vehicle>
+    <vehicle id="40" type="passenger" depart="40.00" departLane="best">
+        <route edges="-E14 E15 E16 E11 -E2 -E1 -E0 -E5"/>
+    </vehicle>
+    <vehicle id="41" type="passenger" depart="41.00" departLane="best">
+        <route edges="-E12 -E7 E5 E0 E1"/>
+    </vehicle>
+    <vehicle id="42" type="passenger" depart="42.00" departLane="best">
+        <route edges="E15 E16 -E10 -E8 -E7 E5"/>
+    </vehicle>
+    <vehicle id="43" type="passenger" depart="43.00" departLane="best">
+        <route edges="-E15 -E13 -E12 -E7 -E4"/>
+    </vehicle>
+    <vehicle id="44" type="passenger" depart="44.00" departLane="best">
+        <route edges="E15 E16 -E10 E9 -E3 -E11 -E16"/>
+    </vehicle>
+    <vehicle id="45" type="passenger" depart="45.00" departLane="best">
+        <route edges="E0 E6 -E9"/>
+    </vehicle>
+    <vehicle id="46" type="passenger" depart="46.00" departLane="best">
+        <route edges="E4 E7 E8 -E14 -E13"/>
+    </vehicle>
+    <vehicle id="47" type="passenger" depart="47.00" departLane="best">
+        <route edges="E8 E9 E4 E7 E12"/>
+    </vehicle>
+    <vehicle id="48" type="passenger" depart="48.00" departLane="best">
+        <route edges="-E3 -E11 -E10 E9 E4"/>
+    </vehicle>
+    <vehicle id="49" type="passenger" depart="49.00" departLane="best">
+        <route edges="E7 E8 E10 E11 E3"/>
+    </vehicle>
+    <vehicle id="50" type="passenger" depart="50.00" departLane="best">
+        <route edges="-E4 -E6 E1"/>
+    </vehicle>
+    <vehicle id="51" type="passenger" depart="51.00" departLane="best">
+        <route edges="E12 E13 E14 E10"/>
+    </vehicle>
+    <vehicle id="52" type="passenger" depart="52.00" departLane="best">
+        <route edges="-E9 E10 E11 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="53" type="passenger" depart="53.00" departLane="best">
+        <route edges="-E8 -E7 -E4 -E9 E10"/>
+    </vehicle>
+    <vehicle id="54" type="passenger" depart="54.00" departLane="best">
+        <route edges="-E6 E1 E2 E3 -E9"/>
+    </vehicle>
+    <vehicle id="55" type="passenger" depart="55.00" departLane="best">
+        <route edges="-E13 -E12 -E7 -E4 -E9 -E8"/>
+    </vehicle>
+    <vehicle id="56" type="passenger" depart="56.00" departLane="best">
+        <route edges="E8 E9 -E6 E1"/>
+    </vehicle>
+    <vehicle id="57" type="passenger" depart="57.00" departLane="best">
+        <route edges="-E15 -E13 -E12 -E7 -E4"/>
+    </vehicle>
+    <vehicle id="58" type="passenger" depart="58.00" departLane="best">
+        <route edges="E6 E4 E7 E8"/>
+    </vehicle>
+    <vehicle id="59" type="passenger" depart="59.00" departLane="best">
+        <route edges="-E2 -E1 E6 -E3 -E11 -E10"/>
+    </vehicle>
+    <vehicle id="60" type="passenger" depart="60.00" departLane="best">
+        <route edges="-E11 -E10 E9 -E6 E1"/>
+    </vehicle>
+    <vehicle id="61" type="passenger" depart="61.00" departLane="best">
+        <route edges="E14 -E8"/>
+    </vehicle>
+    <vehicle id="62" type="passenger" depart="62.00" departLane="best">
+        <route edges="-E11 -E16 -E15 -E13 -E12"/>
+    </vehicle>
+    <vehicle id="63" type="passenger" depart="63.00" departLane="best">
+        <route edges="E9 -E6 -E0 -E5"/>
+    </vehicle>
+    <vehicle id="64" type="passenger" depart="64.00" departLane="best">
+        <route edges="E8 -E14 -E13 -E12 -E7 E5"/>
+    </vehicle>
+    <vehicle id="65" type="passenger" depart="65.00" departLane="best">
+        <route edges="E16 -E10 E9 -E6 E1"/>
+    </vehicle>
+    <vehicle id="66" type="passenger" depart="66.00" departLane="best">
+        <route edges="-E10 -E14 E15 E16 E11"/>
+    </vehicle>
+    <vehicle id="67" type="passenger" depart="67.00" departLane="best">
+        <route edges="E4 E7 E8 E10"/>
+    </vehicle>
+    <vehicle id="68" type="passenger" depart="68.00" departLane="best">
+        <route edges="-E6 E1 E2 E3 E4 E5 E0 E6"/>
+    </vehicle>
+    <vehicle id="69" type="passenger" depart="69.00" departLane="best">
+        <route edges="E8 E10 -E16"/>
+    </vehicle>
+    <vehicle id="70" type="passenger" depart="70.00" departLane="best">
+        <route edges="-E8 -E7 -E4"/>
+    </vehicle>
+    <vehicle id="71" type="passenger" depart="71.00" departLane="best">
+        <route edges="-E7 E5 E0 E6 E4"/>
+    </vehicle>
+    <vehicle id="72" type="passenger" depart="72.00" departLane="best">
+        <route edges="-E10 -E14 -E13 -E12"/>
+    </vehicle>
+    <vehicle id="73" type="passenger" depart="73.00" departLane="best">
+        <route edges="E1 E2 -E11 -E16"/>
+    </vehicle>
+    <vehicle id="74" type="passenger" depart="74.00" departLane="best">
+        <route edges="-E5 E7 E8 -E14 -E13 -E12"/>
+    </vehicle>
+    <vehicle id="75" type="passenger" depart="75.00" departLane="best">
+        <route edges="-E9 -E14 -E13"/>
+    </vehicle>
+    <vehicle id="76" type="passenger" depart="76.00" departLane="best">
+        <route edges="E12 E13 E14 -E8 -E7 -E4"/>
+    </vehicle>
+    <vehicle id="77" type="passenger" depart="77.00" departLane="best">
+        <route edges="-E4 -E9 E10"/>
+    </vehicle>
+    <vehicle id="78" type="passenger" depart="78.00" departLane="best">
+        <route edges="-E12 -E7 E5 E0 E1 E2"/>
+    </vehicle>
+    <vehicle id="79" type="passenger" depart="79.00" departLane="best">
+        <route edges="-E4 -E6 E1"/>
+    </vehicle>
+    <vehicle id="80" type="passenger" depart="80.00" departLane="best">
+        <route edges="-E13 -E12 -E7 -E4 -E9 -E8 E12 E13"/>
+    </vehicle>
+    <vehicle id="81" type="passenger" depart="81.00" departLane="best">
+        <route edges="-E0 -E5 -E4 -E6"/>
+    </vehicle>
+    <vehicle id="82" type="passenger" depart="82.00" departLane="best">
+        <route edges="E15 E16 -E10 -E14 -E13 -E12"/>
+    </vehicle>
+    <vehicle id="83" type="passenger" depart="83.00" departLane="best">
+        <route edges="E1 E2 E3"/>
+    </vehicle>
+    <vehicle id="84" type="passenger" depart="84.00" departLane="best">
+        <route edges="-E12 E8 E10 E11"/>
+    </vehicle>
+    <vehicle id="85" type="passenger" depart="85.00" departLane="best">
+        <route edges="E10 E11 -E2 -E1 -E0 -E5 E7"/>
+    </vehicle>
+    <vehicle id="86" type="passenger" depart="86.00" departLane="best">
+        <route edges="-E8 E12 E13 E14 E9"/>
+    </vehicle>
+    <vehicle id="87" type="passenger" depart="87.00" departLane="best">
+        <route edges="E7 E8 -E14 -E13 -E12 -E7"/>
+    </vehicle>
+    <vehicle id="88" type="passenger" depart="88.00" departLane="best">
+        <route edges="-E5 -E4 -E6 E1"/>
+    </vehicle>
+    <vehicle id="89" type="passenger" depart="89.00" departLane="best">
+        <route edges="-E16 -E15 E14 E9 -E6 -E0 -E5"/>
+    </vehicle>
+    <vehicle id="90" type="passenger" depart="90.00" departLane="best">
+        <route edges="-E8 E12 E13 E14 E9"/>
+    </vehicle>
+    <vehicle id="91" type="passenger" depart="91.00" departLane="best">
+        <route edges="-E3 -E2 -E1 E6"/>
+    </vehicle>
+    <vehicle id="92" type="passenger" depart="92.00" departLane="best">
+        <route edges="-E9 -E8 -E7 E5 E0"/>
+    </vehicle>
+    <vehicle id="93" type="passenger" depart="93.00" departLane="best">
+        <route edges="-E5 -E4 -E6 E1 E2"/>
+    </vehicle>
+    <vehicle id="94" type="passenger" depart="94.00" departLane="best">
+        <route edges="E8 -E14 -E13 -E12 -E7 E5 E0 E6"/>
+    </vehicle>
+    <vehicle id="95" type="passenger" depart="95.00" departLane="best">
+        <route edges="E8 E10 E11 -E2 -E1"/>
+    </vehicle>
+    <vehicle id="96" type="passenger" depart="96.00" departLane="best">
+        <route edges="E7 E8"/>
+    </vehicle>
+    <vehicle id="97" type="passenger" depart="97.00" departLane="best">
+        <route edges="-E0 -E5 E7 E8 E9 E4"/>
+    </vehicle>
+    <vehicle id="98" type="passenger" depart="98.00" departLane="best">
+        <route edges="E7 E12 E13 E14 -E8"/>
+    </vehicle>
+    <vehicle id="99" type="passenger" depart="99.00" departLane="best">
+        <route edges="E0 E1 E2"/>
+    </vehicle>
+    -->
+</routes>

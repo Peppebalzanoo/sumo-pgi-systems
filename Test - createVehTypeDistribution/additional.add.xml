@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+	<vTypeDistribution id="car">
+		<vType id="car0" sigma="0.549" length="4.801" vClass="passenger"/>
+		<vType id="car1" sigma="0.751" length="4.872" vClass="passenger"/>
+		<vType id="car2" sigma="0.305" length="5.013" vClass="passenger"/>
+	</vTypeDistribution>
+	<vTypeDistribution id="bus">
+		<vType id="bus0" sigma="0.549" length="7.510" vClass="bus"/>
+		<vType id="bus1" sigma="0.472" length="6.130" vClass="bus"/>
+		<vType id="bus2" sigma="0.266" length="8.476" vClass="bus"/>
+	</vTypeDistribution>
+</additional>

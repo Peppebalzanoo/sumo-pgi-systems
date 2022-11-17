@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+   <input>
+       <net-file value="../Tutorial 4 - Special Lane/network.net.xml"/>
+       <route-files value="../Tutorial 4 - Special Lane/elem.rou.xml,../Tutorial 4 - Special Lane/walks.rou.xml"/>
+   </input>
+   <processing>
+    <lateral-resolution value="1" />
+   </processing>
+</configuration>

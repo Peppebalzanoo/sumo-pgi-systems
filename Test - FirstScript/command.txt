@@ -1,0 +1,1 @@
+generateParkingAreas.py -n network.net.xml -o parking.xml

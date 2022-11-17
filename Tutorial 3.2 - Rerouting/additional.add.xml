@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<additionals>
+    
+    <rerouter id="rr_0" edges="edge5" vTypes="auto">
+        <interval end="5000">
+            <destProbReroute id="edge9" probability="0.5"/>
+            <!-- <destProbReroute id="edge0" probability="0.5"/> -->
+        </interval>
+    </rerouter>
+
+    <rerouter id="rr_00" edges="edge9" vTypes="auto">
+        <interval end="5000">
+            <destProbReroute id="edge5"/>
+        </interval>
+    </rerouter>
+
+
+     <rerouter id="rr_1" edges="edge5" vTypes="bici">
+        <interval end="5000">
+            <destProbReroute id="edge0" probability="0.5"/>
+            <!-- <destProbReroute id="edge9" probability="0.5"/> -->
+        </interval>
+    </rerouter>
+
+     <rerouter id="rr_11" edges="edge0" vTypes="bici">
+        <interval end="5000">
+            <destProbReroute id="edge5"/>
+        </interval>
+    </rerouter>
+
+
+
+
+</additionals>

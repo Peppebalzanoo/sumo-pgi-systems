@@ -1,0 +1,2 @@
+ createVehTypeDistribution.py -o additional.add.xml -ncar -s 3 conf_passenger.txt
+ createVehTypeDistribution.py -o additional.add.xml -nbus -s 1 conf_bus.txt

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+	<vTypeDistribution id="cartype_">
+		<vType id="cartype_0" sigma="0.549" length="3.801" vClass="passenger"/>
+	</vTypeDistribution>
+
+	<vTypeDistribution id="bustype_">
+		<vType id="bustype_0" sigma="0.549" length="7.825" vClass="bus"/>
+	</vTypeDistribution>
+
+</additional>

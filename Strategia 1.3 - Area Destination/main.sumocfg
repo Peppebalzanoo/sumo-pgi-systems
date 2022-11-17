@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="network1_3.net.xml"/>
+        <route-files value="elem.rou.xml"/>
+        <additional-files value="parking.xml"/>
+        <!--<gui-settings-file value="configuration.view.xml"/>-->       
+    </input>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <no-internal-links value="false" />
+        <step-method.ballistic value="false"/>
+    </processing>
+
+
+
+    <report>
+        <verbose value="true"/>
+        <duration-log.statistics value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+    <!--<gui_only>
+        <gui-settings-file value="configuration.view.xml"/>
+    </gui_only>-->
+
+     <time-to-teleport value="-1"/>
+</configuration>

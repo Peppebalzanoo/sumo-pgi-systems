@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-10-07 10:05:23 by Eclipse SUMO GUI Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\Giuseppe\Desktop\Sumo%20Tutorials\Tutorial%206%20-%20YouTube\network1_3.net.xml"/>
+        <route-files value="C:\Users\Giuseppe\Desktop\Sumo%20Tutorials\Tutorial%206%20-%20YouTube\routes.rou.xml"/>
+        <additional-files value="C:\Users\Giuseppe\Desktop\Sumo%20Tutorials\Tutorial%206%20-%20YouTube\additional.add.xml"/>
+    </input>
+
+    <gui_only>
+        <gui-settings-file value="C:\Users\Giuseppe\Desktop\Sumo%20Tutorials\Tutorial%206%20-%20YouTube\configuration.view.xml"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+</detector>

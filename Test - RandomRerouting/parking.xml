@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-10-12 19:33:59.369753 by generateParkingAreas.py v1_14_1+0000-f654d7b963e
+<configuration>
+    <net-file value="network1_3.net.xml"/>
+    <output-file value="parking.xml"/>
+    <random-capacity value="True"/>
+    <random value="True"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <parkingArea id="paE32" lane="E32_0" roadsideCapacity="4" length="5"/>
+    <parkingArea id="paE34" lane="E34_0" roadsideCapacity="4" length="5"/>
+    <parkingArea id="paE36" lane="E36_0" roadsideCapacity="1" length="5"/>
+    <parkingArea id="paE38" lane="E38_0" roadsideCapacity="1" length="5"/>
+    <parkingArea id="paE39" lane="E39_0" roadsideCapacity="1" length="5"/>
+</additional>
