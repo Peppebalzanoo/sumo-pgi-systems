@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="san_francisco.net.xml"/>
+        <route-files value="san_francisco.rou.xml"/>
+        <gui-settings-file value="gui-settings.cfg"/>
+	    <additional-files value="san_francisco.poly.xml,off_parking.add.xml,on_parking.add.xml"/>
+    </input>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <time-to-teleport value="-1" />
+        <xml-validation value="never" />
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+<!--
+    <output>
+        <summary value="summary.xml"/>
+        <queue-output value="queue.xml"/>
+        <netstate-dump value="dump.xml"/>
+        <vehroute-output value="vehroute.xml"/>
+        <vehroutes.route-length value="true"/>
+        <stop-output value="stops.xml"/>
+    </output>
+-->
+
+</configuration>
