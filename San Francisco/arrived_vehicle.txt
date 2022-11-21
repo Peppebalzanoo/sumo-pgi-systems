@@ -5,6 +5,4 @@ refactoring.py
 [ 29 ] esce perché sceglie una strada con lunghezza 4.75 <= space_on_next_step 7.161434000000001
 [ 32 ] esce perché sceglie una strada con lunghezza 4.84 <= space_on_next_step 7.987636000000001
 _________________________________________________________________________________________
-update.py
-('32',)
-('35',)
+test.py
