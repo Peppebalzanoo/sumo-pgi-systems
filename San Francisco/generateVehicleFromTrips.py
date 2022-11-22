@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import os
 import sys
 import xml.etree.ElementTree as ElementTree
@@ -6,7 +5,6 @@ from argparse import ArgumentParser
 
 import sumolib
 from sumolib.net.edge import Edge
-
 
 def main():
     parser = ArgumentParser(description="Generate vehicle from an trip-file")

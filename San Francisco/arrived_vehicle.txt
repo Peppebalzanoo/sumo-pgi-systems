@@ -1,8 +1,3 @@
 SCRIPT NAME
 _________________________________________________________________________________________
-refactoring.py
-[ 35 ] esce perché sceglie una strada con lunghezza 5.44 <= space_on_next_step 8.149746
-[ 29 ] esce perché sceglie una strada con lunghezza 4.75 <= space_on_next_step 7.161434000000001
-[ 32 ] esce perché sceglie una strada con lunghezza 4.84 <= space_on_next_step 7.987636000000001
-_________________________________________________________________________________________
 test.py
