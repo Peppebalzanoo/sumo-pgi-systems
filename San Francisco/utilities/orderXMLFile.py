@@ -31,7 +31,7 @@ def read():
                 new_root.append(child)
                 break
     new_tree = ElementTree.ElementTree(new_root)
-    new_tree.write("out.xml", encoding="utf-8", xml_declaration=True)
+    new_tree.write("no_stop.xml", encoding="utf-8", xml_declaration=True)
 
 
 def main():
