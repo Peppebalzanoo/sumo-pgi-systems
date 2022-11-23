@@ -31,7 +31,7 @@ def create_csv_stopinfo(list_vec_xml):
         df.to_csv("stop_info.csv", index=False)
 
 def read_csv_stopinfo():
-    with open("stop_info.csv", "r") as csv_file:
+    with open("../output/stop_info.csv", "r") as csv_file:
         next(csv_file)  # Skippo la prima linea
         csv_reader = csv.reader(csv_file, delimiter=",")
 
