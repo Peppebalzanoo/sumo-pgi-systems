@@ -5,40 +5,27 @@ from argparse import ArgumentParser
 # / = only 1 level of subelements
 # // = all subelements
 
-
+# Funzione inutilizzata
 def insert_vec_type(filename):
     tree = ET.parse(filename)
     root = tree.getroot()
-
-    diz = {"id": "passenger", "vClass": "passenger"}
-    elem = ET.Element("vType", diz)
+    elem = ET.Element("vType", {"id": "passenger", "vClass": "passenger"})
     root.insert(0, elem)
-    new_root = ET.Element(root.tag)
-    new_root.text = "\n"
-
-    for vec in root.findall("./vType"):
-        vec.tail = "\n \u0020"
-        new_root.append(vec)
-
-    for trip in root.findall(".//trip"):
-        new_root.append(trip)
-    new_tree = ET.ElementTree(new_root)
-    new_tree.write(filename, encoding="utf-8", method="xml", xml_declaration=True)
+    # elem.tail = "\n \u0020"
+    ET.indent(tree, space="\t")
+    tree.write(filename, encoding="utf-8", method="xml", xml_declaration=True)
 
 
 def remove_attr(filename):
     tree = ET.parse(filename)
     root = tree.getroot()
-    new_root = ET.Element(root.tag)
-    new_root.text = "\n \u0020"
     for trip in root.findall(".//trip"):
-        trip.text = ''
         for key in ["trip_type", "type", "color", "from_taz", "to_taz", "stat", "flag", "direction", "end"]:
             trip.attrib.pop(key)
         trip.attrib["depart"] = "0.00"
-        new_root.append(trip)
-    new_tree = ET.ElementTree(new_root)
-    new_tree.write(filename, encoding="utf-8", method="xml", xml_declaration=True)
+    ET.indent(tree, space="\t")
+    tree.write(filename, encoding="utf-8", method="xml", xml_declaration=True)
+
 
 def remove_stop(input_filename, output_filename):
     tree = ET.parse(input_filename)
@@ -47,7 +34,9 @@ def remove_stop(input_filename, output_filename):
         trip.text = ''
         for stop in trip.findall(".//stop"):
             trip.remove(stop)
+    ET.indent(tree, space="\t")
     tree.write(output_filename, encoding="utf-8",  method="xml", xml_declaration=True)
+
 
 def main():
     parser = ArgumentParser(description="Clear trip-file")
@@ -60,7 +49,7 @@ def main():
     else:
         remove_stop(options.trip_file, options.output_file)
         remove_attr(options.output_file)
-        insert_vec_type(options.output_file)
+        # insert_vec_type(options.output_file)
 
 if __name__ == "__main__":
     main()
