@@ -2,6 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/San Francisco/arrived_vehicle.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/San Francisco/output/exit_vehicle_report.txt" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/San Francisco/testing/arrived_vehicle.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/San Francisco/testing/exit_vehicle.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/San Francisco/testing/exit_vehicle_report.txt" charset="windows-1252" />
   </component>
 </project>

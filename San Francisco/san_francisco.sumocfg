@@ -10,8 +10,6 @@
     </input>
 
     <processing>
-        <!--<begin value="0"/>-->
-        <!--<end value="900"/>-->
         <step-length value="1"/>
         <ignore-route-errors value="false"/>
         <time-to-teleport value="-1" />
@@ -22,13 +20,12 @@
         <verbose value="true"/>
     </report>
 
-
     <output>
         <summary value="output/summary.xml"/>
-        <!--<netstate-dump value="output/dump.xml"/>-->
-        <!--<vehroute-output value="output/vehroute.xml"/>-->
-        <!--<tripinfo-output value="output/tripinfo.xml"/>-->
+        <vehroute-output value="output/vehroute.xml"/>
+        <tripinfo-output value="output/tripinfo.xml"/>
         <collision-output value="output/collision.xml"/>
+        <emission-output value="output/emission.xml"/>
         <stop-output value="output/stops.xml"/>
     </output>
 

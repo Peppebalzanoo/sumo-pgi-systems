@@ -2,5 +2,4 @@ generateVehicle.py -net san_francisco.net.xml -trp trip.trips.xml -vtp passenger
 
 clearTripFile.py -trp trip_test.trips.xml -o clear.trips.xml
 
-sumo -c your.sumocfg --vehroute-output yourRoutes.rou.xml
 sumo -c san_francisco.sumocfg --vehroute-output yourRoutes.rou.xml
