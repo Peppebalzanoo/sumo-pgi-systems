@@ -21,12 +21,13 @@
     </report>
 
     <output>
-        <summary value="output/summary.xml"/>
-        <vehroute-output value="output/vehroute.xml"/>
-        <tripinfo-output value="output/tripinfo.xml"/>
-        <collision-output value="output/collision.xml"/>
-        <emission-output value="output/emission.xml"/>
-        <stop-output value="output/stops.xml"/>
+        <summary value="output/dynamic_area/100%/summary.xml"/>
+        <vehroute-output value="output/dynamic_area/100%/vehroute.xml"/>
+        <tripinfo-output value="output/dynamic_area/100%/tripinfo.xml"/>
+        <collision-output value="output/dynamic_area/100%/collision.xml"/>
+        <emission-output value="output/dynamic_area/100%/emission.xml"/>
+        <stop-output value="output/dynamic_area/100%/stops.xml"/>
+        <statistic-output value="output/dynamic_area/100%/statistic.xml"/>
     </output>
 
 </configuration>

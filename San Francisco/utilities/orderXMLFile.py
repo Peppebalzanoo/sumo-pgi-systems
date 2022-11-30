@@ -1,23 +1,18 @@
 import xml.etree.ElementTree as ElementTree
 
-
 def read():
     tree = ElementTree.parse('test.rou.xml')
     root = tree.getroot()
-    # print(root.tag)
-    # print(root.attrib)
 
     # Lista di lista di tuple
     list_of_list_tuple = []
     for child in root:
         list_of_list_tuple.append(list(child.items()))
-    # print(list_of_list_tuple)
 
     temp_list_tuple = []
     for idx in range(0, len(list_of_list_tuple)):
         temp_tupla = list_of_list_tuple[idx][0]
         temp_list_tuple.append(temp_tupla)
-    # print(temp_list_tuple)
 
     temp_list_tuple.sort(key=lambda elem: int(elem[1]))
 
