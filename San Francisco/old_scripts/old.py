@@ -60,7 +60,7 @@ def get_start_coordinate_cartesiane_edges(destEdgeID, curr_lane_index):
 
 
 def get_vehicleXML():
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse('../san_francisco.rou.xml')
     root = tree.getroot()
     list_vec_xml = []
     for elem in root.findall(".//vehicle"):
@@ -73,14 +73,14 @@ def get_vehicleXML():
 
 
 def get_laneXML_form_edgeID_index(edgeID, index):
-    tree = ElementTree.parse('san_francisco.net.xml')
+    tree = ElementTree.parse('../san_francisco.net.xml')
     root = tree.getroot()
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane/[@index='" + str(index) + "']"):
         return name.attrib['id']
 
 
 def get_indexesXML_form_edgeID(edgeID):
-    tree = ElementTree.parse('san_francisco.net.xml')
+    tree = ElementTree.parse('../san_francisco.net.xml')
     root = tree.getroot()
     list_indexes = []
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane"):
@@ -100,7 +100,7 @@ def get_index_calculated(edgeID, curr_lane_index):
 
 
 def get_destinationXML(vecID):
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse('../san_francisco.rou.xml')
     root = tree.getroot()
     for elem in root.findall(".//vehicle/[@id='" + vecID + "']//route"):
         temp = elem.get("edges")
@@ -114,7 +114,7 @@ def get_destinationXML(vecID):
 
 
 def get_departXML(vecID):
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse('../san_francisco.rou.xml')
     root = tree.getroot()
     for elem in root.findall(".//vehicle/[@id='" + vecID + "']//route"):
         temp = elem.get("edges")
@@ -214,7 +214,7 @@ vec_searchtime_dictionary = {}
 
 
 def load_vec_searchtime_dictionary():
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse('../san_francisco.rou.xml')
     root = tree.getroot()
     for elem in root.findall(".//vehicle"):
         vecID = elem.attrib['id']
@@ -529,7 +529,7 @@ def main():
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
     sumoBinary = checkBinary('sumo-gui')
-    sumoCmd = [sumoBinary, "-c", "san_francisco.sumocfg", "--start"]
+    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
 
     traci.start(sumoCmd)
     run()

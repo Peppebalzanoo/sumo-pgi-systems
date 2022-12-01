@@ -409,13 +409,21 @@ def main():
     else:
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
-    # sumoBinary = checkBinary('sumo-gui')
     sumoBinary = checkBinary('sumo')
-    sumoCmd = [sumoBinary, "-c", "san_francisco.sumocfg", "--start"]
+    # STRATEGIA: dynamic_area, SCENARIO: 100%
 
+    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run()
     traci.close()
+
+    # STRATEGIA: dynamic_area, SCENARIO: 70%
+    # sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_70%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run()
+    # traci.close()
+
+
 
 
 if __name__ == "__main__":

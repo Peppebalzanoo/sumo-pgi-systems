@@ -1,5 +1,4 @@
 import csv
-import pandas
 from matplotlib import pyplot
 import xml.etree.ElementTree as ElementTree
 
@@ -48,46 +47,28 @@ def get_average_emmissions(list_vec_xml):
     generate_pie(data_emissions, labels_data_emissions, "emissions", "dynamic_area", "100%")
 
 
-def get_average_route_length(list_vec_xml):
-    avg_route_length = 0.0
-    avg_duration = 0.0
-    total_travel_time = 0.0
-    tree = ElementTree.parse('../output/dynamic_area/100%/statistic.xml')
-    root = tree.getroot()
-    for elem in tree.findall(".//vehicleTripStatistics"):
-        avg_route_length = float(elem.attrib["routeLength"])
-        avg_duration = float(elem.attrib["duration"])
-        total_travel_time = float(elem.attrib["totalTravelTime"])
+def read_csv_statistics(strategia, scenario):
+    with open("../output/"+strategia+"/"+scenario+"/csv/statistics.csv", "r") as csv_file:
+        next(csv_file)  # Skippo la prima riga
+        csv_reader = csv.reader(csv_file, delimiter=",")
 
-    data_statistic = [avg_route_length, avg_duration]
-    print(data_statistic)
-    lables_data_statistic = ["Lunghezza Media", "Durata Media"]
-    generate_bar(data_statistic, lables_data_statistic, "statistics", "dynamic_area", "100%", None)
+        for temp_list in csv_reader:
+            avg_route_length = temp_list[0]
+            avg_speed = temp_list[1]
+            avg_duration = temp_list[2]
+
+        data_statistic = [avg_route_length, avg_duration]
+        lables_data_statistic = ["Lunghezza Media", "Durata Media"]
+        generate_bar(data_statistic, lables_data_statistic, "statistics", "dynamic_area", "100%", None)
 
 
-def create_csv_stopinfo(list_vec_xml):
-    cols = ["vehicleID", "parkingAreaID"]
-    rows = []
 
-    # Parsing the XML file
-    tree = ElementTree.parse('../output/dynamic_area/100%/stops.xml')
-    root = tree.getroot()
-    for vecID in list_vec_xml:
-        for elem in root.findall(".//stopinfo/[@id='" + vecID + "']"):
-            vehicleID = elem.attrib["id"]
-            parkingID = elem.attrib["parkingArea"]
-            rows.append({"vehicleID": vehicleID, "parkingAreaID": parkingID})
-    df = pandas.DataFrame(rows, columns=cols)
-    df.to_csv("../output/csv/stopinfo.csv", index=False)
-
-
-def read_csv_stopinfo():
-    with open("../output/csv/stopinfo.csv", "r") as csv_file:
-        next(csv_file)  # Skippo la prima linea
+def read_csv_stopinfo(strategia, scenario):
+    with open("../output/"+strategia+"/"+scenario+"/csv/stopinfo.csv", "r") as csv_file:
+        next(csv_file)  # Skippo la prima riga
         csv_reader = csv.reader(csv_file, delimiter=",")
 
         number_vec = len(get_vehicle_from_xml())
-
         counter_parked = 0
         for temp_list in csv_reader:
             counter_parked += 1
@@ -104,9 +85,9 @@ def read_csv_stopinfo():
         data_count = [counter_parked, counter_not_parked]
         data_labels_count = ["Trovato", "Non trovato"]
 
-        generate_bar(data_count, data_labels_count, "stopinfo", "dynamic_area", "100%", None)
-        generate_bar(data_percentage, labels_percentage, "stopinfo_%_", "dynamic_area", "100%", None)
-        generate_pie(data_percentage, labels_percentage, "stopinfo_%_", "dynamic_area", "100%")
+        # generate_bar(data_count, data_labels_count, "stopinfo", "dynamic_area", "100%", None)
+        # generate_bar(data_percentage, labels_percentage, "stopinfo_%_", "dynamic_area", "100%", None)
+        # generate_pie(data_percentage, labels_percentage, "stopinfo_%_", strategia, scenario)
 
 
 def generate_bar(data, data_labels, name_out, strategia, scenario, xy_lables):
@@ -176,10 +157,8 @@ def generate_pie(data, data_labels, name_out, strategia, scenario):
 
 def main():
     list_vec = get_vehicle_from_xml()
-    create_csv_stopinfo(list_vec)
-    read_csv_stopinfo()
-    get_average_emmissions(list_vec)
-    get_average_route_length(list_vec)
+    read_csv_stopinfo("dynamic_area", "100%")
+    read_csv_statistics("dynamic_area", "100%")
 
 
 if __name__ == "__main__":
