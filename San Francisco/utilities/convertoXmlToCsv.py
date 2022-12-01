@@ -12,8 +12,25 @@ def get_vehicle_from_xml():
     return list_vec_xml
 
 
+def create_csv_tripinfo(list_vec_xml, strategia, scenario):
+    cols = ["vecID", "depart", "arrival"]
+    rows = []
+    tree = ElementTree.parse("../output/"+strategia+"/"+scenario+"/tripinfo.xml")
+    root = tree.getroot()
+
+    for vecID in list_vec_xml:
+        for elem in root.findall(".//tripinfo/[@id='" + vecID + "']"):
+            vehicleID = elem.attrib["id"]
+            depart = elem.attrib["depart"]
+            arrival = elem.attrib["arrival"]
+            rows.append({"vecID": vehicleID, "depart": depart, "arrival": arrival})
+    df = pandas.DataFrame(rows, columns=cols)
+    df.to_csv("../output/"+strategia+"/"+scenario+"/csv/tripinfo.csv", index=False)
+
+
+
 def create_csv_stopinfo(list_vec_xml, strategia, scenario):
-    cols = ["vecID", "parkingID", "duration"]
+    cols = ["vecID", "parkingID", "started", "ended", "duration"]
     rows = []
     tree = ElementTree.parse("../output/"+strategia+"/"+scenario+"/stops.xml")
     root = tree.getroot()
@@ -23,7 +40,7 @@ def create_csv_stopinfo(list_vec_xml, strategia, scenario):
             parkingID = elem.attrib["parkingArea"]
             start = float(elem.attrib["started"])
             end = float(elem.attrib["ended"])
-            rows.append({"vecID": vehicleID, "parkingID": parkingID, "duration": (end - start)})
+            rows.append({"vecID": vehicleID, "parkingID": parkingID, "started": start, "ended": end, "duration": (end - start)})
     df = pandas.DataFrame(rows, columns=cols)
     df.to_csv("../output/"+strategia+"/"+scenario+"/csv/stopinfo.csv", index=False)
 
@@ -63,16 +80,19 @@ def main():
     create_csv_stopinfo(list_vec, "dynamic_area", "100%")
     create_csv_statistics("dynamic_area", "100%")
     create_csv_emmissions("dynamic_area", "100%")
+    create_csv_tripinfo(list_vec, "dynamic_area", "100%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 70%
     create_csv_stopinfo(list_vec, "dynamic_area", "70%")
     create_csv_statistics("dynamic_area", "70%")
     create_csv_emmissions("dynamic_area", "70%")
+    create_csv_tripinfo(list_vec, "dynamic_area", "70%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 50%
     create_csv_stopinfo(list_vec, "dynamic_area", "50%")
     create_csv_statistics("dynamic_area", "50%")
     create_csv_emmissions("dynamic_area", "50%")
+    create_csv_tripinfo(list_vec, "dynamic_area", "50%")
 
 if __name__ == "__main__":
     main()

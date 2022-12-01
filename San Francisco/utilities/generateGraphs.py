@@ -14,6 +14,43 @@ def get_vehicle_from_xml():
         list_vec_xml.append(vec_xml)
     return list_vec_xml
 
+def read_csv_tripinfo(strategia, scenario):
+    count_between_0_and_5min = count_between_5_and_10min = count_plus_10min = 0
+    tot_val = 0.0
+
+    with open("../output/"+strategia+"/"+scenario+"/csv/tripinfo.csv", "r") as csv_file_tripinfo, open("../output/"+strategia+"/"+scenario+"/csv/stopinfo.csv", "r") as csv_file_stopinfo:
+
+        next(csv_file_tripinfo)  # Skippo la prima riga di csv_file_tripinfo
+        csv_reader_tripinfo = csv.reader(csv_file_tripinfo, delimiter=",")
+
+        next(csv_file_stopinfo)  # Skippo la prima riga di csv_file_stopinfo
+        csv_reader_stopinfo = csv.reader(csv_file_stopinfo, delimiter=",")
+
+        list_val = []
+        for temp_list_stop in csv_reader_stopinfo:
+            temp_vecID = temp_list_stop[0]
+            temp_start_stop = float(temp_list_stop[2])
+            for temp_list_trip in csv_reader_tripinfo:
+                if temp_vecID == temp_list_trip[0]:
+                    temp_depart = float(temp_list_trip[1])
+                    list_val.append(temp_start_stop - temp_depart)
+                    break
+
+        for val in list_val:
+            if 0.0 <= val <= 300.0:
+                count_between_0_and_5min += 1
+            elif 300.0 <= val <= 600.0:
+                count_between_5_and_10min += 1
+            else:
+                count_plus_10min += 1
+
+
+        print("count_between_0_and_5min:", count_between_0_and_5min)
+        print("count_between_5_and_10min:", count_between_5_and_10min)
+        print("count_plus_10min:", count_plus_10min)
+        print("\n")
+
+
 
 def read_csv_emmissions(strategia, scenario, num_vec):
     temp_emissions_CO = temp_emissions_CO2 = temp_emissions_HC = temp_emissions_PM = temp_emissions_NO = temp_fuel_consumed = 0.0
@@ -67,6 +104,7 @@ def read_csv_stopinfo(strategia, scenario):
             counter_parked += 1
 
         counter_not_parked = number_vec - counter_parked
+
 
         # counter_parked : number_vec = X : 100 ---> X = (counter_parked * 100)/number_vec
         percentuale_parked = (counter_parked * 100)/number_vec
@@ -150,17 +188,19 @@ def main():
     read_csv_stopinfo("dynamic_area", "100%")
     read_csv_statistics("dynamic_area", "100%")
     read_csv_emmissions("dynamic_area", "100%", len(list_vec))
+    read_csv_tripinfo("dynamic_area", "100%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 70%
     read_csv_stopinfo("dynamic_area", "70%")
     read_csv_statistics("dynamic_area", "70%")
     read_csv_emmissions("dynamic_area", "70%", len(list_vec))
+    read_csv_tripinfo("dynamic_area", "70%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 50%
     read_csv_stopinfo("dynamic_area", "50%")
     read_csv_statistics("dynamic_area", "50%")
     read_csv_emmissions("dynamic_area", "50%", len(list_vec))
-
+    read_csv_tripinfo("dynamic_area", "50%")
 
 
 
