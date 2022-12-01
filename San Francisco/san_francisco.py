@@ -418,11 +418,16 @@ def main():
     traci.close()
 
     # STRATEGIA: dynamic_area, SCENARIO: 70%
-    # sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_70%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run()
-    # traci.close()
+    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_70%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run()
+    traci.close()
 
+    # STRATEGIA: dynamic_area, SCENARIO: 70%
+    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_50%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run()
+    traci.close()
 
 
 

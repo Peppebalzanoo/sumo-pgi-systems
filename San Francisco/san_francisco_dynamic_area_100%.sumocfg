@@ -6,7 +6,9 @@
         <net-file value="san_francisco.net.xml"/>
         <route-files value="san_francisco.rou.xml"/>
         <gui-settings-file value="gui-settings.cfg"/>
-	    <additional-files value="san_francisco.poly.xml,off_parking_100%.add.xml,on_parking_100%.add.xml"/>
+	    <additional-files value="san_francisco.poly.xml,
+	        parking_capacity_100%/off_parking_100%.add.xml,
+	            parking_capacity_100%/on_parking_100%.add.xml"/>
     </input>
 
     <processing>

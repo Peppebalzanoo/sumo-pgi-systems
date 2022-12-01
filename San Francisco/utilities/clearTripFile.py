@@ -40,7 +40,7 @@ def remove_stop(input_filename, output_filename):
 
 def main():
     parser = ArgumentParser(description="Clear trip-file")
-    parser.add_argument("-trp", "--trip-file", help="the trip.trips.xml input filename")
+    parser.add_argument("-trp", "--trip-file", help="the notclear_trip.trips.xml input filename")
     parser.add_argument("-o", "--output-file", help="the output.trips.xml filename")
     options = parser.parse_args()
     if options.trip_file is None or options.output_file is None:
@@ -49,7 +49,6 @@ def main():
     else:
         remove_stop(options.trip_file, options.output_file)
         remove_attr(options.output_file)
-        # insert_vec_type(options.output_file)
 
 if __name__ == "__main__":
     main()

@@ -1,1 +1,0 @@
-netconvert --osm-files sanfrancisco.osm.xml -o sanfrancisco.net.xml

@@ -10,7 +10,7 @@ from sumolib.net.edge import Edge
 def main():
     parser = ArgumentParser(description="Generate vehicle from an trip-file")
     parser.add_argument("-net", "--net-file", help="the network.net.xml input filename")
-    parser.add_argument("-trp", "--trip-file", help="the trip.trips.xml input filename")
+    parser.add_argument("-trp", "--trip-file", help="the notclear_trip.trips.xml input filename")
     parser.add_argument("-vtp", "--vehicle-type", help="the vehicle-type")
     parser.add_argument("-o", "--output-file", help="the output.rou.net filename")
     options = parser.parse_args()

@@ -1,3 +1,0 @@
-sigma; normal(0.5,0.2)
-length; normal(5,2); [4.9,10]
-vClass; bus

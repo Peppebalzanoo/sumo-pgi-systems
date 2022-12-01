@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-  <parkingArea id="paedge0" lane="edge0_0" roadsideCapacity="5" length="5"/>
-  <parkingArea id="paedge1" lane="edge1_0" roadsideCapacity="3" length="5"/>
-  <parkingArea id="paedge2" lane="edge2_0" roadsideCapacity="5" length="5"/>
-  <parkingArea id="paedge3" lane="edge3_0" roadsideCapacity="6" length="5"/>
-  <parkingArea id="paedge4" lane="edge4_0" roadsideCapacity="4" length="5"/>
-</additional>
