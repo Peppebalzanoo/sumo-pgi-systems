@@ -14,9 +14,8 @@ def get_vehicle_from_xml():
         list_vec_xml.append(vec_xml)
     return list_vec_xml
 
-def read_csv_tripinfo(strategia, scenario):
+def read_csv_trip_and_stop_info(strategia, scenario):
     count_between_0_and_5min = count_between_5_and_10min = count_plus_10min = 0
-    tot_val = 0.0
 
     with open("../output/"+strategia+"/"+scenario+"/csv/tripinfo.csv", "r") as csv_file_tripinfo, open("../output/"+strategia+"/"+scenario+"/csv/stopinfo.csv", "r") as csv_file_stopinfo:
 
@@ -188,19 +187,19 @@ def main():
     read_csv_stopinfo("dynamic_area", "100%")
     read_csv_statistics("dynamic_area", "100%")
     read_csv_emmissions("dynamic_area", "100%", len(list_vec))
-    read_csv_tripinfo("dynamic_area", "100%")
+    read_csv_trip_and_stop_info("dynamic_area", "100%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 70%
     read_csv_stopinfo("dynamic_area", "70%")
     read_csv_statistics("dynamic_area", "70%")
     read_csv_emmissions("dynamic_area", "70%", len(list_vec))
-    read_csv_tripinfo("dynamic_area", "70%")
+    read_csv_trip_and_stop_info("dynamic_area", "70%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 50%
     read_csv_stopinfo("dynamic_area", "50%")
     read_csv_statistics("dynamic_area", "50%")
     read_csv_emmissions("dynamic_area", "50%", len(list_vec))
-    read_csv_tripinfo("dynamic_area", "50%")
+    read_csv_trip_and_stop_info("dynamic_area", "50%")
 
 
 

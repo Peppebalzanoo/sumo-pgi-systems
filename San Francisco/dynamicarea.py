@@ -67,14 +67,14 @@ def get_vehicle_from_xml():
 
 # * ********************************************************************************************************************************************************************* * #
 
-def get_lane_xml_form_edge_and_index(edgeID, index):
+def get_lane_xml_from_edge_and_index(edgeID, index):
     tree = ElementTree.parse('san_francisco.net.xml')
     root = tree.getroot()
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane/[@index='" + str(index) + "']"):
         return name.attrib['id']
 
 
-def get_indexes_xml_form_edge(edgeID):
+def get_indexes_xml_from_edge(edgeID):
     tree = ElementTree.parse('san_francisco.net.xml')
     root = tree.getroot()
     list_indexes = []
@@ -84,7 +84,7 @@ def get_indexes_xml_form_edge(edgeID):
 
 
 def get_expected_index(edgeID, curr_lane_index):
-    list_indexes = get_indexes_xml_form_edge(edgeID)
+    list_indexes = get_indexes_xml_from_edge(edgeID)
     if curr_lane_index != 0 and curr_lane_index in list_indexes:
         return curr_lane_index
     else:
@@ -245,36 +245,9 @@ def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_lane
             if len(list_available_edgs) > 0:
                 random_edgeID = random.choice(list_available_edgs)
                 random_index = get_expected_index(random_edgeID, expected_index)
-                random_laneID = get_lane_xml_form_edge_and_index(random_edgeID, random_index)
+                random_laneID = get_lane_xml_from_edge_and_index(random_edgeID, random_index)
                 traci.vehicle.changeTarget(vecID, random_edgeID)
-
-                position = 0.0
-                old_last_edge = traci.lane.getEdgeID(last_laneID_excpected)
-                distance_to_new_last_edge = get_distance_to_last(old_last_edge, random_edgeID, position)
-
-                space_on_next_next_step = traci.vehicle.getFollowSpeed(vecID, space_on_next_step, distance_to_new_last_edge, traci.lane.getMaxSpeed(last_laneID_excpected), traci.vehicle.getDecel(vecID))
-
-                if space_on_next_next_step >= distance_to_new_last_edge:
-                    num_links_next = traci.lane.getLinkNumber(random_laneID)
-                    if num_links_next >= 1:
-                        list_next = traci.lane.getLinks(random_laneID)
-                        avbl_edg = get_available_edges(vecID, last_laneID_excpected, random_index, random_laneID, list_next)
-                        if len(avbl_edg) >= 1:
-                            new_next = random.choice(avbl_edg)
-                            traci.vehicle.changeTarget(vecID, new_next)
-                            exit_cond = True
-                        else:
-                            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
-                            update_vec_to_searchtime_started_dictionary(vecID, 0, True)
-                    else:
-                        # Non c'è nessuna strada collegata a quella corrente
-                        if exit_vehicle_report.get(vecID) is None:
-                            exit_vehicle_report[vecID] = "E' uscito perchè NON ci sono piu' strade fisicamente percorribili"
-                            file = open("output/exit_vehicle_report.txt", "a")
-                            print(vecID, "E' uscito perchè NON ci sono piu' strade fisicamente percorribili", file=file)
-                            file.close()
-                else:
-                    exit_cond = True
+                exit_cond = True
             else:
                 update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
                 update_vec_to_searchtime_started_dictionary(vecID, 0, True)
@@ -381,7 +354,7 @@ def run():
                 # ___ ROUTINE ___ #
                 if space_on_next_step >= distance_to_lastedge:
                     next_expected_index = get_expected_index(last_edgeID, curr_lane_index)
-                    last_laneID_excpected = get_lane_xml_form_edge_and_index(last_edgeID, next_expected_index)
+                    last_laneID_excpected = get_lane_xml_from_edge_and_index(last_edgeID, next_expected_index)
 
                     if last_edgeID == get_depart_xml(vecID):
                         if exit_vehicle_report.get(vecID) is None:
@@ -411,8 +384,8 @@ def main():
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
     sumoBinary = checkBinary('sumo')
-    # STRATEGIA: dynamic_area, SCENARIO: 100%
 
+    # STRATEGIA: dynamic_area, SCENARIO: 100%
     sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run()
