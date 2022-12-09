@@ -189,11 +189,11 @@ def main():
     read_csv_emmissions("dynamic_area", "100%", len(list_vec))
     read_csv_trip_and_stop_info("dynamic_area", "100%")
 
-    # STRATEGIA: dynamic_area, SCENARIO: 70%
-    read_csv_stopinfo("dynamic_area", "70%")
-    read_csv_statistics("dynamic_area", "70%")
-    read_csv_emmissions("dynamic_area", "70%", len(list_vec))
-    read_csv_trip_and_stop_info("dynamic_area", "70%")
+    # STRATEGIA: dynamic_area, SCENARIO: 75%
+    read_csv_stopinfo("dynamic_area", "75%")
+    read_csv_statistics("dynamic_area", "75%")
+    read_csv_emmissions("dynamic_area", "75%", len(list_vec))
+    read_csv_trip_and_stop_info("dynamic_area", "75%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 50%
     read_csv_stopinfo("dynamic_area", "50%")

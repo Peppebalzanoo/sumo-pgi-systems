@@ -7,7 +7,6 @@ import xml.etree.ElementTree as ElementTree
 
 AREA_INIT = 500
 TIME_SLICE = 600
-
 exit_vehicle_report = {}
 
 # (vecID, coordinateXY_lane_dest)
@@ -226,7 +225,7 @@ def get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpecte
     return list_available
 
 
-def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, space_on_next_step, dist_to_last):
+def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected):
     # Veicolo alla ricerca di un parcheggio
     traci.vehicle.setColor(vecID, (255, 0, 0))
 
@@ -266,7 +265,7 @@ def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_lane
 
 # * ********************************************************************************************************************************************************************* * #
 
-def routine(vecID, curr_edgeID, curr_laneID, curr_lane_index, last_edgeID, last_laneID_excpected, expected_index, space_on_next_step, dist_to_last):
+def routine(vecID, curr_laneID, last_edgeID, last_laneID_excpected, expected_index):
 
     # Controllo se non sono arrivato al mio indirizzo di partenza
     # Controllo se sono arrivato alla mia destinazione (destinazione xml oppure destinazione casuale)
@@ -296,11 +295,11 @@ def routine(vecID, curr_edgeID, curr_laneID, curr_lane_index, last_edgeID, last_
                     reset_vec_to_searchtime_started_dictionary(vecID)
 
                 except traci.TraCIException as e:
-                    search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, space_on_next_step, dist_to_last)
+                    search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected)
             else:
-                search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, space_on_next_step, dist_to_last)
+                search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected)
         else:
-            search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, space_on_next_step, dist_to_last)
+            search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected)
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -362,7 +361,7 @@ def run():
                             print(vecID, "E' uscito perchè ha completato il percorso PARTENZA ---> DESTINAZIONE ---> PARTENZA", file=file)
                             file.close()
 
-                    routine(vecID, curr_edgeID, curr_laneID, curr_lane_index, last_edgeID, last_laneID_excpected, next_expected_index, space_on_next_step, distance_to_lastedge)
+                    routine(vecID, curr_laneID, last_edgeID, last_laneID_excpected, next_expected_index)
 
             else:
                 # SE IL VEICOLO È ATTUALMENTE PARCHEGGIATO
@@ -383,6 +382,7 @@ def main():
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
     sumoBinary = checkBinary('sumo')
+    # sumoBinary = 'sumo'
 
     # STRATEGIA: dynamic_area, SCENARIO: 100%
     sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
@@ -390,13 +390,13 @@ def main():
     run()
     traci.close()
 
-    # STRATEGIA: dynamic_area, SCENARIO: 70%
-    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_70%.sumocfg", "--start"]
+    # STRATEGIA: dynamic_area, SCENARIO: 75%
+    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_75%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run()
     traci.close()
 
-    # STRATEGIA: dynamic_area, SCENARIO: 70%
+    # STRATEGIA: dynamic_area, SCENARIO: 50%
     sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_50%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run()

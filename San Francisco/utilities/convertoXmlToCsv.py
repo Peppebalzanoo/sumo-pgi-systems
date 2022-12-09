@@ -82,11 +82,11 @@ def main():
     create_csv_emmissions("dynamic_area", "100%")
     create_csv_tripinfo(list_vec, "dynamic_area", "100%")
 
-    # STRATEGIA: dynamic_area, SCENARIO: 70%
-    create_csv_stopinfo(list_vec, "dynamic_area", "70%")
-    create_csv_statistics("dynamic_area", "70%")
-    create_csv_emmissions("dynamic_area", "70%")
-    create_csv_tripinfo(list_vec, "dynamic_area", "70%")
+    # STRATEGIA: dynamic_area, SCENARIO: 75%
+    create_csv_stopinfo(list_vec, "dynamic_area", "75%")
+    create_csv_statistics("dynamic_area", "75%")
+    create_csv_emmissions("dynamic_area", "75%")
+    create_csv_tripinfo(list_vec, "dynamic_area", "75%")
 
     # STRATEGIA: dynamic_area, SCENARIO: 50%
     create_csv_stopinfo(list_vec, "dynamic_area", "50%")

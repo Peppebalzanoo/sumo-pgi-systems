@@ -37,8 +37,7 @@ def reduce_to(percentage):
 
 
 def main():
-    reduce_to(70)
-    reduce_to(50)
+    reduce_to(75)
 
 if __name__ == "__main__":
     main()

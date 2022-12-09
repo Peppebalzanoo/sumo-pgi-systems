@@ -22,7 +22,6 @@ def remove_attr(filename):
     for trip in root.findall(".//trip"):
         for key in ["trip_type", "type", "color", "from_taz", "to_taz", "stat", "flag", "direction", "end"]:
             trip.attrib.pop(key)
-        trip.attrib["depart"] = "0.00"
     ET.indent(tree, space="\t")
     tree.write(filename, encoding="utf-8", method="xml", xml_declaration=True)
 
