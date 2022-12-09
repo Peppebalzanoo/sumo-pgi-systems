@@ -1,25 +1,21 @@
-@ISTRUZIONI
+@ISTRUZIONI:
 
-#1: PER AVVIARE la simulazione usare il comando "python dynamicarea.py"
+#0: LO SCRIPT EFFETTEURA' UN CONTROLLO SULLA VARIABILE D'AMBIENTE "SUMO_HOME"
+    - PER SETTARLA: "https://sumo.dlr.de/docs/Basics/Basic_Computer_Skills.html"
+    - SE NON TI INTERESSA SETTARLA:
+        1. @COMMENTARE la riga 385 del file strategiaX.py
+                "sumoBinary = checkBinary('sumo')"
+        2. @SCOMMENTARE la riga 386 del file strategiaX.py
+                "sumoBinary = ('sumo')"
 
-#2: UNA VOLTA AVVIATO, lo script verrà fatto un controllo sulla variabile d'ambiente SUMO_HOME
-    - SE VUOI SETTARLA, seguire la procedura al link:
-        "https://sumo.dlr.de/docs/Basics/Basic_Computer_Skills.html"
+#1: PER AVVIARE SENZA GUI USARE IL COMANDO "python strategiaX.py"
 
-    - SE NON VUOI SETTARLA:
-        @ COMMENTARE la riga #385 del file dynamicarea.py
-            "sumoBinary = checkBinary('sumo')"
-        @ SCOMMENTARE la riga #386 del file dynamicarea.py
-            "sumoBinary = ('sumo')"
-
-#3: PER AVVIARE la simulazione con GUI
-        @ SOSTITUIRE la riga #385 del file dynamicarea.py
-            "sumoBinary = checkBinary('sumo')" con "sumoBinary = checkBinary('sumo-gui')"
+#2: PER AVVIARE CON GUI
+        @SOSTITUIRE la riga 385 del file strategiaX.py
+            "sumoBinary = checkBinary('sumo')" >>> "sumoBinary = checkBinary('sumo-gui')"
 
 ##########################################################################################
-
 @COMANDI UTILI:
-
+sumo -c san_francisco.sumocfg --vehroute-output yourRoutes.rou.xml
 "./utilities/clearTripFile.py" -trp "trip.trips.xml" -o "clear.trips.xml"
-
 "./utilities/generateVehicleFromTrips.py" -net "san_francisco.net.xml" -trp "clear.trips.xml" -vtp passenger -o "san_francisco.rou.xml"

@@ -591,7 +591,7 @@ def main():
 
     # sumoBinary = checkBinary('sumo-gui')
     sumoBinary = checkBinary('sumo')
-    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
+    sumoCmd = [sumoBinary, "-c", "san_francisco_strategia1_100%.sumocfg", "--start"]
 
     traci.start(sumoCmd)
     run()

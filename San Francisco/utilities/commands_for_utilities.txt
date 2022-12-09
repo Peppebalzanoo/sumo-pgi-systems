@@ -1,5 +1,0 @@
-generateVehicleFromTrips.py -net "../san_francisco.net.xml" -trp "../trip.trips.xml" -vtp passenger -o "../san_francisco.rou.xml"
-
-clearTripFile.py -trp "../trip.trips.xml" -o "../trip.trips.xml"
-
-sumo -c san_francisco.sumocfg --vehroute-output yourRoutes.rou.xml

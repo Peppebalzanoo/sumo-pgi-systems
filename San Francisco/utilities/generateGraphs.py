@@ -49,6 +49,12 @@ def read_csv_trip_and_stop_info(strategia, scenario):
         print("count_plus_10min:", count_plus_10min)
         print("\n")
 
+        data = [count_between_0_and_5min, count_between_5_and_10min, count_plus_10min]
+        lables_data_pie = ["between_0_and_5min", "between_5_and_10min", "plus_10min"]
+        lables_data_bar = ["0_and_5min", "5_and_10min", "plus_10min"]
+        generate_bar(data, lables_data_bar, "counter", strategia, scenario, None)
+        generate_pie(data, lables_data_pie, "counter", strategia, scenario)
+
 
 
 def read_csv_emmissions(strategia, scenario, num_vec):
@@ -104,9 +110,11 @@ def read_csv_stopinfo(strategia, scenario):
 
         counter_not_parked = number_vec - counter_parked
 
+        print("SU UN TOTALE DI", number_vec, "SI SONO PARCHEGGIATI", counter_parked, ", NON SI SONO PARCHEGGIATI", counter_not_parked)
 
         # counter_parked : number_vec = X : 100 ---> X = (counter_parked * 100)/number_vec
         percentuale_parked = (counter_parked * 100)/number_vec
+
         # counter_notparked : number_vec = X : 100 ---> X = (counter_notparked * 100)/number_vec
         percentuale_notparked = (counter_not_parked * 100)/number_vec
 
@@ -183,23 +191,23 @@ def generate_pie(data, data_labels, name_out, strategia, scenario):
 def main():
     list_vec = get_vehicle_from_xml()
 
-    # STRATEGIA: dynamic_area, SCENARIO: 100%
-    read_csv_stopinfo("dynamic_area", "100%")
-    read_csv_statistics("dynamic_area", "100%")
-    read_csv_emmissions("dynamic_area", "100%", len(list_vec))
-    read_csv_trip_and_stop_info("dynamic_area", "100%")
+    # STRATEGIA: strategia1, SCENARIO: 100%
+    read_csv_stopinfo("strategia1", "100%")
+    read_csv_statistics("strategia1", "100%")
+    read_csv_emmissions("strategia1", "100%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia1", "100%")
 
-    # STRATEGIA: dynamic_area, SCENARIO: 75%
-    read_csv_stopinfo("dynamic_area", "75%")
-    read_csv_statistics("dynamic_area", "75%")
-    read_csv_emmissions("dynamic_area", "75%", len(list_vec))
-    read_csv_trip_and_stop_info("dynamic_area", "75%")
+    # STRATEGIA: strategia1, SCENARIO: 75%
+    read_csv_stopinfo("strategia1", "75%")
+    read_csv_statistics("strategia1", "75%")
+    read_csv_emmissions("strategia1", "75%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia1", "75%")
 
-    # STRATEGIA: dynamic_area, SCENARIO: 50%
-    read_csv_stopinfo("dynamic_area", "50%")
-    read_csv_statistics("dynamic_area", "50%")
-    read_csv_emmissions("dynamic_area", "50%", len(list_vec))
-    read_csv_trip_and_stop_info("dynamic_area", "50%")
+    # STRATEGIA: strategia1, SCENARIO: 50%
+    read_csv_stopinfo("strategia1", "50%")
+    read_csv_statistics("strategia1", "50%")
+    read_csv_emmissions("strategia1", "50%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia1", "50%")
 
 
 

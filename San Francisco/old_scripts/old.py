@@ -529,7 +529,7 @@ def main():
         sys.exit("please declare environment variable 'SUMO_HOME'")
 
     sumoBinary = checkBinary('sumo-gui')
-    sumoCmd = [sumoBinary, "-c", "san_francisco_dynamic_area_100%.sumocfg", "--start"]
+    sumoCmd = [sumoBinary, "-c", "san_francisco_strategia1_100%.sumocfg", "--start"]
 
     traci.start(sumoCmd)
     run()
