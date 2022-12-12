@@ -9,6 +9,33 @@ AREA_INIT = 500
 TIME_SLICE = 600
 exit_vehicle_report = {}
 
+
+# * ********************************************************************************************************************************************************************* * #
+def myprint(mylist):
+    for elem in mylist:
+        print(elem)
+
+
+def myprintroute(curr_route_list):
+    idx = 0
+    for idx in range(0, len(curr_route_list)):
+        print("         ", curr_route_list[idx])
+    print("     numero_nodi: ", len(curr_route_list))
+
+
+def myprintinfo(vecID, curr_laneID, curr_edgeID, curr_lane_index, distance_to_lastedge, space_on_next_step, curr_route_list):
+    print("     *** INFORMAZIONI VEICOLO ***")
+    print("     VEICOLO:", vecID, "curr_edgeID:", curr_edgeID, "curr_laneID:", curr_laneID, "curr_lane_index:", curr_lane_index)
+    print("     dist_to_last:", distance_to_lastedge, "space_on_next:", space_on_next_step)
+    print("     curr_route_list:")
+    idx = 0
+    for idx in range(0, len(curr_route_list)):
+        print("         ", curr_route_list[idx])
+    print("     numero_nodi: ", len(curr_route_list))
+
+
+# * ********************************************************************************************************************************************************************* * #
+
 # (vecID, coordinateXY_lane_dest)
 vecID_to_dest_lane_position_dictionary = {}
 
@@ -52,6 +79,7 @@ def get_start_coordinate_from_destination_lane(destEdgeID, index):
     coordinateXY = traci.simulation.convert2D(destEdgeID, 0.0, index, False)
     return coordinateXY
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def get_vehicle_from_xml():
@@ -62,6 +90,7 @@ def get_vehicle_from_xml():
         vec_xml = elem.attrib['id']
         list_vec_xml.append(vec_xml)
     return list_vec_xml
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -88,6 +117,7 @@ def get_expected_index(edgeID, curr_lane_index):
     else:
         return 0
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def get_destination_xml(vecID):
@@ -99,6 +129,7 @@ def get_destination_xml(vecID):
             list_edges = temp.split()
             return list_edges[len(list_edges) - 1]
     return None
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -112,6 +143,7 @@ def get_depart_xml(vecID):
             return list_edges[0]
     return None
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def get_distance_to_last(curr_edgeID, last_edgeID, curr_position):
@@ -122,16 +154,18 @@ def get_distance_to_last(curr_edgeID, last_edgeID, curr_position):
 
     return distance_tolast_edge
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def get_parking(laneID):
     return lane_to_parking_dictionary.get(laneID)
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def check_parking_aviability(parkingID):
-    parking_capacity = traci.simulation.getParameter(parkingID, "parkingArea.capacity")
-    parking_occupancy = traci.simulation.getParameter(parkingID, "parkingArea.occupancy")
+    parking_capacity = int(traci.simulation.getParameter(parkingID, "parkingArea.capacity"))
+    parking_occupancy = int(traci.simulation.getParameter(parkingID, "parkingArea.occupancy"))
     if parking_occupancy < parking_capacity:
         return True
     return False
@@ -144,6 +178,7 @@ def is_parking_already_setted(vecID, parkingID):
         if temp_stop_data.stoppingPlaceID == parkingID:
             return True
     return False
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -162,6 +197,7 @@ def set_coordinate_lane_destination_xml(vecID, curr_lane_index):
     if vecID_to_dest_lane_position_dictionary.get(vecID) is None:
         coordinateXY = get_start_coordinate_from_destination_lane(get_destination_xml(vecID), curr_lane_index)
         vecID_to_dest_lane_position_dictionary[vecID] = coordinateXY
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -189,12 +225,13 @@ def reset_vec_to_searchtime_started_dictionary(vecID):
 def check_timeslice(vecID, count):
     if count == TIME_SLICE:
         if vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3:
-            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2,vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
+            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
             update_vec_to_searchtime_started_dictionary(vecID, 0, True)
         else:
             send_to_depart_xml(vecID)
             reset_vecID_to_dynamicarea_counter_dictionary(vecID)
             reset_vec_to_searchtime_started_dictionary(vecID)
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -225,7 +262,7 @@ def get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpecte
     return list_available
 
 
-def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, scenario):
+def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario):
     # Veicolo alla ricerca di un parcheggio
     traci.vehicle.setColor(vecID, (255, 0, 0))
 
@@ -244,6 +281,7 @@ def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_lane
                 random_edgeID = random.choice(list_available_edgs)
                 random_index = get_expected_index(random_edgeID, expected_index)
                 random_laneID = get_lane_xml_from_edge_and_index(random_edgeID, random_index)
+
                 traci.vehicle.changeTarget(vecID, random_edgeID)
                 exit_cond = True
             else:
@@ -259,14 +297,14 @@ def search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_lane
         # Non c'è nessuna strada collegata a quella corrente
         if exit_vehicle_report.get(vecID) is None:
             exit_vehicle_report[vecID] = "E' uscito perchè NON ci sono piu' strade fisicamente percorribili"
-            file = open("output/strategia1/"+scenario+"/exit_vehicle_report.txt", "a")
+            file = open("output/strategia1/" + scenario + "/exit_vehicle_report.txt", "a")
             print(vecID, "è uscito perchè NON ci sono piu' strade fisicamente percorribili", file=file)
             file.close()
 
+
 # * ********************************************************************************************************************************************************************* * #
 
-def routine(vecID, curr_laneID, last_edgeID, last_laneID_excpected, expected_index, scenario):
-
+def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected, expected_index, scenario):
     # Controllo se non sono arrivato al mio indirizzo di partenza
     # Controllo se sono arrivato alla mia destinazione (destinazione xml oppure destinazione casuale)
     if last_edgeID != get_depart_xml(vecID):
@@ -288,30 +326,29 @@ def routine(vecID, curr_laneID, last_edgeID, last_laneID_excpected, expected_ind
                 try:
                     if is_parking_already_setted(vecID, parkingID) is False:
                         # (900sec == 10min, 10800sec == 3hrs)
-                        # random_parking_time = random.randint(900, 10800)
-                        random_parking_time = 20
+                        random_parking_time = random.randint(900, 10800)
                         traci.vehicle.setParkingAreaStop(vecID, parkingID, random_parking_time)
 
                     reset_vec_to_searchtime_started_dictionary(vecID)
 
                 except traci.TraCIException as e:
-                    search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, scenario)
+                    search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
             else:
-                search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, scenario)
+                search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
         else:
-            search_random_edge_for_parking(vecID, curr_laneID, expected_index, last_laneID_excpected, scenario)
+            search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
+
 
 # * ********************************************************************************************************************************************************************* * #
 
 def run(strategia, scenario):
-
     load_vecID_to_dynamicarea_counter_dictionary(AREA_INIT)
     set_lane_to_parking_dictionary()
     load_vec_to_searchtime_started_dictionary()
 
     step = traci.simulation.getTime()  # step = 0.0
 
-    file = open("output/strategia1/"+scenario+"/exit_vehicle_report.txt", "w")
+    file = open("output/strategia1/" + scenario + "/exit_vehicle_report.txt", "w")
     file.close()
 
     while traci.simulation.getMinExpectedNumber() != 0:
@@ -349,6 +386,8 @@ def run(strategia, scenario):
                 # Limite superiore della velocità nel prossimo step
                 space_on_next_step = traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel)
 
+                # myprintinfo(vecID, curr_laneID, curr_edgeID, curr_lane_index, distance_to_lastedge, space_on_next_step, curr_route_list)
+
                 # ___ ROUTINE ___ #
                 if space_on_next_step >= distance_to_lastedge:
                     next_expected_index = get_expected_index(last_edgeID, curr_lane_index)
@@ -357,12 +396,11 @@ def run(strategia, scenario):
                     if last_edgeID == get_depart_xml(vecID):
                         if exit_vehicle_report.get(vecID) is None:
                             exit_vehicle_report[vecID] = "E' uscito perchè ha completato il percorso PARTENZA ---> DESTINAZIONE ---> PARTENZA"
-                            file = open("output/strategia1/"+scenario+"/exit_vehicle_report.txt", "a")
+                            file = open("output/strategia1/" + scenario + "/exit_vehicle_report.txt", "a")
                             print(vecID, "E' uscito perchè ha completato il percorso (PARTENZA ---> DESTINAZIONE ---> PARTENZA)", file=file)
                             file.close()
 
-                    routine(vecID, curr_laneID, last_edgeID, last_laneID_excpected, next_expected_index, scenario)
-
+                    routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected, next_expected_index, scenario)
             else:
                 # SE IL VEICOLO È ATTUALMENTE PARCHEGGIATO
                 send_to_depart_xml(vecID)
@@ -390,18 +428,16 @@ def main():
     run("strategia1", "100%")
     traci.close()
 
-    # STRATEGIA: strategia1, SCENARIO: 75%
-    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
-    traci.start(sumoCmd)
-    run("strategia1", "75%")
-    traci.close()
-
-    # STRATEGIA: strategia1, SCENARIO: 50%
-    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
-    traci.start(sumoCmd)
-    run("strategia1", "50%")
-    traci.close()
-
+    # # STRATEGIA: strategia1, SCENARIO: 75%
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "75%")
+    # traci.close()
+    #
+    # # STRATEGIA: strategia1, SCENARIO: 50%
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
+    # traci.start(sumoCmd)  # run("strategia1", "50%")
+    # traci.close()
 
 
 if __name__ == "__main__":
