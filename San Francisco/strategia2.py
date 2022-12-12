@@ -135,7 +135,7 @@ def check_parking_aviability(parkingID):
     return False
 
 def is_parking_already_setted(vecID, parkingID):
-    tuple_of_stop_data = traci.vehicle.getStops(vecID, 10)
+    tuple_of_stop_data = traci.vehicle.getStops(vecID, 1)
     for i in range(0, len(tuple_of_stop_data)):
         temp_stop_data = tuple_of_stop_data[i]
         if temp_stop_data.stoppingPlaceID == parkingID:
@@ -240,20 +240,20 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
     lane_parking = traci.parkingarea.getLaneID(parkingID)
     edge_parking = traci.lane.getEdgeID(lane_parking)
 
-    print("curr_edge:", curr_edgeID)
-    print("last_edgeID:", last_edgeID)
-    print("edge_parking:", edge_parking)
+    # Calcolo il percorso dall'ultimo nodo al nodo del parcheggio
+    route_last_to_edge_parking_stage = traci.simulation.findRoute(last_edgeID, edge_parking)
 
-    traci.vehicle.changeTarget(vecID, edge_parking)
+    # Calcolo il nuovo percorso aggiungendo il nodo corrente + il percorso calcolato dall'ultimo nodo al nodo del parcheggio
+    new_route = []
+    if curr_edgeID != last_edgeID:
+        new_route = [curr_edgeID]
 
-    # # Calcolo il percorso dall'ultimo nodo al nodo del parcheggio
-    # route_last_to_edge_parking_stage = traci.simulation.findRoute(last_edgeID, edge_parking)
-    #
-    # # Calcolo il nuovo percorso aggiungendo il nodo corrente + il percorso calcolato dall'ultimo nodo al nodo del parcheggio
-    # new_route = [curr_edgeID]
-    # new_route += list(route_last_to_edge_parking_stage.edges)
-    #
-    # traci.vehicle.setRoute(vecID, new_route)
+    new_route += list(route_last_to_edge_parking_stage.edges)
+
+    # Setto il nuovo percorso calcolato
+    traci.vehicle.setRoute(vecID, new_route)
+
+    # traci.vehicle.changeTarget(vecID, edge_parking)
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -272,9 +272,11 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, curr_route_list, last_
             if check_parking_aviability(parkingID):
                 try:
                     if is_parking_already_setted(vecID, parkingID) is False:
+
                         # (900sec == 10min, 10800sec == 3hrs)
-                        # random_parking_time = random.randint(900, 10800)
+                        # ! random_parking_time = random.randint(900, 10800)
                         traci.vehicle.setParkingAreaStop(vecID, parkingID, 20)
+
                 except traci.TraCIException as e:
                     calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario)
             else:
@@ -305,7 +307,6 @@ def run(strategia, scenario):
 
             # Se il veicolo non è attualmente parcheggiato
             if traci.vehicle.isStoppedParking(vecID) is False:
-
                 curr_route_list = traci.vehicle.getRoute(vecID)
                 last_edgeID = curr_route_list[len(curr_route_list) - 1]
 
@@ -331,9 +332,18 @@ def run(strategia, scenario):
                     last_laneID_excpected = get_lane_xml_from_edge_and_index(last_edgeID, next_expected_index)
                     routine(vecID, curr_laneID, curr_edgeID, last_edgeID, curr_route_list, last_laneID_excpected, next_expected_index, scenario)
                 else:
-                    pass
-                    # Controllo se il veicolo ha trovato posto libero mentre si sta dirigendo verso quello piu' grande
+                    # Controllo se sono arrivato a destinazione, non ho trovato parcheggio, ho calcolato i parcheggi e mi sto dirigendo verso il parcheggio più grande
+                    if vecID_to_list_parking_index.get(vecID) is not None:
+                        # Controllo se il veicolo trova posto libero mentre si sta dirigendo verso quello piu' grande
+                        parkID = get_parking(curr_laneID)
+                        if parkID is not None and check_parking_aviability(parkID) is True and is_parking_already_setted(vecID, parkID) is False:
+                            try:
+                                # (900sec == 10min, 10800sec == 3hrs)
+                                # ! random_parking_time = random.randint(900, 10800)
+                                traci.vehicle.setParkingAreaStop(vecID, parkID, 20)
 
+                            except traci.TraCIException as e:
+                                pass
             else:
                 # Se il veicolo è attualmente parcheggiato
                 send_to_depart_xml(vecID)
@@ -359,7 +369,16 @@ def main():
     run("strategia2", "100%")
     traci.close()
 
-    # # STRATEGIA: strategia2, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia2", "75%")  # traci.close()  #  # # STRATEGIA: strategia2, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia2", "50%")  # traci.close()
+    # # STRATEGIA: strategia2, SCENARIO: 75%
+    # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_75%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia2", "75%")
+    # traci.close()
+    #
+    # # STRATEGIA: strategia2, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia2", "50%")
+    # traci.close()
 
 
 if __name__ == "__main__":

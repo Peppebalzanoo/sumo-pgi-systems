@@ -172,7 +172,7 @@ def check_parking_aviability(parkingID):
 
 
 def is_parking_already_setted(vecID, parkingID):
-    tuple_of_stop_data = traci.vehicle.getStops(vecID, 10)
+    tuple_of_stop_data = traci.vehicle.getStops(vecID, 1)
     for i in range(0, len(tuple_of_stop_data)):
         temp_stop_data = tuple_of_stop_data[i]
         if temp_stop_data.stoppingPlaceID == parkingID:
@@ -188,7 +188,6 @@ def send_to_depart_xml(vecID):
     depart_edge_xml = get_depart_xml(vecID)
     if curr_last_edgeID != depart_edge_xml:
         traci.vehicle.changeTarget(vecID, depart_edge_xml)
-        traci.vehicle.setColor(vecID, (255, 255, 0))
         return True
     return False
 
@@ -263,8 +262,6 @@ def get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpecte
 
 
 def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario):
-    # Veicolo alla ricerca di un parcheggio
-    traci.vehicle.setColor(vecID, (255, 0, 0))
 
     # Notifico che da questo momento il veicolo sta cercando parcheggio
     update_vec_to_searchtime_started_dictionary(vecID, vec_to_searchtime_started_dictionary.get(vecID)[0], True)
@@ -282,8 +279,22 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
                 random_index = get_expected_index(random_edgeID, expected_index)
                 random_laneID = get_lane_xml_from_edge_and_index(random_edgeID, random_index)
 
-                traci.vehicle.changeTarget(vecID, random_edgeID)
+                # Calcolo il percorso dall'ultimo nodo al nuovo nodo
+                route_last_to_random_edge_stage = traci.simulation.findRoute(last_edgeID, random_edgeID)
+
+                # Calcolo il nuovo percorso aggiungendo il nodo corrente + il percorso calcolato dall'ultimo nodo al nodo del parcheggio
+                new_route = []
+                if curr_edgeID != last_edgeID:
+                    new_route = [curr_edgeID]
+
+                new_route += list(route_last_to_random_edge_stage.edges)
+
+                # Setto il nuovo percorso calcolato
+                traci.vehicle.setRoute(vecID, new_route)
+
+                # traci.vehicle.changeTarget(vecID, random_edgeID)
                 exit_cond = True
+
             else:
                 update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
                 update_vec_to_searchtime_started_dictionary(vecID, 0, True)
@@ -312,22 +323,16 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
         # Assegno al veicolo le coordinate (X, Y) del suo indirizzo di destinazione XML
         set_coordinate_lane_destination_xml(vecID, expected_index)
 
-        # Il veicolo è alla ricerca di un parcheggio
-        traci.vehicle.setColor(vecID, (255, 0, 0))
-
         # Controllo se nella lane di destinazione corrente c'è un parcheggio
         parkingID = get_parking(last_laneID_excpected)
         if parkingID is not None:
-
-            # Il veicolo ha trovato parcheggio
-            traci.vehicle.setColor(vecID, (0, 255, 0))
 
             if check_parking_aviability(parkingID):
                 try:
                     if is_parking_already_setted(vecID, parkingID) is False:
                         # (900sec == 10min, 10800sec == 3hrs)
-                        random_parking_time = random.randint(900, 10800)
-                        traci.vehicle.setParkingAreaStop(vecID, parkingID, random_parking_time)
+                        # ! random_parking_time = random.randint(900, 10800)
+                        traci.vehicle.setParkingAreaStop(vecID, parkingID, 20)
 
                     reset_vec_to_searchtime_started_dictionary(vecID)
 
