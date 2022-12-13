@@ -70,10 +70,10 @@ def read_csv_emmissions(strategia, scenario, num_vec):
             temp_emissions_HC += float(temp_list[2])
             temp_fuel_consumed += float(temp_list[3])
 
-        average_emissions_CO = temp_emissions_CO/num_vec
-        average_emissions_CO2 = temp_emissions_CO2/num_vec
-        average_emissions_HC = temp_emissions_HC/num_vec
-        average_fuel_consumed = temp_fuel_consumed/num_vec
+        average_emissions_CO = float(temp_emissions_CO/num_vec)
+        average_emissions_CO2 = float(temp_emissions_CO2/num_vec)
+        average_emissions_HC = float(temp_emissions_HC/num_vec)
+        average_fuel_consumed = float(temp_fuel_consumed/num_vec)
 
         data_emissions = [average_emissions_CO, average_emissions_CO2, average_fuel_consumed]
         labels_data_emissions = ["CO", "CO2", "Fuel"]
@@ -117,6 +117,7 @@ def read_csv_stopinfo(strategia, scenario):
 
         # counter_notparked : number_vec = X : 100 ---> X = (counter_notparked * 100)/number_vec
         percentuale_notparked = (counter_not_parked * 100)/number_vec
+
 
         data_percentage = [percentuale_parked, percentuale_notparked]
         labels_percentage = ["Trovato %", "Non Trovato %"]
@@ -184,32 +185,36 @@ def generate_pie(data, data_labels, name_out, strategia, scenario):
     pyplot.pie(data, labels=data_labels, autopct='%1.1f%%', startangle=0, shadow=False, colors=colors_palette, explode=myexplode)
     pyplot.legend()
     pyplot.axis("equal")
-    pyplot.savefig("../output/" + strategia + "/"+scenario+"/"+"plots/"  + name_out + "_pie_" + data_labels[0].lower().replace(" ", "") + "_" + data_labels[1].lower().replace(" ", ""))
+    pyplot.savefig("../output/" + strategia + "/"+scenario+"/"+"plots/" + name_out + "_pie_" + data_labels[0].lower().replace(" ", "") + "_" + data_labels[1].lower().replace(" ", ""))
     pyplot.close()
 
 
 def main():
     list_vec = get_vehicle_from_xml()
 
-    # STRATEGIA: strategia1, SCENARIO: 100%
-    read_csv_stopinfo("strategia1", "100%")
-    read_csv_statistics("strategia1", "100%")
-    read_csv_emmissions("strategia1", "100%", len(list_vec))
-    read_csv_trip_and_stop_info("strategia1", "100%")
+    # # STRATEGIA: strategia1, SCENARIO: 100%
+    # read_csv_stopinfo("strategia1", "100%")
+    # read_csv_statistics("strategia1", "100%")
+    # read_csv_emmissions("strategia1", "100%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia1", "100%")
+    #
+    # # STRATEGIA: strategia1, SCENARIO: 75%
+    # read_csv_stopinfo("strategia1", "75%")
+    # read_csv_statistics("strategia1", "75%")
+    # read_csv_emmissions("strategia1", "75%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia1", "75%")
+    #
+    # # STRATEGIA: strategia1, SCENARIO: 50%
+    # read_csv_stopinfo("strategia1", "50%")
+    # read_csv_statistics("strategia1", "50%")
+    # read_csv_emmissions("strategia1", "50%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia1", "50%")
 
-    # STRATEGIA: strategia1, SCENARIO: 75%
-    read_csv_stopinfo("strategia1", "75%")
-    read_csv_statistics("strategia1", "75%")
-    read_csv_emmissions("strategia1", "75%", len(list_vec))
-    read_csv_trip_and_stop_info("strategia1", "75%")
-
-    # STRATEGIA: strategia1, SCENARIO: 50%
-    read_csv_stopinfo("strategia1", "50%")
-    read_csv_statistics("strategia1", "50%")
-    read_csv_emmissions("strategia1", "50%", len(list_vec))
-    read_csv_trip_and_stop_info("strategia1", "50%")
-
-
+    # STRATEGIA: strategia2, SCENARIO: 100%
+    read_csv_stopinfo("strategia2", "100%")
+    read_csv_statistics("strategia2", "100%")
+    read_csv_emmissions("strategia2", "100%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia2", "100%")
 
 if __name__ == "__main__":
     main()

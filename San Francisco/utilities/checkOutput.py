@@ -10,7 +10,7 @@ def get_vehicle_from_xml():
     return list_vec_xml
 
 def check_stops(vecID):
-    tree = ET.parse('stops.xml')
+    tree = ET.parse('../output/strategia2/100%/stops.xml')
     root = tree.getroot()
     count = 0
     for stop in root.findall(".//stopinfo/[@id='"+vecID+"'"):
@@ -21,27 +21,8 @@ def check_stops(vecID):
         file.close()
 
 
-# def check_route(vecID):
-#     tree = ET.parse('vehroute.xml')
-#     root = tree.getroot()
-#     count = 0
-#     last_list = []
-#     for route in root.findall(".//vehicle/[@id='"+vecID+"']//routeDistribution//route"):
-#         temp_list = list(route.attrib["edges"].split(" "))
-#         if count == 0:
-#             last_list = temp_list
-#             count += 1
-#         elif count > 0 and last_list in temp_list:
-#             last_list = temp_list
-#         elif count > 0 and last_list not in temp_list:
-#             file = open("file.txt", "a")
-#             print("VecID:", vecID, "un percorso inconsistente", file=file)
-#             file.close()
-#             break
-
-
 def check_route(vecID):
-    tree = ET.parse('vehroute.xml')
+    tree = ET.parse('../output/strategia2/100%/vehroute.xml')
     root = tree.getroot()
     count = 0
     last_edge = ""

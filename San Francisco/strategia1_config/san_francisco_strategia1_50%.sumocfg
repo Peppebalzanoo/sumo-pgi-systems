@@ -29,6 +29,7 @@
         <collision-output value="../output/strategia1/50%/collision.xml"/>
         <stop-output value="../output/strategia1/50%/stops.xml"/>
         <statistic-output value="../output/strategia1/50%/statistic.xml"/>
+        <emission-output value="../output/strategia1/50%/emissions.xml"/>
     </output>
 
 </configuration>

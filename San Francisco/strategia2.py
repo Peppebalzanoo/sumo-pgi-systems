@@ -3,6 +3,7 @@ import os
 import sys
 import traci
 import random
+from os.path import exists
 from sumolib import checkBinary
 import xml.etree.ElementTree as ElementTree
 
@@ -126,7 +127,6 @@ def get_distance_to_last(curr_edgeID, last_edgeID, curr_position):
         distance_tolast_edge = 0.0
     else:
         distance_tolast_edge = traci.simulation.getDistanceRoad(curr_edgeID, curr_position, last_edgeID, 0.0, True)
-        print("***************", distance_tolast_edge)
 
     return distance_tolast_edge
 
@@ -206,6 +206,7 @@ def get_available_lanes(vecID):
             list_aviable_lane.append(temp_lane)
         idx += 1
 
+        # ! Controllare questa porzione di codice
         # CONTROLLO SE STO USCENDO DAL WHILE E SE HO TROVATO ALMENO UNA LANE CON UN PARCHEGGIO NELL'AREA CORRENTE DI RICERCA
         if idx >= len(list_lane) and len(list_aviable_lane) == 0:
             if curr_area < 4000:
@@ -241,23 +242,31 @@ vecID_to_list_parking_index = {}
 def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
     # Controllo se per questo veicolo non ho mai calcolato i parcheggi disponibili nell'area corrente di ricerca
     if vecID_to_list_parking_index.get(vecID) is None:
-        print(" Il veicolo", vecID, "sta calcolando i parcheggi disponibili nell'area corrente di ricerca...")
-        list_aviable_lane = get_available_lanes(vecID)
-        list_desc_parking = get_ordred_parkings(list_aviable_lane)
 
-        # Read
-        # list_desc_parking = []
-        # with open("parking.txt") as f:
-        #     for line in f:
-        #         list_desc_parking.append(line.strip())
+        # ! Commentato temporanemante
+        # print(" Il veicolo", vecID, "sta calcolando i parcheggi disponibili nell'area corrente di ricerca...")
+        # list_aviable_lane = get_available_lanes(vecID)
+        # list_desc_parking = get_ordred_parkings(list_aviable_lane)
+        # ! -------------------------
 
-        vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
+        if exists("./parkings/parks"+vecID+".txt"):
+            # Read
+            list_desc_parking = []
+            with open("./parkings/parks"+vecID+".txt") as f:
+                for line in f:
+                    list_desc_parking.append(line.strip())
+            vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
+        else:
+            print(" Il veicolo", vecID, "sta calcolando i parcheggi disponibili nell'area corrente di ricerca...")
+            list_aviable_lane = get_available_lanes(vecID)
+            list_desc_parking = get_ordred_parkings(list_aviable_lane)
+            vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
 
-        # Write
-        fln = open("./parkings/parks"+vecID+".txt", "w")
-        for elem in list_desc_parking:
-            print(elem, file=fln)
-        fln.close()
+            # Write
+            fln = open("./parkings/parks"+vecID+".txt", "w")
+            for elem in list_desc_parking:
+                print(elem, file=fln)
+            fln.close()
 
     # Recupero la lista dei parcheggi
     list_parking = vecID_to_list_parking_index.get(vecID)[0]
@@ -399,9 +408,7 @@ def run(strategia, scenario):
                     if vecID_to_list_parking_index.get(vecID) is not None and mappa.get(vecID) is None:
                         # Controllo se trovo parcheggio mentre mi sto dirigendo verso quello più grande
                         parkingID = get_parking(curr_laneID)
-                        if parkingID is not None and check_parking_aviability(parkingID) is True and is_parking_already_setted(vecID, parkingID) is False and check_parking_position(vecID,
-                                                                                                                                                                                     curr_position,
-                                                                                                                                                                                     parkingID):
+                        if parkingID is not None and check_parking_aviability(parkingID) is True and is_parking_already_setted(vecID, parkingID) is False and check_parking_position(vecID, curr_position, parkingID) is True:
                             try:
                                 # (900sec == 10min, 10800sec == 3hrs)
                                 # ! random_parking_time = random.randint(900, 10800)

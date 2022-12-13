@@ -76,23 +76,30 @@ def create_csv_emmissions(strategia, scenario):
 def main():
     list_vec = get_vehicle_from_xml()
 
-    # STRATEGIA: strategia1, SCENARIO: 100%
-    create_csv_stopinfo(list_vec, "strategia1", "100%")
-    create_csv_statistics("strategia1", "100%")
-    create_csv_emmissions("strategia1", "100%")
-    create_csv_tripinfo(list_vec, "strategia1", "100%")
+    # # STRATEGIA: strategia1, SCENARIO: 100%
+    # create_csv_stopinfo(list_vec, "strategia1", "100%")
+    # create_csv_statistics("strategia1", "100%")
+    # create_csv_emmissions("strategia1", "100%")
+    # create_csv_tripinfo(list_vec, "strategia1", "100%")
+    #
+    # # STRATEGIA: strategia1, SCENARIO: 75%
+    # create_csv_stopinfo(list_vec, "strategia1", "75%")
+    # create_csv_statistics("strategia1", "75%")
+    # create_csv_emmissions("strategia1", "75%")
+    # create_csv_tripinfo(list_vec, "strategia1", "75%")
+    #
+    # # STRATEGIA: strategia1, SCENARIO: 50%
+    # create_csv_stopinfo(list_vec, "strategia1", "50%")
+    # create_csv_statistics("strategia1", "50%")
+    # create_csv_emmissions("strategia1", "50%")
+    # create_csv_tripinfo(list_vec, "strategia1", "50%")
 
-    # STRATEGIA: strategia1, SCENARIO: 75%
-    create_csv_stopinfo(list_vec, "strategia1", "75%")
-    create_csv_statistics("strategia1", "75%")
-    create_csv_emmissions("strategia1", "75%")
-    create_csv_tripinfo(list_vec, "strategia1", "75%")
 
-    # STRATEGIA: strategia1, SCENARIO: 50%
-    create_csv_stopinfo(list_vec, "strategia1", "50%")
-    create_csv_statistics("strategia1", "50%")
-    create_csv_emmissions("strategia1", "50%")
-    create_csv_tripinfo(list_vec, "strategia1", "50%")
+    # # STRATEGIA: strategia2, SCENARIO: 100%
+    create_csv_stopinfo(list_vec, "strategia2", "100%")
+    create_csv_statistics("strategia2", "100%")
+    create_csv_emmissions("strategia2", "100%")
+    create_csv_tripinfo(list_vec, "strategia2", "100%")
 
 if __name__ == "__main__":
     main()
