@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Title: Update strategia2.py, strategia1.py, mioscript_up.py">
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/emission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/exit_vehicle_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/mioscript.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/collision.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/emission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/exit_vehicle_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/statistic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/stops.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/tripinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/vehroute.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/collision.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/emission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/exit_vehicle_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/statistic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/stops.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/tripinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/75%/vehroute.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/collision.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/emission.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/exit_vehicle_report.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/file.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/mioscript_up.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/checkOutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/statistic.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/stops.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/summary.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/tripinfo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/vehroute.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/settings.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3970836f-3620-45d6-8b37-2ffc894936f6" />
+        <option name="url" value="https://github.com/Peppebalzanoo/Sumo-SanFrancisco.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GZenYWIiftdu1EizxlOFV3QgxB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/testing/version.py&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Sumo Tutorials" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Sumo Tutorials" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\output\strategia1\100%" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\strategia2_config" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\testing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\output\strategia2\100%" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\strategia2_config" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\strategia1_config" />
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\parking_capacity_100%" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="checkOutput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sumo Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\utilities\checkOutput.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checkOutput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sumo Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\utilities\checkOutput.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reduceParkingCapacity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sumo Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/San Francisco/utilities" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/San Francisco/utilities/reduceParkingCapacity.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="strategia1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sumo Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/San Francisco" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/San Francisco/strategia1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="strategia2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sumo Tutorials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/San Francisco" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/San Francisco/strategia2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.checkOutput" />
+        <item itemvalue="Python.reduceParkingCapacity" />
+        <item itemvalue="Python.strategia2" />
+        <item itemvalue="Python.checkOutput" />
+        <item itemvalue="Python.strategia1 (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Giuseppe\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="" />
+      <created>1666600700598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666600700598</updated>
+      <workItem from="1666600701699" duration="22847000" />
+      <workItem from="1666633436542" duration="2092000" />
+      <workItem from="1666648825669" duration="5472000" />
+      <workItem from="1666682296500" duration="10757000" />
+      <workItem from="1666714514144" duration="685000" />
+      <workItem from="1666855161601" duration="15999000" />
+      <workItem from="1666882018693" duration="145000" />
+      <workItem from="1666955216248" duration="918000" />
+      <workItem from="1667479501841" duration="189000" />
+      <workItem from="1667481366538" duration="13907000" />
+      <workItem from="1667498511646" duration="8319000" />
+      <workItem from="1667548540518" duration="14060000" />
+      <workItem from="1667810745260" duration="2902000" />
+      <workItem from="1667830981657" duration="8951000" />
+      <workItem from="1667891805151" duration="33000" />
+      <workItem from="1667891844583" duration="127000" />
+      <workItem from="1667891980610" duration="9472000" />
+      <workItem from="1667916249503" duration="146000" />
+      <workItem from="1667916403209" duration="65000" />
+      <workItem from="1667916475442" duration="12989000" />
+      <workItem from="1667929637396" duration="355000" />
+      <workItem from="1667984180177" duration="10693000" />
+      <workItem from="1667996435680" duration="1982000" />
+      <workItem from="1667998441476" duration="111000" />
+      <workItem from="1667998560417" duration="383000" />
+      <workItem from="1668077443544" duration="5029000" />
+      <workItem from="1668085269584" duration="1601000" />
+      <workItem from="1668086890914" duration="13951000" />
+      <workItem from="1668156674058" duration="8686000" />
+      <workItem from="1668166496572" duration="6365000" />
+      <workItem from="1668177159094" duration="204000" />
+      <workItem from="1668248671600" duration="544000" />
+      <workItem from="1668249226615" duration="4075000" />
+      <workItem from="1668255834842" duration="21288000" />
+      <workItem from="1668333457771" duration="13780000" />
+      <workItem from="1668351535539" duration="2130000" />
+      <workItem from="1668354996127" duration="662000" />
+      <workItem from="1668358714568" duration="348000" />
+      <workItem from="1668414919649" duration="12641000" />
+      <workItem from="1668504131767" duration="9674000" />
+      <workItem from="1668521192158" duration="196000" />
+      <workItem from="1668522753601" duration="8433000" />
+      <workItem from="1668531835201" duration="338000" />
+      <workItem from="1668591487129" duration="30848000" />
+      <workItem from="1668671682435" duration="1001000" />
+      <workItem from="1668672698966" duration="7858000" />
+      <workItem from="1668758382991" duration="2599000" />
+      <workItem from="1668761020231" duration="17673000" />
+      <workItem from="1668782541669" duration="2451000" />
+      <workItem from="1669023100590" duration="28445000" />
+      <workItem from="1669106925843" duration="91000" />
+      <workItem from="1669107023422" duration="218000" />
+      <workItem from="1669107250122" duration="50000" />
+      <workItem from="1669107308003" duration="11111000" />
+      <workItem from="1669121721516" duration="237000" />
+      <workItem from="1669121965534" duration="21958000" />
+      <workItem from="1669148623179" duration="10827000" />
+      <workItem from="1669194618577" duration="10800000" />
+      <workItem from="1669209674973" duration="22293000" />
+      <workItem from="1669240887132" duration="2791000" />
+      <workItem from="1669243790345" duration="146000" />
+      <workItem from="1669243944539" duration="2282000" />
+      <workItem from="1669246399616" duration="413000" />
+      <workItem from="1669281172737" duration="11326000" />
+      <workItem from="1669297227402" duration="16112000" />
+      <workItem from="1669316307695" duration="4684000" />
+      <workItem from="1669369040045" duration="6733000" />
+      <workItem from="1669456019083" duration="2133000" />
+      <workItem from="1669634467798" duration="7725000" />
+      <workItem from="1669661592787" duration="2281000" />
+      <workItem from="1669663902994" duration="17000" />
+      <workItem from="1669714224343" duration="5051000" />
+      <workItem from="1669749398318" duration="13507000" />
+      <workItem from="1669795876419" duration="15173000" />
+      <workItem from="1669881026144" duration="29308000" />
+      <workItem from="1669971585387" duration="19163000" />
+      <workItem from="1670054546648" duration="7369000" />
+      <workItem from="1670147227800" duration="1631000" />
+      <workItem from="1670155376888" duration="660000" />
+      <workItem from="1670156154220" duration="1219000" />
+      <workItem from="1670161604085" duration="622000" />
+      <workItem from="1670163215501" duration="768000" />
+      <workItem from="1670237936794" duration="6485000" />
+      <workItem from="1670265510348" duration="351000" />
+      <workItem from="1670269611222" duration="392000" />
+      <workItem from="1670270022496" duration="27000" />
+      <workItem from="1670270094483" duration="137000" />
+      <workItem from="1670270238624" duration="29000" />
+      <workItem from="1670335510841" duration="973000" />
+      <workItem from="1670337129031" duration="141000" />
+      <workItem from="1670423290058" duration="402000" />
+      <workItem from="1670428824170" duration="2349000" />
+      <workItem from="1670578084481" duration="3441000" />
+      <workItem from="1670589907642" duration="16031000" />
+      <workItem from="1670661110075" duration="25058000" />
+      <workItem from="1670740701746" duration="9609000" />
+      <workItem from="1670750401231" duration="4250000" />
+      <workItem from="1670755195864" duration="254000" />
+      <workItem from="1670829845272" duration="571000" />
+      <workItem from="1670830474243" duration="16000" />
+      <workItem from="1670832660436" duration="16892000" />
+      <workItem from="1670855058882" duration="1742000" />
+      <workItem from="1670919267852" duration="40507000" />
+      <workItem from="1670965213607" duration="341000" />
+      <workItem from="1670965560700" duration="318000" />
+      <workItem from="1670965893770" duration="48000" />
+      <workItem from="1670966026847" duration="1151000" />
+      <workItem from="1670967217223" duration="1173000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update get_available_edges()&#10;Code refactoring">
+      <created>1668681202849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668681202849</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add arrived_vehicle.txt">
+      <created>1668681258614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668681258614</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Sumo projects">
+      <created>1668681459471</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668681459471</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Delete .idea">
+      <created>1668681601454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668681601454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Code refactoring and bugs fixing in refactoring.py">
+      <created>1668782120807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668782120807</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added test_refactoring.py&#10;Tested test_refactoring.py">
+      <created>1669054413702</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669054413702</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added/Tested convertXMLtoCSV.py, test_refactoring_ultimate.py and convertXMLtoCSV.py">
+      <created>1669159511162</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159511162</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added/Tested orderXMLFile.py">
+      <created>1669212455679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669212455679</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added/Tested clearTripFile.py">
+      <created>1669232184752</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669232184752</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added/Tested clearTripFile.py">
+      <created>1669243587711</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669243587711</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added/Tested good.py and test.py">
+      <created>1669317265133</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669317265133</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added:&#10;Tested: good.py&#10;Fixed: generateVehicleFromTrips.py">
+      <created>1669386162587</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669386162587</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added: &#10;Tested: san_francisco.py&#10;Updated: san_francisco.py, convertXMLtoCSV.py, san_francisco.sumocfg, old.py, old_v2.py">
+      <created>1669762979578</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669762979578</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Title: generate pyplot.plot, pyplot.pie and pyplot.bar&#10;Updated: convertXMLtoCSV.py">
+      <created>1669811141861</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669811141861</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Title: reduceParkingCapacity.py, convertoXmlToCsv.py, generateGraphs.py">
+      <created>1669890859868</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669890859868</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Code refactoring">
+      <created>1669910231494</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669910231494</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added read_csv_tripinfo() in generateGraphs.py">
+      <created>1669919009154</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669919009154</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Code refactoring.">
+      <created>1670256536167</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1670256536167</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Code refactoring">
+      <created>1670337261961</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1670337261961</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Code refactoring">
+      <created>1670593919532</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1670593919532</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added main.py and Code Refactoring.">
+      <created>1670606749886</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1670606749886</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Title: strategia2.py e mioscript.py&#10;Added:strategia2.py, mioscript.py;&#10;Others: Code Refactoring and Testing">
+      <created>1670846889298</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1670846889298</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Title: Bug Fixing&#10;Others: Code Refactoring and Testing">
+      <created>1670857408024</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1670857408024</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Title: Update&#10;Others: Code Refactoring and Testing">
+      <created>1670857749905</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1670857749905</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670964396121</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1670964396121</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670964663671</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1670964663671</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670964755050</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1670964755050</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670966426228</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670966426228</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670966974794</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670966974794</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing">
+      <created>1670967048195</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670967048195</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fixup! Title: Update Others: Code Refactoring and Testing">
+      <created>1670967375783</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1670967375783</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixup! Title: Update Others: Code Refactoring and Testing">
+      <created>1670967428188</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1670967428188</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py">
+      <created>1670967968496</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1670967968496</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Title: Update strategia2.py, strategia1.py, mioscript_up.py">
+      <created>1670968040988</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1670968040988</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="001f5f77-9918-4c4e-933b-7219fb3e17af">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="001f5f77-9918-4c4e-933b-7219fb3e17af" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update get_available_edges()&#10;Code refactoring" />
+    <MESSAGE value="Add arrived_vehicle.txt" />
+    <MESSAGE value="Add Sumo projects" />
+    <MESSAGE value="Delete .idea" />
+    <MESSAGE value="Code refactoring and bugs fixing in refactoring.py" />
+    <MESSAGE value="Added test_refactoring.py&#10;Tested test_refactoring.py" />
+    <MESSAGE value="Added/Tested convertXMLtoCSV.py, test_refactoring_ultimate.py and convertXMLtoCSV.py" />
+    <MESSAGE value="Added/Tested orderXMLFile.py" />
+    <MESSAGE value="Added/Tested clearTripFile.py" />
+    <MESSAGE value="Added/Tested good.py and test.py" />
+    <MESSAGE value="Added:&#10;Tested: good.py&#10;Fixed: generateVehicleFromTrips.py" />
+    <MESSAGE value="Added: &#10;Tested: san_francisco.py&#10;Updated: san_francisco.py, convertXMLtoCSV.py, san_francisco.sumocfg, old.py, old_v2.py" />
+    <MESSAGE value="Title: generate pyplot.plot, pyplot.pie and pyplot.bar&#10;Updated: convertXMLtoCSV.py" />
+    <MESSAGE value="Title: reduceParkingCapacity.py, convertoXmlToCsv.py, generateGraphs.py" />
+    <MESSAGE value="Added read_csv_tripinfo() in generateGraphs.py" />
+    <MESSAGE value="Code refactoring." />
+    <MESSAGE value="Code refactoring" />
+    <MESSAGE value="Added main.py and Code Refactoring." />
+    <MESSAGE value="Title: strategia2.py e mioscript.py&#10;Added:strategia2.py, mioscript.py;&#10;Others: Code Refactoring and Testing" />
+    <MESSAGE value="Title: Bug Fixing&#10;Others: Code Refactoring and Testing" />
+    <MESSAGE value="Title: Update&#10;Others: Code Refactoring and Testing" />
+    <MESSAGE value="Title: Update strategia2.py, strategia1.py, mioscript_up.py&#10;Others: Code Refactoring and Testing" />
+    <MESSAGE value="fixup! Title: Update Others: Code Refactoring and Testing" />
+    <MESSAGE value="Title: Update strategia2.py, strategia1.py, mioscript_up.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Title: Update strategia2.py, strategia1.py, mioscript_up.py" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Sumo_Projects$generatePlotFromCSV.coverage" NAME="generatePlotFromCSV Coverage Results" MODIFIED="1669802469033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$clearTripFile.coverage" NAME="clearTripFile Coverage Results" MODIFIED="1669244203537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/testing" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$dynamicarea.coverage" NAME="dynamicarea Coverage Results" MODIFIED="1670337180306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertXMLtoCSV__1_.coverage" NAME="convertXMLtoCSV (1) Coverage Results" MODIFIED="1669810892018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$mioscript.coverage" NAME="mioscript Coverage Results" MODIFIED="1670956644134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$generateGraphs.coverage" NAME="generateGraphs Coverage Results" MODIFIED="1670595414249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$order.coverage" NAME="order Coverage Results" MODIFIED="1669212111206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/test" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXmlToCsv.coverage" NAME="convertoXmlToCsv Coverage Results" MODIFIED="1670594300376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$test.coverage" NAME="clearTripFile Coverage Results" MODIFIED="1669230749035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/testing" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$main.coverage" NAME="main Coverage Results" MODIFIED="1670604679881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$mioscript__1_.coverage" NAME="mioscript (1) Coverage Results" MODIFIED="1670919311304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output/strategia1/100%" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXmlToCsv__1_.coverage" NAME="convertoXmlToCsv (1) Coverage Results" MODIFIED="1669918783771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$mioscript_up__1_.coverage" NAME="mioscript_up (1) Coverage Results" MODIFIED="1670964106065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXML__1_.coverage" NAME="convertoXML (1) Coverage Results" MODIFIED="1669882925868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$version.coverage" NAME="version Coverage Results" MODIFIED="1669311281370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/testing" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$dynamic_area__1_.coverage" NAME="dynamic_area (1) Coverage Results" MODIFIED="1669980369629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$reduceParkingCapacity.coverage" NAME="reduceParkingCapacity Coverage Results" MODIFIED="1670960851309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$refactoring.coverage" NAME="refactoring Coverage Results" MODIFIED="1668779392646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia2.coverage" NAME="strategia2 Coverage Results" MODIFIED="1670960270215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$demo.coverage" NAME="demo Coverage Results" MODIFIED="1670337170767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$san_francisco.coverage" NAME="san_francisco Coverage Results" MODIFIED="1669894484669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia1__1_.coverage" NAME="strategia1 (1) Coverage Results" MODIFIED="1670925714406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertXMLtoCSV.coverage" NAME="convertXMLtoCSV Coverage Results" MODIFIED="1669198416356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$clearTripFile__1_.coverage" NAME="clearTripFile (1) Coverage Results" MODIFIED="1669307822860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Tutorials$script.coverage" NAME="script Coverage Results" MODIFIED="1668351584232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/san_francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$generateVehicleFromTrips.coverage" NAME="generateVehicleFromTrips Coverage Results" MODIFIED="1669125312002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="0" />
+        <entry key="mode" value="0" />
+        <entry key="regex" value="&lt;/trip&gt;" />
+        <entry key="text" value=" &lt;trip id=&quot;2404&quot; trip_type=&quot;on&quot; type=&quot;on&quot; color=&quot;1,1,0&quot; from_taz=&quot;&quot; to_taz=&quot;16&quot; stat=&quot;into&quot; flag=&quot;True&quot; from=&quot;84823308&quot; to=&quot;-33789567&quot; direction=&quot;into&quot; depart=&quot;18000&quot; end=&quot;19800&quot;&gt; &lt;/trip&gt;" />
+      </map>
+    </option>
+  </component>
+</project>

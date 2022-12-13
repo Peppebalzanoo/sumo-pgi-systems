@@ -24,11 +24,9 @@
     </report>
 
     <output>
-        <summary value="../output/strategia1/50%/summary.xml"/>
         <vehroute-output value="../output/strategia1/50%/vehroute.xml"/>
         <tripinfo-output value="../output/strategia1/50%/tripinfo.xml"/>
         <collision-output value="../output/strategia1/50%/collision.xml"/>
-        <emission-output value="../output/strategia1/50%/emission.xml"/>
         <stop-output value="../output/strategia1/50%/stops.xml"/>
         <statistic-output value="../output/strategia1/50%/statistic.xml"/>
     </output>
