@@ -4,59 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Title: Adding parks">
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/csv/emissions.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/csv/statistics.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/csv/stopinfo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/csv/tripinfo.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/emissions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/exit_vehicle_report.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/statistics_nogrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__nogrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_pie_co_co2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_pie_co_co2_noexplode.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/statistics_nogrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/stopinfo_%__nogrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/San Francisco/parkings/parks79.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Title: Fix route for strategia1.py e strategia2.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_pie_between_0_and_5min_between_5_and_10min.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_pie_between_0_and_5min_between_5_and_10min.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_pie_between_0_and_5min_between_5_and_10min_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/counter_pie_between_0_and_5min_between_5_and_10min_noexplode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/emissions_pie_co_co2.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/emissions_pie_co_co2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/emissions_pie_co_co2_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/emissions_pie_co_co2_noexplode.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/statistics_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/statistics_bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/statistics_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/statistics_grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__pie_trovato%_nontrovato%.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__pie_trovato%_nontrovato%.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__pie_trovato%_nontrovato%_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/plots/stopinfo_%__pie_trovato%_nontrovato%_noexplode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/exit_vehicle_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/exit_vehicle_report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/collision.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/collision.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/csv/emissions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/csv/emissions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/counter_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/counter_bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/counter_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/counter_grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/emissions_nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/statistics_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/statistics_bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/statistics_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/statistics_grid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/stopinfo_%__bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/stopinfo_%__bar__nogrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/stopinfo_%__grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/plots/stopinfo_%__grid.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/statistic.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/stops.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/stops.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/tripinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/tripinfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/vehroute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/100%/vehroute.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/checkOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/checkOutput.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/convertXmlToCsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/convertXmlToCsv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/file.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/generateGraphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/generateGraphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +336,7 @@
       <workItem from="1670965893770" duration="48000" />
       <workItem from="1670966026847" duration="1151000" />
       <workItem from="1670967217223" duration="7279000" />
-      <workItem from="1671007240645" duration="15425000" />
+      <workItem from="1671007240645" duration="18537000" />
     </task>
     <task id="LOCAL-00001" summary="Update get_available_edges()&#10;Code refactoring">
       <created>1668681202849</created>
@@ -629,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670974826107</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Title: Fix route for strategia1.py e strategia2.py">
+      <created>1671023087015</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1671023087015</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -688,7 +656,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add arrived_vehicle.txt" />
     <MESSAGE value="Add Sumo projects" />
     <MESSAGE value="Delete .idea" />
     <MESSAGE value="Code refactoring and bugs fixing in refactoring.py" />
@@ -713,7 +680,8 @@
     <MESSAGE value="Title: Update strategia2.py, strategia1.py, mioscript_up.py" />
     <MESSAGE value="Title: Deleting files" />
     <MESSAGE value="Title: Adding parks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Title: Adding parks" />
+    <MESSAGE value="Title: Fix route for strategia1.py e strategia2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Title: Fix route for strategia1.py e strategia2.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sumo_Projects$generatePlotFromCSV.coverage" NAME="generatePlotFromCSV Coverage Results" MODIFIED="1669802469033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
