@@ -17,7 +17,6 @@ def myprint(mylist):
 
 
 def myprintroute(curr_route_list):
-    idx = 0
     for idx in range(0, len(curr_route_list)):
         print("         ", curr_route_list[idx])
     print("     numero_nodi: ", len(curr_route_list))
@@ -28,10 +27,7 @@ def myprintinfo(vecID, curr_laneID, curr_edgeID, curr_lane_index, distance_to_la
     print("     VEICOLO:", vecID, "curr_edgeID:", curr_edgeID, "curr_laneID:", curr_laneID, "curr_lane_index:", curr_lane_index)
     print("     dist_to_last:", distance_to_lastedge, "space_on_next:", space_on_next_step)
     print("     curr_route_list:")
-    idx = 0
-    for idx in range(0, len(curr_route_list)):
-        print("         ", curr_route_list[idx])
-    print("     numero_nodi: ", len(curr_route_list))
+    myprintroute(curr_route_list)
 
 
 # * ********************************************************************************************************************************************************************* * #
@@ -234,7 +230,7 @@ def check_timeslice(vecID, count):
 
 # * ********************************************************************************************************************************************************************* * #
 
-def get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpected, list_tuple_links):
+def get_available_edges(vecID, curr_laneID, curr_edgeID, expected_index, last_edgeID, last_laneID_excpected, list_tuple_links):
     tupla_dynamicarea_counter = vecID_to_dynamicarea_counter_dictionary.get(vecID)
     curr_area = tupla_dynamicarea_counter[0]
     dest_lane_positionXY = vecID_to_dest_lane_position_dictionary.get(vecID)
@@ -247,22 +243,21 @@ def get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpecte
     for i in range(0, len(list_tuple_links)):
         temp_tuple = list_tuple_links[i]
         temp_lane = temp_tuple[0]
+        temp_edge = traci.lane.getEdgeID(temp_lane)
 
-        if temp_lane != curr_laneID and temp_lane != last_laneID_excpected:
-            temp_edge = traci.lane.getEdgeID(temp_lane)
+        # if temp_lane != curr_laneID and temp_lane != last_laneID_excpected:
+        if temp_edge != curr_edgeID and temp_edge != last_edgeID:
+            # temp_edge = traci.lane.getEdgeID(temp_lane)
             temp_index = get_expected_index(temp_edge, expected_index)
             curr_coordinateXY = get_start_coordinate_from_destination_lane(temp_edge, temp_index)
 
-            currX = curr_coordinateXY[0]
-            currY = curr_coordinateXY[1]
-            if limit_infX <= currX <= limit_supX and limit_infY <= currY <= limit_supY:
+            if limit_infX <= curr_coordinateXY[0] <= limit_supX and limit_infY <= curr_coordinateXY[1] <= limit_supY:
                 list_available.append(temp_edge)
 
     return list_available
 
 
 def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario):
-
     # Notifico che da questo momento il veicolo sta cercando parcheggio
     update_vec_to_searchtime_started_dictionary(vecID, vec_to_searchtime_started_dictionary.get(vecID)[0], True)
 
@@ -272,27 +267,86 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
     if num_links >= 1:
         exit_cond = False
         while vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3 and exit_cond is False:
-            list_available_edgs = get_available_edges(vecID, curr_laneID, expected_index, last_laneID_excpected, list_tuple_links)
+            list_available_edgs = get_available_edges(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, list_tuple_links)
 
             if len(list_available_edgs) > 0:
                 random_edgeID = random.choice(list_available_edgs)
                 random_index = get_expected_index(random_edgeID, expected_index)
                 random_laneID = get_lane_xml_from_edge_and_index(random_edgeID, random_index)
 
-                # Calcolo il percorso dall'ultimo nodo al nuovo nodo
-                route_last_to_random_edge_stage = traci.simulation.findRoute(last_edgeID, random_edgeID)
+                dest_edge = get_destination_xml(vecID)
 
-                # Calcolo il nuovo percorso aggiungendo il nodo corrente + il percorso calcolato dall'ultimo nodo al nodo del parcheggio
+                # Calcolo il nuovo percorso
                 new_route = []
-                if curr_edgeID != last_edgeID:
-                    new_route = [curr_edgeID]
+                count = -1
+                equal = -1
 
-                new_route += list(route_last_to_random_edge_stage.edges)
+                if last_edgeID == dest_edge:
+                    count = 1
+                    if curr_edgeID != dest_edge:
+                        # Caso 0.1
+                        route_stage1 = traci.simulation.findRoute(curr_edgeID, dest_edge)
+                        route_list1 = list(route_stage1.edges)
+                        new_route += route_list1
 
-                # Setto il nuovo percorso calcolato
-                traci.vehicle.setRoute(vecID, new_route)
+                        route_stage2 = traci.simulation.findRoute(dest_edge, random_edgeID)
+                        route_list2 = list(route_stage2.edges)
+                        route_list2.pop(0)
+                        new_route += route_list2
 
-                # traci.vehicle.changeTarget(vecID, random_edgeID)
+                    else:
+                        # Caso 0.2
+                        route_stage2 = traci.simulation.findRoute(dest_edge, random_edgeID)
+                        route_list2 = list(route_stage2.edges)
+                        new_route += route_list2
+
+                    last_route_map[vecID] = new_route
+
+                else:
+                    old_route = list(last_route_map.get(vecID))
+                    if old_route is not None:
+
+                        if curr_edgeID == old_route[0]:
+                            # Caso 1
+                            count = 2
+
+                            new_route += old_route
+
+                            route_stage = traci.simulation.findRoute(last_edgeID, random_edgeID)
+                            route_list = list(route_stage.edges)
+                            route_list.pop(0)
+                            new_route += route_list
+
+                            last_route_map[vecID] = new_route
+
+                        else:
+                            # Caso 2
+                            count = 3
+
+                            route_stage1 = traci.simulation.findRoute(curr_edgeID, last_edgeID)
+                            route_list1 = list(route_stage1.edges)
+                            new_route += route_list1
+
+                            route_stage2 = traci.simulation.findRoute(last_edgeID, random_edgeID)
+                            route_list2 = list(route_stage2.edges)
+                            route_list2.pop(0)
+                            new_route += route_list2
+
+                            last_route_map[vecID] = new_route
+                    else:
+                        raise "Non ho settato il vecchio route"
+                try:
+                    # Setto il nuovo percorso calcolato
+                    traci.vehicle.setRoute(vecID, new_route)
+
+                except traci.TraCIException as e:
+
+                    traci.vehicle.changeTarget(vecID, random_edgeID)
+
+                    fln = open("exception_strategia1.txt", "a")
+                    print("exception:", e, "veicolo:", vecID, "count:", count, file=fln)
+                    fln.close()
+
                 exit_cond = True
 
             else:
@@ -345,6 +399,9 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 
 
 # * ********************************************************************************************************************************************************************* * #
+
+# vecID, last_route
+last_route_map = {}
 
 def run(strategia, scenario):
     load_vecID_to_dynamicarea_counter_dictionary(AREA_INIT)
@@ -427,22 +484,16 @@ def main():
     sumoBinary = checkBinary('sumo')
     # sumoBinary = 'sumo'
 
+    fln = open("exception_strategia1.txt", "w")
+    fln.close()
+
     # STRATEGIA: strategia1, SCENARIO: 100%
     sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_100%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run("strategia1", "100%")
     traci.close()
 
-    # # STRATEGIA: strategia1, SCENARIO: 75%
-    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia1", "75%")
-    # traci.close()
-    #
-    # # STRATEGIA: strategia1, SCENARIO: 50%
-    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
-    # traci.start(sumoCmd)  # run("strategia1", "50%")
-    # traci.close()
+    # # STRATEGIA: strategia1, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "75%")  # traci.close()  #  # # STRATEGIA: strategia1, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "50%")  # traci.close()
 
 
 if __name__ == "__main__":

@@ -283,47 +283,76 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
         edge_parking = traci.lane.getEdgeID(lane_parking)
         dest_edge = get_destination_xml(vecID)
 
-        num_links = traci.lane.getLinkNumber(lane_parking)
-        if num_links > 0:
-            # Calcolo il nuovo percorso
-            new_route = []
+        # Calcolo il nuovo percorso
+        new_route = []
+        count = -1
+        equal = -1
 
-            if last_edgeID == dest_edge:
-                route_stage = traci.simulation.findRoute(dest_edge, edge_parking)
-                route_list = list(route_stage.edges)
-                if curr_edgeID != dest_edge:
-                    new_route.append(curr_edgeID)
-                new_route += route_list
-                last_route_map[vecID] = new_route
+        if last_edgeID == dest_edge:
+            count = 1
+            if curr_edgeID != dest_edge:
+                # Caso 0.1
+                route_stage1 = traci.simulation.findRoute(curr_edgeID, dest_edge)
+                route_list1 = list(route_stage1.edges)
+                new_route += route_list1
+
+                route_stage2 = traci.simulation.findRoute(dest_edge, edge_parking)
+                route_list2 = list(route_stage2.edges)
+                route_list2.pop(0)
+                new_route += route_list2
+
             else:
-                old_route = last_route_map.get(vecID)
-                if old_route is not None:
-                    old_first = old_route[0]
-                    if curr_edgeID == old_first:
-                        # Caso 1:
-                        new_route += old_route
-                        route_stage = traci.simulation.findRoute(last_edgeID, edge_parking)
-                        route_list = list(route_stage.edges)
-                        route_list.pop(0)
-                        new_route += route_list
-                        last_route_map[vecID] = new_route
-                    else:
-                        # Caso 2
-                        new_route = [curr_edgeID]
-                        route_stage = traci.simulation.findRoute(last_edgeID, edge_parking)
-                        route_list = list(route_stage.edges)
-                        new_route += route_list
-                        last_route_map[vecID] = new_route
+                # Caso 0.2
+                route_stage2 = traci.simulation.findRoute(dest_edge, edge_parking)
+                route_list2 = list(route_stage2.edges)
+                new_route += route_list2
+
+            last_route_map[vecID] = new_route
+
+        else:
+            old_route = list(last_route_map.get(vecID))
+            if old_route is not None:
+
+                if curr_edgeID == old_route[0]:
+                    # Caso 1
+                    count = 2
+
+                    new_route += old_route
+
+                    route_stage = traci.simulation.findRoute(last_edgeID, edge_parking)
+                    route_list = list(route_stage.edges)
+                    route_list.pop(0)
+                    new_route += route_list
+
+                    last_route_map[vecID] = new_route
+
                 else:
-                    raise "Non ho settato il vecchio route"
-            try:
-                # Setto il nuovo percorso calcolato
-                traci.vehicle.setRoute(vecID, new_route)
-            except traci.TraCIException as e:
-                traci.vehicle.changeTarget(vecID, edge_parking)
-                fln = open("exception.txt", "a")
-                print("exception:", e, "veicolo:", vecID)
-                fln.close()
+                    # Caso 2
+                    count = 3
+
+                    route_stage1 = traci.simulation.findRoute(curr_edgeID, last_edgeID)
+                    route_list1 = list(route_stage1.edges)
+                    new_route += route_list1
+
+                    route_stage2 = traci.simulation.findRoute(last_edgeID, edge_parking)
+                    route_list2 = list(route_stage2.edges)
+                    route_list2.pop(0)
+                    new_route += route_list2
+
+                    last_route_map[vecID] = new_route
+            else:
+                raise "Non ho settato il vecchio route"
+        try:
+            # Setto il nuovo percorso calcolato
+            traci.vehicle.setRoute(vecID, new_route)
+
+        except traci.TraCIException as e:
+
+            traci.vehicle.changeTarget(vecID, edge_parking)
+
+            fln = open("exception_strategia2.txt", "a")
+            print("exception:", e, "veicolo:", vecID, file=fln)
+            fln.close()
 
 
 
@@ -361,9 +390,10 @@ def check_parking_position(vecID, vec_position, parkingID):
     return False
 
 
-# vecID, (parking)
+# vecID, parking)
 mappa = {}
 
+# vecID, last_route
 last_route_map = {}
 
 
@@ -436,7 +466,7 @@ def main():
     sumoBinary = checkBinary('sumo')
     # sumoBinary = 'sumo'
 
-    fln = open("exception.txt", "w")
+    fln = open("exception_strategia2.txt", "w")
     fln.close()
 
     # STRATEGIA: strategia2, SCENARIO: 100%

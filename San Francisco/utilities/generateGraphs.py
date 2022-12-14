@@ -47,7 +47,6 @@ def read_csv_trip_and_stop_info(strategia, scenario):
         print("count_between_0_and_5min:", count_between_0_and_5min)
         print("count_between_5_and_10min:", count_between_5_and_10min)
         print("count_plus_10min:", count_plus_10min)
-        print("\n")
 
         data = [count_between_0_and_5min, count_between_5_and_10min, count_plus_10min]
         lables_data_pie = ["between_0_and_5min", "between_5_and_10min", "plus_10min"]
@@ -96,6 +95,9 @@ def read_csv_statistics(strategia, scenario):
         lables_data_statistic = ["Lunghezza Media", "Durata Media"]
         generate_bar(data_statistic, lables_data_statistic, "statistics", strategia, scenario, None)
 
+        print("Lunghezza media:", avg_route_length)
+        print("Duarata media:", avg_duration)
+        print("Velocità media:", avg_speed)
 
 
 def read_csv_stopinfo(strategia, scenario):
@@ -110,7 +112,7 @@ def read_csv_stopinfo(strategia, scenario):
 
         counter_not_parked = number_vec - counter_parked
 
-        print("SU UN TOTALE DI", number_vec, "SI SONO PARCHEGGIATI", counter_parked, ", NON SI SONO PARCHEGGIATI", counter_not_parked)
+        print("SU UN TOTALE DI", number_vec, "VEICOLO, HANNO PARCHEGGIATO:", counter_parked, ", NON HANNO PARCHEGGIATO:", counter_not_parked)
 
         # counter_parked : number_vec = X : 100 ---> X = (counter_parked * 100)/number_vec
         percentuale_parked = (counter_parked * 100)/number_vec
@@ -127,7 +129,7 @@ def read_csv_stopinfo(strategia, scenario):
 
 
 def generate_bar(data, data_labels, name_out, strategia, scenario, xy_lables):
-    pyplot.figure(figsize=(5, 6), dpi=120)
+    pyplot.figure(figsize=(6, 7), dpi=120)
     if xy_lables is not None:
         pyplot.xlabel(xy_lables[0])
         pyplot.ylabel(xy_lables[1])
@@ -136,7 +138,7 @@ def generate_bar(data, data_labels, name_out, strategia, scenario, xy_lables):
     pyplot.savefig("../output/" + strategia+"/"+scenario+"/"+"plots/" + name_out + "_bar_" + "_nogrid")
     pyplot.close()
 
-    pyplot.figure(figsize=(5, 6), dpi=120)
+    pyplot.figure(figsize=(6, 7), dpi=120)
     if xy_lables is not None:
         pyplot.xlabel(xy_lables[0])
         pyplot.ylabel(xy_lables[1])
@@ -192,25 +194,29 @@ def generate_pie(data, data_labels, name_out, strategia, scenario):
 def main():
     list_vec = get_vehicle_from_xml()
 
-    # # STRATEGIA: strategia1, SCENARIO: 100%
-    # read_csv_stopinfo("strategia1", "100%")
-    # read_csv_statistics("strategia1", "100%")
-    # read_csv_emmissions("strategia1", "100%", len(list_vec))
-    # read_csv_trip_and_stop_info("strategia1", "100%")
+    # STRATEGIA: strategia1, SCENARIO: 100%
+    print("# STRATEGIA: strategia1, SCENARIO: 100% #")
+    read_csv_stopinfo("strategia1", "100%")
+    read_csv_statistics("strategia1", "100%")
+    read_csv_emmissions("strategia1", "100%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia1", "100%")
     #
     # # STRATEGIA: strategia1, SCENARIO: 75%
+    # print("\n# STRATEGIA: strategia1, SCENARIO: 75% #")
     # read_csv_stopinfo("strategia1", "75%")
     # read_csv_statistics("strategia1", "75%")
     # read_csv_emmissions("strategia1", "75%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia1", "75%")
     #
     # # STRATEGIA: strategia1, SCENARIO: 50%
+    # # print("\n# STRATEGIA: strategia1, SCENARIO: 50% #")
     # read_csv_stopinfo("strategia1", "50%")
     # read_csv_statistics("strategia1", "50%")
     # read_csv_emmissions("strategia1", "50%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia1", "50%")
-
+    #
     # STRATEGIA: strategia2, SCENARIO: 100%
+    print("\n# STRATEGIA: strategia2, SCENARIO: 100% #")
     read_csv_stopinfo("strategia2", "100%")
     read_csv_statistics("strategia2", "100%")
     read_csv_emmissions("strategia2", "100%", len(list_vec))

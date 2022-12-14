@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-14 00:02:35 by Eclipse SUMO sumo Version 1.14.1
+<!-- generated on 2022-12-14 13:33:32 by Eclipse SUMO sumo Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -10,6 +10,7 @@
     </input>
 
     <output>
+        <emission-output value="./strategia2_config/../output/strategia2/100%25/emissions.xml"/>
         <tripinfo-output value="./strategia2_config/../output/strategia2/100%25/tripinfo.xml"/>
         <vehroute-output value="./strategia2_config/../output/strategia2/100%25/vehroute.xml"/>
         <stop-output value="./strategia2_config/../output/strategia2/100%25/stops.xml"/>
@@ -32,7 +33,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="61596"/>
+        <remote-port value="50995"/>
     </traci_server>
 
     <gui_only>
