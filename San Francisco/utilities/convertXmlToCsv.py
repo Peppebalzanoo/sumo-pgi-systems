@@ -1,7 +1,6 @@
 import pandas
 import xml.etree.ElementTree as ElementTree
 
-
 def get_vehicle_from_xml():
     tree = ElementTree.parse('../san_francisco.rou.xml')
     root = tree.getroot()
@@ -10,7 +9,6 @@ def get_vehicle_from_xml():
         vec_xml = elem.attrib['id']
         list_vec_xml.append(vec_xml)
     return list_vec_xml
-
 
 def create_csv_tripinfo(list_vec_xml, strategia, scenario):
     cols = ["vecID", "depart", "arrival"]
@@ -27,8 +25,6 @@ def create_csv_tripinfo(list_vec_xml, strategia, scenario):
     df = pandas.DataFrame(rows, columns=cols)
     df.to_csv("../output/"+strategia+"/"+scenario+"/csv/tripinfo.csv", index=False)
 
-
-
 def create_csv_stopinfo(list_vec_xml, strategia, scenario):
     cols = ["vecID", "parkingID", "started", "ended", "duration"]
     rows = []
@@ -44,7 +40,6 @@ def create_csv_stopinfo(list_vec_xml, strategia, scenario):
     df = pandas.DataFrame(rows, columns=cols)
     df.to_csv("../output/"+strategia+"/"+scenario+"/csv/stopinfo.csv", index=False)
 
-
 def create_csv_statistics(strategia, scenario):
     cols = ["routeLengthAVG", "speedAVG", "durationAVG"]
     rows = []
@@ -56,7 +51,6 @@ def create_csv_statistics(strategia, scenario):
     rows.append({"routeLengthAVG": avg_route_length, "speedAVG": avg_speed, "durationAVG": avg_duration})
     df = pandas.DataFrame(rows, columns=cols)
     df.to_csv("../output/"+strategia+"/"+scenario+"/csv/statistics.csv", index=False)
-
 
 def create_csv_emmissions(strategia, scenario):
     cols = ["CO", "CO2", "HC", "FUEL"]
@@ -72,15 +66,14 @@ def create_csv_emmissions(strategia, scenario):
     df = pandas.DataFrame(rows, columns=cols)
     df.to_csv("../output/"+strategia+"/"+scenario+"/csv/emissions.csv", index=False)
 
-
 def main():
     list_vec = get_vehicle_from_xml()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    create_csv_stopinfo(list_vec, "strategia1", "100%")
-    create_csv_statistics("strategia1", "100%")
-    create_csv_emmissions("strategia1", "100%")
-    create_csv_tripinfo(list_vec, "strategia1", "100%")
+    # create_csv_stopinfo(list_vec, "strategia1", "100%")
+    # create_csv_statistics("strategia1", "100%")
+    # create_csv_emmissions("strategia1", "100%")
+    # create_csv_tripinfo(list_vec, "strategia1", "100%")
     #
     # # STRATEGIA: strategia1, SCENARIO: 75%
     # create_csv_stopinfo(list_vec, "strategia1", "75%")
@@ -95,7 +88,7 @@ def main():
     # create_csv_tripinfo(list_vec, "strategia1", "50%")
 
 
-    # # STRATEGIA: strategia2, SCENARIO: 100%
+    # STRATEGIA: strategia2, SCENARIO: 100%
     create_csv_stopinfo(list_vec, "strategia2", "100%")
     create_csv_statistics("strategia2", "100%")
     create_csv_emmissions("strategia2", "100%")
