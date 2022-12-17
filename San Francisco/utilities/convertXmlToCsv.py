@@ -70,10 +70,10 @@ def main():
     list_vec = get_vehicle_from_xml()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    # create_csv_stopinfo(list_vec, "strategia1", "100%")
-    # create_csv_statistics("strategia1", "100%")
-    # create_csv_emmissions("strategia1", "100%")
-    # create_csv_tripinfo(list_vec, "strategia1", "100%")
+    create_csv_stopinfo(list_vec, "strategia1", "100%")
+    create_csv_statistics("strategia1", "100%")
+    create_csv_emmissions("strategia1", "100%")
+    create_csv_tripinfo(list_vec, "strategia1", "100%")
     #
     # # STRATEGIA: strategia1, SCENARIO: 75%
     # create_csv_stopinfo(list_vec, "strategia1", "75%")

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-12-17 16:35:26 by Eclipse SUMO sumo Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./strategia3_config/../san_francisco.net.xml"/>
+        <route-files value="./strategia3_config/../san_francisco.rou.xml"/>
+        <additional-files value="./strategia3_config/../san_francisco.poly.xml,./strategia3_config/../parking_capacity_100%25/off_parking_100%25.add.xml,./strategia3_config/../parking_capacity_100%25/on_parking_100%25.add.xml"/>
+    </input>
+
+    <output>
+        <emission-output value="./strategia3_config/../output/strategia3/100%25/emissions.xml"/>
+        <tripinfo-output value="./strategia3_config/../output/strategia3/100%25/tripinfo.xml"/>
+        <vehroute-output value="./strategia3_config/../output/strategia3/100%25/vehroute.xml"/>
+        <stop-output value="./strategia3_config/../output/strategia3/100%25/stops.xml"/>
+        <collision-output value="./strategia3_config/../output/strategia3/100%25/collision.xml"/>
+        <statistic-output value="./strategia3_config/../output/strategia3/100%25/statistic.xml"/>
+    </output>
+
+    <time>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="64376"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="./strategia3_config/../gui-settings.cfg"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<collisions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/collision_file.xsd">
+</collisions>

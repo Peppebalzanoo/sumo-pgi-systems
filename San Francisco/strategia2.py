@@ -7,30 +7,11 @@ import xml.etree.ElementTree as ElementTree
 
 AREA_INIT = 500
 
-exit_vehicle_report = {}
-
-# * ********************************************************************************************************************************************************************* * #
-def myprint(mylist):
-    for elem in mylist:
-        print(elem)
-
-def myprintroute(curr_route_list):
-    for idx in range(0, len(curr_route_list)):
-        print("         ", curr_route_list[idx])
-    print("     numero_nodi: ", len(curr_route_list))
-
-def myprintinfo(vecID, curr_laneID, curr_edgeID, curr_lane_index, last_edgeID, distance_to_lastedge, space_on_next_step, curr_route_list):
-    print("     *** INFORMAZIONI VEICOLO ***")
-    print("     VEICOLO:", vecID, "curr_edgeID:", curr_edgeID, "last_edgeID:", last_edgeID, "curr_laneID:", curr_laneID, "curr_lane_index:", curr_lane_index)
-    print("     dist_to_last:", distance_to_lastedge, "space_on_next:", space_on_next_step)
-    print("     curr_route_list:")
-    myprintroute(curr_route_list)
-
 # * ********************************************************************************************************************************************************************* * #
 # (vecID, parkingID)
 vecID_to_parkingID_dictionary = {}
 
-# (vecID, last_route[...])
+# (vecID, last_route[])
 vecID_to_last_route_dictionary = {}
 
 # (vecID, coordinateXY_lane_dest)
@@ -40,7 +21,6 @@ vecID_to_dest_lane_position_dictionary = {}
 
 # (currLaneID, parkingID)
 lane_to_parking_dictionary = {}
-
 
 def set_lane_to_parking_dictionary():
     parkingIDs_list = traci.parkingarea.getIDList()
@@ -177,7 +157,7 @@ def set_coordinate_lane_destination_xml(vecID, curr_lane_index):
 # * ********************************************************************************************************************************************************************* * #
 
 def get_available_lanes(vecID):
-    # TUTTE LE CORSIE CHE HANNO UN PARCHEGGIO
+    # Tutte le corsie che hanno un parcheggio
     list_lane = list(lane_to_parking_dictionary.keys())
 
     curr_area = AREA_INIT
@@ -200,11 +180,14 @@ def get_available_lanes(vecID):
         idx += 1
 
         # ! Controllare questa porzione di codice
-        # CONTROLLO SE STO USCENDO DAL WHILE E SE HO TROVATO ALMENO UNA LANE CON UN PARCHEGGIO NELL'AREA CORRENTE DI RICERCA
+        # Controllo se sto uscendo dal while e se non ho trovato nessuna lane con un parcheggio nell'area corrente di ricerca
         if idx >= len(list_lane) and len(list_aviable_lane) == 0:
             if curr_area < 4000:
+                fln = open("caso_strategia2.txt", "a")
+                print("VecID:", vecID, "nessun parcheggio nell'area corrente di ricerca:", curr_area)
+                fln.close()
                 curr_area = curr_area * 2
-                # DEVO AGGIORNARE LE COORDINATE DEI LIMITE INFERIORE E SUPERIORE
+                # Devo aggiornare le coordinate del limite inferiore e superiore
                 limit_infX = dest_lane_coordinateXY[0] - curr_area / 2
                 limit_infY = dest_lane_coordinateXY[1] - curr_area / 2
                 limit_supX = dest_lane_coordinateXY[0] + curr_area / 2
@@ -237,6 +220,7 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
         # print(" Il veicolo", vecID, "sta calcolando i parcheggi disponibili nell'area corrente di ricerca...")
         # list_aviable_lane = get_available_lanes(vecID)
         # list_desc_parking = get_ordred_parkings(list_aviable_lane)
+        # vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
         # ! ------------------------------------------------------------------
 
         # ! Porzione di codice temporanea
@@ -277,7 +261,6 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
 
         # Calcolo il nuovo percorso
         new_route = []
-        count = -1
 
         # Il veicolo, nel prossimo step, raggiungerà la sua destinazione xml
         if last_edgeID == dest_edge_xml:
@@ -289,11 +272,11 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
             route_list2.pop(0)
             new_route += route_list2
 
-            count = 120
+            # Salvo il percorso
             vecID_to_last_route_dictionary[vecID] = new_route
 
-        # Il veicolo, nel prossimo step, raggiungerà una destinazione
         else:
+            # Il veicolo, nel prossimo step, raggiungerà una destinazione
             # Recupero il percorso da curr_edge a last_edge
             old_route = list(vecID_to_last_route_dictionary.get(vecID))
             trovato_curr_edge = False
@@ -311,7 +294,7 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
             route_list2.pop(0)
             new_route += route_list2
 
-            count = 23
+            # Salvo il percorso
             vecID_to_last_route_dictionary[vecID] = new_route
 
         try:
@@ -320,7 +303,7 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario):
         except traci.TraCIException as e:
             traci.vehicle.changeTarget(vecID, edge_parking)
             fln = open("exception_strategia2.txt", "a")
-            print("exception:", e, "veicolo:", vecID, "count:", count, file=fln)
+            print("exception:", e, "veicolo:", vecID, file=fln)
             fln.close()
 
 # * ********************************************************************************************************************************************************************* * #
@@ -336,15 +319,18 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, curr_route_list, last_
         if vecID_to_parkingID_dictionary.get(vecID) is None:
             # Controllo se nella lane di destinazione corrente c'è un parcheggio
             parkingID = get_parking(last_laneID_excpected)
-            if parkingID is not None and check_parking_aviability(parkingID) is True and is_parking_already_setted(vecID, parkingID) is False:
+            if parkingID is not None and check_parking_aviability(parkingID) is True:
                 try:
                     # (900sec == 10min, 10800sec == 3hrs)
                     # ! random_parking_time = random.randint(900, 10800)
-                    traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
-                    vecID_to_parkingID_dictionary[vecID] = parkingID
+                    if is_parking_already_setted(vecID, parkingID) is False:
+                        traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+                        # Salvo il parcheggio
+                        vecID_to_parkingID_dictionary[vecID] = parkingID
                 except traci.TraCIException as e:
                     calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario)
             else:
+                # Se non c'è parcheggio OPPURE se non ci sono posti disponibili
                 calculate_parkings(vecID, curr_edgeID, last_edgeID, scenario)
 
 # * ********************************************************************************************************************************************************************* * #
@@ -378,8 +364,6 @@ def run(strategia, scenario):
                 # Limite superiore della velocità nel prossimo step
                 space_on_next_step = float(traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel))
 
-                # myprintinfo(vecID, curr_laneID, curr_edgeID, curr_lane_index, last_edgeID, distance_to_lastedge, space_on_next_step, curr_route_list)
-
                 # ___ ROUTINE ___ #
                 if space_on_next_step >= distance_to_lastedge:
                     next_expected_index = get_expected_index(last_edgeID, curr_lane_index)
@@ -390,12 +374,16 @@ def run(strategia, scenario):
                     if vecID_to_list_parking_index.get(vecID) is not None and vecID_to_parkingID_dictionary.get(vecID) is None:
                         # Controllo se trovo parcheggio mentre mi sto dirigendo verso quello più grande
                         parkingID = get_parking(curr_laneID)
-                        if parkingID is not None and check_parking_aviability(parkingID) is True and is_parking_already_setted(vecID, parkingID) is False and check_parking_position(vecID, curr_position, parkingID) is True:
+                        if parkingID is not None and check_parking_aviability(parkingID) is True and check_parking_position(vecID, curr_position, parkingID) is True:
                             try:
                                 # (900sec == 10min, 10800sec == 3hrs)
                                 # ! random_parking_time = random.randint(900, 10800)
-                                traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
-                                vecID_to_parkingID_dictionary[vecID] = parkingID
+
+                                if is_parking_already_setted(vecID, parkingID) is False:
+                                    traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+                                    # Salvo il parcheggio
+                                    vecID_to_parkingID_dictionary[vecID] = parkingID
+
                             except traci.TraCIException as e:
                                 pass
             else:
@@ -419,14 +407,14 @@ def main():
 
     fln = open("exception_strategia2.txt", "w")
     fln.close()
+    fln = open("caso_strategia2.txt", "w")
+    fln.close()
 
     # STRATEGIA: strategia2, SCENARIO: 100%
     sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
     traci.start(sumoCmd)
     run("strategia2", "100%")
     traci.close()
-
-    # # STRATEGIA: strategia2, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia2", "75%")  # traci.close()  #  # # STRATEGIA: strategia2, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia2", "50%")  # traci.close()
 
 # * ********************************************************************************************************************************************************************* * #
 

@@ -13,22 +13,21 @@ def get_vehicle_from_xml():
 
 def check_stops(filename, strategia, scenario):
     file = open(filename, "a")
-    tree = ET.parse("../output/+"+strategia+"/"+scenario+"/stops.xml")
+    tree = ET.parse("../output/" + strategia + "/" + scenario + "/stops.xml")
     root = tree.getroot()
     for vecID in get_vehicle_from_xml():
         count = 0
-        for stop in root.findall(".//stopinfo/[@id='" + vecID + "'"):
+        for stop in root.findall(".//stopinfo/[@id='" + vecID + "']"):
             count += 1
-        if count != 1:
+        if count > 1:
             print("VecID:", vecID, "ha effettuato più di una fermata (" + str(count) + ")", file=file)
     file.close()
 
 
 def check_route(filename, strategia, scenario):
-
     file = open(filename, "w")
 
-    tree = ET.parse("../output/"+strategia+"/"+scenario+"/vehroute.xml")
+    tree = ET.parse("../output/" + strategia + "/" + scenario + "/vehroute.xml")
     root = tree.getroot()
     for vecID in get_vehicle_from_xml():
         count = 0
@@ -45,11 +44,25 @@ def check_route(filename, strategia, scenario):
     file.close()
 
 
+def run(strategia, scenario):
+    filename = "check_output_" + strategia + "_" + scenario + ".txt"
+    check_route(filename, strategia, scenario)
+    check_stops(filename, strategia, scenario)
 
-def main(strategia, scenario):
-    check_route("check_output"+strategia+"_"+scenario+".txt", strategia, scenario)
-    check_stops("check_output"+strategia+"_"+scenario+".txt", strategia, scenario)
+
+def main():
+    run("strategia1", "100%")
+    # run("strategia1", "75%")
+    # run("strategia1", "50%")
+
+    run("strategia2", "100%")
+    # run("strategia2", "75%")
+    # run("strategia2", "50%")
+
+    # run("strategia3", "100%")
+    # run("strategia3", "75%")
+    # run("strategia3", "50%")
+
 
 if __name__ == "__main__":
-    main("strategia1", "100%")
-    main("strategia2", "100%")
+    main()

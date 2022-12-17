@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-12-17 16:35:26 by Eclipse SUMO sumo Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./strategia3_config/../san_francisco.net.xml"/>
+        <route-files value="./strategia3_config/../san_francisco.rou.xml"/>
+        <additional-files value="./strategia3_config/../san_francisco.poly.xml,./strategia3_config/../parking_capacity_100%25/off_parking_100%25.add.xml,./strategia3_config/../parking_capacity_100%25/on_parking_100%25.add.xml"/>
+    </input>
+
+    <output>
+        <emission-output value="./strategia3_config/../output/strategia3/100%25/emissions.xml"/>
+        <tripinfo-output value="./strategia3_config/../output/strategia3/100%25/tripinfo.xml"/>
+        <vehroute-output value="./strategia3_config/../output/strategia3/100%25/vehroute.xml"/>
+        <stop-output value="./strategia3_config/../output/strategia3/100%25/stops.xml"/>
+        <collision-output value="./strategia3_config/../output/strategia3/100%25/collision.xml"/>
+        <statistic-output value="./strategia3_config/../output/strategia3/100%25/statistic.xml"/>
+    </output>
+
+    <time>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="64376"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="./strategia3_config/../gui-settings.cfg"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="4" depart="18000.00" departLane="142972028#1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="19209.00" arrivalLane="142972028#1_0" arrivalPos="161.20" arrivalSpeed="11.54" duration="1209.00" routeLength="7581.38" waitingTime="449.00" waitingCount="15" stopTime="3.00" timeLoss="569.21" rerouteNo="2" devices="vehroute_4 tripinfo_4 emissions_4" vType="vecType" speedFactor="1.06" vaporized="">
+        <emissions CO_abs="101562.964171" CO2_abs="3056218.246297" HC_abs="532.976900" PMx_abs="57.453371" NOx_abs="1271.155401" fuel_abs="974824.026494" electricity_abs="0"/>
+    </tripinfo>
+</tripinfos>

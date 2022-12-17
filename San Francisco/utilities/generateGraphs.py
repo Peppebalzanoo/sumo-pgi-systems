@@ -192,11 +192,11 @@ def main():
     list_vec = get_vehicle_from_xml()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    # print("# STRATEGIA: strategia1, SCENARIO: 100% #")
-    # read_csv_stopinfo("strategia1", "100%")
-    # read_csv_statistics("strategia1", "100%")
-    # read_csv_emmissions("strategia1", "100%", len(list_vec))
-    # read_csv_trip_and_stop_info("strategia1", "100%")
+    print("# STRATEGIA: strategia1, SCENARIO: 100% #")
+    read_csv_stopinfo("strategia1", "100%")
+    read_csv_statistics("strategia1", "100%")
+    read_csv_emmissions("strategia1", "100%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia1", "100%")
     #
     # # STRATEGIA: strategia1, SCENARIO: 75%
     # print("\n# STRATEGIA: strategia1, SCENARIO: 75% #")

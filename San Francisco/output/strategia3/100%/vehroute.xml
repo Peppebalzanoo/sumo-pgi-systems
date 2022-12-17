@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-12-17 16:35:26 by Eclipse SUMO sumo Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./strategia3_config/../san_francisco.net.xml"/>
+        <route-files value="./strategia3_config/../san_francisco.rou.xml"/>
+        <additional-files value="./strategia3_config/../san_francisco.poly.xml,./strategia3_config/../parking_capacity_100%25/off_parking_100%25.add.xml,./strategia3_config/../parking_capacity_100%25/on_parking_100%25.add.xml"/>
+    </input>
+
+    <output>
+        <emission-output value="./strategia3_config/../output/strategia3/100%25/emissions.xml"/>
+        <tripinfo-output value="./strategia3_config/../output/strategia3/100%25/tripinfo.xml"/>
+        <vehroute-output value="./strategia3_config/../output/strategia3/100%25/vehroute.xml"/>
+        <stop-output value="./strategia3_config/../output/strategia3/100%25/stops.xml"/>
+        <collision-output value="./strategia3_config/../output/strategia3/100%25/collision.xml"/>
+        <statistic-output value="./strategia3_config/../output/strategia3/100%25/statistic.xml"/>
+    </output>
+
+    <time>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="64376"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="./strategia3_config/../gui-settings.cfg"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="4" type="vecType" depart="18000.00" arrival="19209.00">
+        <routeDistribution>
+            <route replacedOnEdge="-8916922#2" replacedOnIndex="27" reason="traci:setRoute" replacedAtTime="18566.00" probability="0" edges="142972028#1 89624695#0 8916932 88572943#1 -225847525 -365816004 8921141#0 -88572914#2 -88572941 -88572932#2 -88572932#1 -88572932#0 -51392400 -51392402#0 -51392402#1 -111560680 86334994#0 -88572965#1 -88572965#0 -88559669 -88572877#6 -88572970 -256400251#1 256400244#0 -99231475 -254971064#1 -8916922#4 -8916922#2 8916922#1"/>
+            <route replacedOnEdge="-8916922#4" replacedOnIndex="30" reason="traci:changeTarget" replacedAtTime="18653.00" probability="0" edges="142972028#1 89624695#0 8916932 88572943#1 -225847525 -365816004 8921141#0 -88572914#2 -88572941 -88572932#2 -88572932#1 -88572932#0 -51392400 -51392402#0 -51392402#1 -111560680 86334994#0 -88572965#1 -88572965#0 -88559669 -88572877#6 -88572970 -256400251#1 256400244#0 -99231475 -254971064#1 -8916922#4 -8916922#2 8916922#1 8916922#3 -8916922#4"/>
+            <route edges="142972028#1 89624695#0 8916932 88572943#1 -225847525 -365816004 8921141#0 -88572914#2 -88572941 -88572932#2 -88572932#1 -88572932#0 -51392400 -51392402#0 -51392402#1 -111560680 86334994#0 -88572965#1 -88572965#0 -88559669 -88572877#6 -88572970 -256400251#1 256400244#0 -99231475 -254971064#1 -8916922#4 -8916922#2 8916922#1 8916922#3 -8916922#4 8916922#3 254971064#0 99231475 225432462#0 47172745 91181771#0 91181771#3 91181771#4 91181771#5 91181771#6 91181771#15 91181771#16 91181771#18 91181771#19 91181771#20 91181771#22 91181771#23 91181771#24 91181771#26 91181769#0 88572943#0 88572943#1 26988051 225847519#1 225847519#4 gneE14 142972028#1"/>
+        </routeDistribution>
+        <stop parkingArea="parkingArea_-8916922#4_0_52" duration="3.00" parking="1"/>
+    </vehicle>
+
+</routes>
