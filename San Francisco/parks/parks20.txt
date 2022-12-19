@@ -1,0 +1,17 @@
+parkingArea_-p4#0_0_102
+parkingArea_111560679#0_0_111
+parkingArea_88559691#4_0_101
+parkingArea_225518502#0_0_84
+parkingArea_-88559691#3_0_75
+parkingArea_225518512#0_0_107
+parkingArea_-88572877#6_0_76
+parkingArea_8919328#1_0_378
+parkingArea_88572948#0_0_376
+parkingArea_8919328#0_0_377
+parkingArea_254299142#11_0_509
+parkingArea_-88559691#6_0_82
+parkingArea_88572965#0_0_512
+parkingArea_254299142#7_0_507
+parkingArea_-88572965#0_0_511
+parkingArea_88559669_0_422
+parkingArea_111552058#0_0_510

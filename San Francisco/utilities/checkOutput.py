@@ -1,5 +1,5 @@
+from os.path import exists
 import xml.etree.ElementTree as ET
-
 
 def get_vehicle_from_xml():
     tree = ET.parse('../san_francisco.rou.xml')
@@ -11,9 +11,24 @@ def get_vehicle_from_xml():
     return list_vec_xml
 
 
+def check_not_parking_vehicle(filename, strategia, scenario):
+    file = open(filename, "a")
+    tree = ET.parse("../output/"+strategia+"/"+scenario+"/stops.xml")
+    root = tree.getroot()
+    list_parked = []
+    for vecID in get_vehicle_from_xml():
+        for stop in root.findall(".//stopinfo/[@id='" + vecID + "']"):
+            list_parked.append(vecID)
+    print("Veicoli Parcheggiati:",list_parked, file=file)
+    not_parked = set(get_vehicle_from_xml()).difference(set(list_parked))
+    print("Veicolo Non Parcheggiati", not_parked, file=file)
+    file.close()
+
+
+
 def check_stops(filename, strategia, scenario):
     file = open(filename, "a")
-    tree = ET.parse("../output/" + strategia + "/" + scenario + "/stops.xml")
+    tree = ET.parse("../output/"+strategia+"/"+scenario+"/stops.xml")
     root = tree.getroot()
     for vecID in get_vehicle_from_xml():
         count = 0
@@ -27,7 +42,7 @@ def check_stops(filename, strategia, scenario):
 def check_route(filename, strategia, scenario):
     file = open(filename, "w")
 
-    tree = ET.parse("../output/" + strategia + "/" + scenario + "/vehroute.xml")
+    tree = ET.parse("../output/"+strategia+"/"+scenario+"/vehroute.xml")
     root = tree.getroot()
     for vecID in get_vehicle_from_xml():
         count = 0
@@ -48,10 +63,11 @@ def run(strategia, scenario):
     filename = "check_output_" + strategia + "_" + scenario + ".txt"
     check_route(filename, strategia, scenario)
     check_stops(filename, strategia, scenario)
+    check_not_parking_vehicle(filename, strategia, scenario)
 
 
 def main():
-    run("strategia1", "100%")
+    # run("strategia1", "100%")
     # run("strategia1", "75%")
     # run("strategia1", "50%")
 

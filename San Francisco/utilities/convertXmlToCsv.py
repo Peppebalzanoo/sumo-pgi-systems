@@ -94,5 +94,12 @@ def main():
     create_csv_emmissions("strategia2", "100%")
     create_csv_tripinfo(list_vec, "strategia2", "100%")
 
+
+    # # STRATEGIA: strategia3,  SCENARIO: 100%
+    # create_csv_stopinfo(list_vec, "strategia3", "100%")
+    # create_csv_statistics("strategia3", "100%")
+    # create_csv_emmissions("strategia3", "100%")
+    # create_csv_tripinfo(list_vec, "strategia3", "100%")
+
 if __name__ == "__main__":
     main()

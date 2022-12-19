@@ -211,14 +211,24 @@ def main():
     # read_csv_statistics("strategia1", "50%")
     # read_csv_emmissions("strategia1", "50%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia1", "50%")
-    #
-    # STRATEGIA: strategia2, SCENARIO: 100%
 
+
+
+    # STRATEGIA: strategia2, SCENARIO: 100%
     print("\n# STRATEGIA: strategia2, SCENARIO: 100% #")
     read_csv_stopinfo("strategia2", "100%")
     read_csv_statistics("strategia2", "100%")
     read_csv_emmissions("strategia2", "100%", len(list_vec))
     read_csv_trip_and_stop_info("strategia2", "100%")
+
+
+
+    # STRATEGIA: strategia3, SCENARIO: 100%
+    # print("\n# STRATEGIA: strategia3, SCENARIO: 100% #")
+    # read_csv_stopinfo("strategia3", "100%")
+    # read_csv_statistics("strategia3", "100%")
+    # read_csv_emmissions("strategia3", "100%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia3", "100%")
 
 if __name__ == "__main__":
     main()
