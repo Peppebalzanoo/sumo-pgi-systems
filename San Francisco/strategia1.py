@@ -384,6 +384,9 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 
                             reset_vec_to_searchtime_started_dictionary(vecID)
 
+                            # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
+                            break
+
                         except traci.TraCIException as e:
                             search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
                     else:

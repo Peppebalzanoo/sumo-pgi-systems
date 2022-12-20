@@ -408,6 +408,9 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                                     print("[INFO_ROUTINE]", vecID, "ha trovato parcheggio alla strada dove è stato indirizzato", parkID, file=fln)
                                     fln.close()
 
+                                # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
+                                break
+
                         except traci.TraCIException as e:
                             calculate_parkings(vecID, curr_edgeID, last_edgeID)
                     else:
@@ -482,6 +485,9 @@ def run(strategia, scenario):
                                             fln = open("log_strategia2.txt", "a")
                                             print("[INFO]", vecID, "ha trovato parcheggio lungo la strada verso il più grande", parkID, file=fln)
                                             fln.close()
+
+                                            # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
+                                            break
 
                                     except traci.TraCIException as e:
                                         pass
