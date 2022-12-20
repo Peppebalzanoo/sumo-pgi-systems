@@ -1,0 +1,833 @@
+[INFO] 1 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922291#0_0_762
+[INFO] 30 ha trovato parcheggio alla strada di destinazione xml parkingArea_206662304#13_0_660
+[INFO] 60 ha trovato parcheggio alla strada di destinazione xml parkingArea_247966218#3_0_791
+[INFO] 45 ha trovato parcheggio alla strada di destinazione xml parkingArea_-43100739_0_743
+[INFO] 16 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225518512#1_0_517
+[INFO] 10 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[INFO] 21 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 0 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_254759933#2_0_1198
+[INFO] 47 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 28 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8919616#1_0_491
+[INFO] 76 ha trovato parcheggio alla strada di destinazione xml parkingArea_-25371463_0_928
+[INFO] 33 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[EXIT] 93 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 77 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[EXIT] 93 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 39 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-225518512#1_0_517
+[INFO] 74 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225806031#2_0_677
+[INFO] 27 ha trovato parcheggio alla strada di destinazione xml parkingArea_135110258#0_0_410
+[INFO] 93 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-87297168_0_1209
+[INFO] 63 ha trovato parcheggio alla strada di destinazione xml parkingArea_224199018#4_0_322
+[INFO] 13 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#5_0_513
+[INFO] 29 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_224199018#1_0_319
+[INFO] 36 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#11_0_91
+[INFO] 85 ha trovato parcheggio alla strada di destinazione xml parkingArea_242896157#1_0_435
+[INFO] 20 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#5_0_513
+[INFO] 40 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922164#1_0_320
+[INFO] 41 ha trovato parcheggio alla strada di destinazione xml parkingArea_88597553#2_0_369
+[INFO] 15 ha trovato parcheggio alla strada di destinazione xml parkingArea_254299142#3_0_508
+[INFO] 68 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#0_0_89
+[INFO] 22 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8916922#3_0_423
+[INFO] 42 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[INFO] 72 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181767_0_670
+[INFO] 12 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#0_0_449
+[INFO] 73 ha trovato parcheggio alla strada di destinazione xml parkingArea_254758122#4_0_1183
+[INFO] 14 ha trovato parcheggio alla strada di destinazione xml parkingArea_8915752_0_467
+[INFO] 25 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_35675861#0_0_89
+[INFO] 84 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335490#0_0_439
+[INFO] 100 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916922#3_0_423
+[INFO] 2 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537380#1_0_469
+[INFO] 34 ha trovato parcheggio alla strada di destinazione xml parkingArea_133733593#1_0_571
+[INFO] 9 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_143617589#2_0_527
+[INFO] 56 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 82 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922858#0_0_539
+[INFO] 51 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916922#3_0_423
+[INFO] 17 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 11 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231482_0_58
+[INFO] 86 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_254758131#2_0_327
+[INFO] 31 ha trovato parcheggio alla strada di destinazione xml parkingArea_111089307#4_0_960
+[INFO] 3 ha trovato parcheggio alla strada di destinazione xml parkingArea_-27397692_0_397
+[INFO] 37 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225518512#1_0_517
+[INFO] 5 ha trovato parcheggio alla strada di destinazione xml parkingArea_283537380#1_0_469
+[INFO] 91 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518502#3_0_85
+[INFO] 24 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO] 6 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922307_0_62
+[INFO] 49 ha trovato parcheggio alla strada di destinazione xml parkingArea_31129732#0_0_532
+[INFO] 53 ha trovato parcheggio alla strada di destinazione xml parkingArea_-242896157#0_0_442
+[INFO] 90 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919328#0_0_377
+[INFO] 75 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_28231602#0_0_18
+[INFO] 55 ha trovato parcheggio alla strada di destinazione xml parkingArea_8915752_0_467
+[INFO] 66 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231463#0_0_394
+[INFO] 7 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24310636#1_0_934
+[INFO] 89 ha trovato parcheggio alla strada di destinazione xml parkingArea_254306572#0_0_372
+[INFO] 104 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 114 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-228202845#2_0_628
+[INFO] 135 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#0_0_449
+[INFO] 62 ha trovato parcheggio alla strada di destinazione xml parkingArea_254306572#0_0_372
+[INFO] 23 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919338_0_468
+[INFO] 88 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8922307_0_63
+[INFO] 99 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88559691#6_0_82
+[INFO] 119 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254466686#4_0_360
+[INFO] 59 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 79 ha trovato parcheggio alla strada di destinazione xml parkingArea_-35675861#0_0_462
+[INFO] 127 ha trovato parcheggio alla strada di destinazione xml parkingArea_27054213#4_0_345
+[INFO] 4 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8916922#3_0_423
+[INFO] 80 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 70 ha trovato parcheggio alla strada di destinazione xml parkingArea_24310636#2_0_938
+[INFO] 52 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 50 ha trovato parcheggio alla strada di destinazione xml parkingArea_27054213#4_0_345
+[INFO] 83 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[INFO] 69 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 35 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_28843496_0_299
+[INFO] 105 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#3_3_519
+[INFO] 26 ha trovato parcheggio alla strada di destinazione xml parkingArea_27054213#6_0_357
+[INFO] 115 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756520#0_0_352
+[INFO] 18 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 43 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_26988030#3_0_1200
+[INFO] 101 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#3_0_52
+[INFO] 111 ha trovato parcheggio alla strada di destinazione xml parkingArea_133733593#1_0_571
+[INFO] 129 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8919328#1_0_378
+[INFO] 57 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922263#1_0_440
+[INFO] 44 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254971068_0_334
+[INFO] 48 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 78 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231463#0_0_394
+[INFO] 140 ha trovato parcheggio alla strada di destinazione xml parkingArea_286003244#9_0_598
+[INFO] 8 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_359898521#0_0_374
+[INFO] 65 ha trovato parcheggio alla strada di destinazione xml parkingArea_111319423_0_83
+[INFO] 38 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_27398048#2_0_237
+[INFO] 132 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8918381#0_0_537
+[INFO] 168 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-26943758#1_0_866
+[INFO] 32 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_32931798#2_0_297
+[INFO] 67 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#0_0_89
+[INFO] 19 ha trovato parcheggio alla strada di destinazione xml parkingArea_47172745_0_65
+[INFO] 117 ha trovato parcheggio alla strada di destinazione xml parkingArea_329607867_0_466
+[INFO] 112 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958606#0_0_568
+[INFO] 61 ha trovato parcheggio alla strada di destinazione xml parkingArea_-37177689#5_0_814
+[INFO] 159 ha trovato parcheggio alla strada di destinazione xml parkingArea_27570802#1_0_276
+[INFO] 126 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922560#1_0_298
+[INFO] 95 ha trovato parcheggio alla strada di destinazione xml parkingArea_228186482#0_0_71
+[INFO] 130 ha trovato parcheggio alla strada di destinazione xml parkingArea_-35675861#1_0_460
+[INFO] 131 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922164#1_0_320
+[INFO] 81 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 109 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231482_0_58
+[INFO] 102 ha trovato parcheggio alla strada di destinazione xml parkingArea_88466052#1_0_438
+[INFO] 106 ha trovato parcheggio alla strada di destinazione xml parkingArea_255330036#9_0_492
+[INFO] 146 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#3_3_519
+[INFO] 103 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_99231460_0_88
+[INFO] 162 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225518512#1_0_517
+[INFO] 134 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 166 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432457_0_400
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 121 ha trovato parcheggio alla strada di destinazione xml parkingArea_254971067#0_0_370
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 163 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88559691#6_0_82
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 123 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[INFO] 54 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 110 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 87 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231460_0_88
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 137 ha trovato parcheggio alla strada di destinazione xml parkingArea_290080809#4_0_626
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 136 ha trovato parcheggio alla strada di destinazione xml parkingArea_254306572#0_0_372
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 58 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225847519#1_0_678
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 113 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_143617589#2_0_527
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 156 ha trovato parcheggio alla strada di destinazione xml parkingArea_47108420#0_0_17
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 139 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254466686#4_0_360
+[INFO] 155 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 116 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 122 ha trovato parcheggio alla strada di destinazione xml parkingArea_224373753_0_53
+[INFO] 96 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225806056_0_688
+[INFO] 97 ha trovato parcheggio alla strada di destinazione xml parkingArea_-202485361#1_0_445
+[INFO] 179 ha trovato parcheggio alla strada di destinazione xml parkingArea_283534317#6_0_550
+[INFO] 193 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8922307_0_63
+[INFO] 187 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8916867#0_0_324
+[INFO] 98 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 148 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225518502#3_0_85
+[INFO] 120 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 153 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#3_0_328
+[INFO] 141 ha trovato parcheggio alla strada di destinazione xml parkingArea_-27398032#0_0_399
+[INFO] 195 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254396709#1_0_358
+[INFO] 164 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 188 ha trovato parcheggio alla strada di destinazione xml parkingArea_214545530#0_0_694
+[INFO] 171 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 118 ha trovato parcheggio alla strada di destinazione xml parkingArea_278995391#0_0_106
+[INFO] 125 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916867#2_0_325
+[INFO] 154 ha trovato parcheggio alla strada di destinazione xml parkingArea_47108420#3_0_301
+[INFO] 176 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO] 128 ha trovato parcheggio alla strada di destinazione xml parkingArea_88463829#0_0_44
+[INFO] 138 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#3_0_52
+[INFO] 160 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88559680#5_0_474
+[INFO] 133 ha trovato parcheggio alla strada di destinazione xml parkingArea_111319423_0_83
+[INFO] 192 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916922#3_0_423
+[INFO] 150 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88559650_0_90
+[INFO] 107 ha trovato parcheggio alla strada di destinazione xml parkingArea_111319423_0_83
+[INFO] 145 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919328#0_0_377
+[INFO] 108 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88572905_0_78
+[INFO] 147 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231475_0_55
+[INFO] 174 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_27398048#2_0_237
+[INFO] 165 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#5_0_513
+[INFO] 46 ha trovato parcheggio alla strada di destinazione xml parkingArea_206662304#13_0_660
+[INFO] 189 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 124 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 142 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466055#0_0_436
+[INFO] 144 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#3_0_52
+[INFO] 173 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[INFO] 172 ha trovato parcheggio alla strada di destinazione xml parkingArea_225847519#4_0_686
+[INFO] 184 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_163784093_0_587
+[INFO] 170 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 191 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397692_0_57
+[INFO] 152 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#7_0_494
+[INFO] 198 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[INFO] 167 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432457_0_400
+[INFO] 180 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518502#3_0_85
+[INFO] 197 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 185 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#3_0_328
+[INFO] 92 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283512618#0_1_373
+[INFO] 161 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#8_0_45
+[INFO] 196 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[INFO] 149 ha trovato parcheggio alla strada di destinazione xml parkingArea_-255330036#7_0_494
+[INFO] 151 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88559680#4_0_486
+[INFO] 157 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_47108420#0_0_17
+[INFO] 182 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 217 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919616#1_0_491
+[INFO] 186 ha trovato parcheggio alla strada di destinazione xml parkingArea_254971068_0_335
+[INFO] 183 ha trovato parcheggio alla strada di destinazione xml parkingArea_-242896157#0_0_442
+[INFO] 178 ha trovato parcheggio alla strada di destinazione xml parkingArea_206662304#13_0_660
+[INFO] 158 ha trovato parcheggio alla strada di destinazione xml parkingArea_47108420#0_0_17
+[INFO] 202 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231475_0_55
+[INFO] 211 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 169 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 181 ha trovato parcheggio alla strada di destinazione xml parkingArea_88466052#1_0_438
+[INFO] 207 ha trovato parcheggio alla strada di destinazione xml parkingArea_88559691#4_0_101
+[INFO] 143 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397692_0_57
+[INFO] 205 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919328#1_0_378
+[INFO] 175 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[INFO] 199 ha trovato parcheggio alla strada di destinazione xml parkingArea_133733593#1_0_571
+[INFO] 190 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_35675861#0_0_89
+[INFO] 194 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922307_0_62
+[INFO] 206 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#3_0_52
+[INFO] 200 ha trovato parcheggio alla strada di destinazione xml parkingArea_-133733582#3_0_684
+[INFO] 210 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922263#1_0_440
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 214 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8920734_0_356
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 228 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 237 ha trovato parcheggio alla strada di destinazione xml parkingArea_225847519#4_0_686
+[INFO] 226 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88597544#2_0_565
+[INFO] 227 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919328#1_0_378
+[INFO] 204 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_364480601#0_0_449
+[INFO] 209 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_111319423_0_83
+[INFO] 215 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_133733593#1_0_571
+[INFO] 220 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518502#3_0_85
+[INFO] 201 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916048_0_956
+[INFO] 218 ha trovato parcheggio alla strada di destinazione xml parkingArea_32931798#2_0_297
+[INFO] 219 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 232 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 208 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-283537552#1_0_87
+[INFO] 216 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916551_0_487
+[INFO] 238 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_254396707#7_0_667
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 241 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 212 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_47172835_0_498
+[INFO] 221 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225518502#3_0_85
+[INFO] 264 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335483#9_0_653
+[INFO] 255 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-88466055#1_0_464
+[INFO] 260 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922307_0_62
+[INFO] 223 ha trovato parcheggio alla strada di destinazione xml parkingArea_8918460#0_0_56
+[INFO] 213 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_27146036#2_0_294
+[INFO] 277 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480068#1_0_472
+[INFO] 234 ha trovato parcheggio alla strada di destinazione xml parkingArea_133733593#1_0_571
+[INFO] 230 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225518512#1_0_517
+[INFO] 236 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8922307_0_63
+[INFO] 240 ha trovato parcheggio alla strada di destinazione xml parkingArea_-24335440#0_0_941
+[INFO] 203 ha trovato parcheggio alla strada di destinazione xml parkingArea_-202485361#1_0_445
+[INFO] 231 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 248 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#8_0_45
+[INFO] 251 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8916922#4_0_52
+[INFO] 285 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480068#1_0_472
+[INFO] 224 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#13_0_407
+[INFO] 275 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922164#4_0_315
+[INFO] 247 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88463829#0_0_44
+[INFO] 286 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756525#3_0_567
+[INFO] 246 ha trovato parcheggio alla strada di destinazione xml parkingArea_111049100#0_0_64
+[INFO] 288 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231466_0_391
+[INFO] 249 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225432462#1_0_61
+[INFO] 269 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 273 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88559702#0_0_455
+[INFO] 257 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_43100046_0_404
+[INFO] 283 ha trovato parcheggio alla strada di destinazione xml parkingArea_329607867_0_466
+[INFO] 282 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254971064#1_0_426
+[INFO] 272 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922307_0_62
+[INFO] 222 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397919_0_66
+[INFO] 233 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8919616#1_0_491
+[INFO] 267 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[INFO] 225 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_160325575#0_0_47
+[INFO] 265 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 284 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8922307_0_63
+[INFO] 252 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_144489134#2_0_601
+[INFO] 244 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_364480068#1_0_472
+[INFO] 287 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88572877#6_0_76
+[INFO] 271 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[INFO] 298 ha trovato parcheggio alla strada di destinazione xml parkingArea_-191296172#0_0_954
+[INFO] 235 ha trovato parcheggio alla strada di destinazione xml parkingArea_35977367#2_0_656
+[INFO] 242 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 274 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO] 229 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-247966218#8_0_796
+[INFO] 245 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225432462#1_0_61
+[INFO] 253 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88597577#0_0_72
+[INFO] 258 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316513#0_0_371
+[INFO] 266 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88559691#6_0_82
+[INFO] 268 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 276 ha trovato parcheggio alla strada di destinazione xml parkingArea_254758126#3_0_1135
+[INFO] 239 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88572877#0_0_74
+[INFO] 270 ha trovato parcheggio alla strada di destinazione xml parkingArea_99231460_0_88
+[INFO] 256 ha trovato parcheggio alla strada di destinazione xml parkingArea_27146036#1_0_295
+[INFO] 292 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_262943781_0_356
+[INFO] 301 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 291 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231486_0_446
+[INFO] 263 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 259 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_27398032#3_0_403
+[INFO] 261 ha trovato parcheggio alla strada di destinazione xml parkingArea_-287958606#1_0_355
+[INFO] 262 ha trovato parcheggio alla strada di destinazione xml parkingArea_-224316527_0_332
+[INFO] 254 ha trovato parcheggio alla strada di destinazione xml parkingArea_88597553#2_0_369
+[EXIT] 243 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 243 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 296 ha trovato parcheggio alla strada di destinazione xml parkingArea_242896157#1_0_435
+[EXIT] 243 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 281 ha trovato parcheggio alla strada di destinazione xml parkingArea_-242896157#3_0_434
+[INFO] 306 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_86303763#1_0_669
+[INFO] 314 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 297 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958606#0_0_568
+[INFO] 278 ha trovato parcheggio alla strada di destinazione xml parkingArea_-202485361#1_0_445
+[INFO] 294 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[INFO] 317 ha trovato parcheggio alla strada di destinazione xml parkingArea_27029200#2_0_964
+[INFO] 280 ha trovato parcheggio alla strada di destinazione xml parkingArea_30029703#4_0_1316
+[INFO] 279 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88463829#0_0_44
+[INFO] 303 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922263#1_0_440
+[INFO] 305 ha trovato parcheggio alla strada di destinazione xml parkingArea_254758126#3_0_1135
+[INFO] 289 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756520#2_0_351
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 321 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181767_0_670
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 313 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 308 ha trovato parcheggio alla strada di destinazione xml parkingArea_-35675861#1_0_460
+[INFO] 320 ha trovato parcheggio alla strada di destinazione xml parkingArea_-p4#0_0_102
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 310 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916922#3_0_423
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 312 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 304 ha trovato parcheggio alla strada di destinazione xml parkingArea_-133733582#3_0_684
+[INFO] 309 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88597544#2_0_565
+[INFO] 299 ha trovato parcheggio alla strada di destinazione xml parkingArea_35977367#2_0_656
+[INFO] 290 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397691_0_443
+[INFO] 319 ha trovato parcheggio alla strada di destinazione xml parkingArea_254297762#1_0_1204
+[INFO] 300 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-87297168_0_1209
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 295 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_364480601#0_0_449
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 316 ha trovato parcheggio alla strada di destinazione xml parkingArea_-287958606#1_0_355
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 307 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 315 ha trovato parcheggio alla strada di destinazione xml parkingArea_48211062#12_0_1219
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 322 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 323 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 325 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-37177689#11_0_829
+[INFO] 324 ha trovato parcheggio alla strada di destinazione xml parkingArea_8918381#1_0_536
+[INFO] 327 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 328 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 329 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 293 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537644#0_0_456
+[INFO] 334 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[INFO] 333 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254758121#3_0_1161
+[INFO] 330 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO] 335 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-88572965#0_0_511
+[INFO] 336 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231486_0_446
+[INFO] 331 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_37177689#10_0_828
+[INFO] 346 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432457_0_400
+[INFO] 347 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916551_0_487
+[INFO] 372 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335439#0_0_931
+[INFO] 352 ha trovato parcheggio alla strada di destinazione xml parkingArea_43100046_0_404
+[INFO] 353 ha trovato parcheggio alla strada di destinazione xml parkingArea_247966218#4_0_793
+[INFO] 341 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231475_0_428
+[INFO] 337 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 360 ha trovato parcheggio alla strada di destinazione xml parkingArea_254448252#1_0_351
+[INFO] 339 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-283537552#1_0_87
+[INFO] 355 ha trovato parcheggio alla strada di destinazione xml parkingArea_88463829#0_0_44
+[INFO] 356 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8918656#0_0_1350
+[INFO] 363 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 359 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_99231460_0_88
+[INFO] 371 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397937_0_384
+[INFO] 358 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316514#0_0_570
+[INFO] 350 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316522#0_0_572
+[INFO] 379 ha trovato parcheggio alla strada di destinazione xml parkingArea_256787755#3_0_874
+[INFO] 343 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_91181771#5_0_513
+[INFO] 367 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO] 348 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88597544#2_0_565
+[INFO] 364 ha trovato parcheggio alla strada di destinazione xml parkingArea_-224316527_0_332
+[INFO] 338 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#2_0_327
+[INFO] 344 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8916922#3_0_423
+[INFO] 375 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#15_0_723
+[INFO] 361 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231486_0_446
+[INFO] 349 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231486_0_446
+[INFO] 357 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#0_0_449
+[INFO] 380 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335441_0_923
+[INFO] 365 ha trovato parcheggio alla strada di destinazione xml parkingArea_262943781_0_356
+[INFO] 369 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 351 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518502#0_0_84
+[INFO] 370 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 354 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 366 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#0_0_326
+[INFO] 368 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 362 ha trovato parcheggio alla strada di destinazione xml parkingArea_225518512#0_0_107
+[INFO] 404 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316514#0_0_570
+[INFO] 384 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335441_0_923
+[INFO] 340 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_31129732#0_0_532
+[INFO] 394 ha trovato parcheggio alla strada di destinazione xml parkingArea_254971068_0_335
+[INFO] 389 ha trovato parcheggio alla strada di destinazione xml parkingArea_-225518512#1_0_517
+[INFO] 377 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#0_0_449
+[INFO] 391 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88466052#1_0_438
+[INFO] 405 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8919179#0_0_356
+[INFO] 345 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397919_0_66
+[INFO] 381 ha trovato parcheggio alla strada di destinazione xml parkingArea_-99231486_0_446
+[INFO] 440 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397691_0_443
+[INFO] 386 ha trovato parcheggio alla strada di destinazione xml parkingArea_255168046#2_0_453
+[INFO] 386 ha trovato parcheggio alla strada di destinazione xml parkingArea_255168046#2_1_516
+[INFO] 383 ha trovato parcheggio alla strada di destinazione xml parkingArea_254448252#1_0_351
+[INFO] 415 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 382 ha trovato parcheggio alla strada di destinazione xml parkingArea_24310636#2_0_938
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 373 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 374 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#1_0_451
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 390 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8922307_0_63
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 418 ha trovato parcheggio alla strada di destinazione xml parkingArea_256787755#0_0_876
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 402 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 438 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432457_0_400
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 492 ha trovato parcheggio alla strada di destinazione xml parkingArea_47108420#0_0_17
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 387 ha trovato parcheggio alla strada di destinazione xml parkingArea_8915752_0_467
+[INFO] 392 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916867#2_0_325
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 403 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 398 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_364480068#1_0_472
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[EXIT] 378 è uscito perchè NON ci sono piu' strade fisicamente percorribili
+[INFO] 422 ha trovato parcheggio alla strada di destinazione xml parkingArea_-122498865_0_730
+[INFO] 406 ha trovato parcheggio alla strada di destinazione xml parkingArea_111049100#0_0_64
+[INFO] 410 ha trovato parcheggio alla strada di destinazione xml parkingArea_8918460#0_0_56
+[INFO] 376 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_27146036#2_0_294
+[INFO] 435 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 399 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88463829#0_0_44
+[INFO] 434 ha trovato parcheggio alla strada di destinazione xml parkingArea_35675861#1_0_461
+[INFO] 397 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#5_0_513
+[INFO] 412 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_283537552#1_0_458
+[INFO] 445 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922858#0_0_539
+[INFO] 401 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480068#1_0_472
+[INFO] 395 ha trovato parcheggio alla strada di destinazione xml parkingArea_254299142#3_0_508
+[INFO] 482 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_290080809#4_0_626
+[INFO] 417 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_359898620#0_0_308
+[INFO] 436 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO] 396 ha trovato parcheggio alla strada di destinazione xml parkingArea_-35675861#1_0_460
+[INFO] 407 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 470 ha trovato parcheggio alla strada di destinazione xml parkingArea_255168046#2_0_453
+[INFO] 470 ha trovato parcheggio alla strada di destinazione xml parkingArea_255168046#2_1_516
+[INFO] 480 ha trovato parcheggio alla strada di destinazione xml parkingArea_-224384018_0_73
+[INFO] 400 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397937_0_384
+[INFO] 420 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916048_0_956
+[INFO] 475 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254971068_0_334
+[INFO] 476 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8920734_0_331
+[INFO] 432 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919328#1_0_378
+[INFO] 388 ha trovato parcheggio alla strada di destinazione xml parkingArea_8915752_0_467
+[INFO] 441 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335490#0_0_439
+[INFO] 455 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO] 484 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316513#0_0_371
+[INFO] 487 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_144489134#2_0_601
+[INFO] 450 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#3_3_519
+[INFO] 496 ha trovato parcheggio alla strada di destinazione xml parkingArea_-27397692_0_397
+[INFO] 481 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254396709#1_0_358
+[INFO] 427 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#1_0_451
+[INFO] 488 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8919179#0_0_356
+[INFO] 472 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756521#3_0_355
+[INFO] 425 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254971064#1_0_426
+[INFO] 437 ha trovato parcheggio alla strada di destinazione xml parkingArea_225432462#0_0_60
+[INFO] 411 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 490 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916867#2_0_325
+[INFO] 471 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8918656#0_0_1350
+[INFO] 451 ha trovato parcheggio alla strada di destinazione xml parkingArea_-35675861#1_0_460
+[INFO] 477 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335489#0_0_305
+[INFO] 463 ha trovato parcheggio alla strada di destinazione xml parkingArea_88463829#0_0_44
+[INFO] 466 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88597544#2_0_565
+[INFO] 460 ha trovato parcheggio alla strada di destinazione xml parkingArea_224316514#0_0_570
+[INFO] 453 ha trovato parcheggio alla strada di destinazione xml parkingArea_-8916922#4_0_52
+[INFO] 461 ha trovato parcheggio alla strada di destinazione xml parkingArea_254396709#0_0_357
+[INFO] 498 ha trovato parcheggio alla strada di destinazione xml parkingArea_133733593#1_0_571
+[INFO] 473 ha trovato parcheggio alla strada di destinazione xml parkingArea_-224384018_0_73
+[INFO] 458 ha trovato parcheggio alla strada di destinazione xml parkingArea_24335489#0_0_305
+[INFO] 459 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397691_0_443
+[INFO] 469 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919179#0_0_356
+[INFO] 452 ha trovato parcheggio alla strada di destinazione xml parkingArea_8922307_0_62
+[INFO] 423 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88572905_0_78
+[INFO] 483 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#3_0_328
+[INFO] 419 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_225853134_0_679
+[INFO] 416 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922560#1_0_298
+[INFO] 433 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#1_0_451
+[INFO] 442 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_364480068#1_0_472
+[INFO] 495 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_359898521#0_0_374
+[INFO] 430 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24335490#0_0_439
+[INFO] 485 ha trovato parcheggio alla strada di destinazione xml parkingArea_27054213#2_0_344
+[INFO] 448 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 426 ha trovato parcheggio alla strada di destinazione xml parkingArea_120256350#8_0_45
+[INFO] 409 ha trovato parcheggio alla strada di destinazione xml parkingArea_111319423_0_83
+[INFO] 497 ha trovato parcheggio alla strada di destinazione xml parkingArea_27054213#4_0_345
+[INFO] 393 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#2_0_327
+[INFO] 424 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 447 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-35675861#1_0_460
+[INFO] 444 ha trovato parcheggio alla strada di destinazione xml parkingArea_364480601#0_0_449
+[INFO] 474 ha trovato parcheggio alla strada di destinazione xml parkingArea_111049100#0_0_64
+[INFO] 456 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_8922164#1_0_320
+[INFO] 431 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_88463829#0_0_44
+[INFO] 413 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_35675861#0_0_89
+[INFO] 494 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756521#3_0_355
+[INFO] 408 ha trovato parcheggio alla strada di destinazione xml parkingArea_-88466055#1_0_464
+[INFO] 421 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_123741465_0_169
+[INFO] 499 ha trovato parcheggio alla strada di destinazione xml parkingArea_28843496_0_299
+[INFO] 491 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#3_0_328
+[INFO] 429 ha trovato parcheggio alla strada di destinazione xml parkingArea_8919338_0_468
+[INFO] 478 ha trovato parcheggio alla strada di destinazione xml parkingArea_-24310636#1_0_935
+[INFO] 414 ha trovato parcheggio alla strada di destinazione xml parkingArea_8915752_0_467
+[INFO] 428 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397692_0_57
+[INFO] 479 ha trovato parcheggio alla strada di destinazione xml parkingArea_254466695#0_0_569
+[INFO] 454 ha trovato parcheggio alla strada di destinazione xml parkingArea_242896157#1_0_435
+[INFO] 486 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_254756525#3_0_567
+[INFO] 457 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_144489134#2_0_601
+[INFO] 443 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_35675861#0_0_89
+[INFO] 462 ha trovato parcheggio alla strada di destinazione xml parkingArea_255330036#7_0_96
+[INFO] 439 ha trovato parcheggio alla strada di destinazione xml parkingArea_27397692_0_57
+[INFO] 446 ha trovato parcheggio alla strada di destinazione xml parkingArea_91181771#0_0_77
+[INFO] 449 ha trovato parcheggio alla strada di destinazione xml parkingArea_-254971064#1_0_426
+[INFO] 489 ha trovato parcheggio alla strada di destinazione xml parkingArea_224199018#4_0_322
+[INFO] 467 ha trovato parcheggio alla strada di destinazione xml parkingArea_254756525#3_0_567
+[INFO] 493 ha trovato parcheggio alla strada di destinazione xml parkingArea_287958607#2_0_327
+[INFO] 464 ha trovato parcheggio alla strada di destinazione xml parkingArea_8916922#3_0_423
+[INFO] 468 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_24245395#0_0_20

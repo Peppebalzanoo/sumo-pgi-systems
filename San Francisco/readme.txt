@@ -3,16 +3,16 @@
 #0: LO SCRIPT EFFETTEURA' UN CONTROLLO SULLA VARIABILE D'AMBIENTE "SUMO_HOME"
     - PER SETTARLA: "https://sumo.dlr.de/docs/Basics/Basic_Computer_Skills.html"
     - SE NON TI INTERESSA SETTARLA:
-        1. @COMMENTARE la riga 385 del file strategiaX.py
+        1. @COMMENTARE la seguente riga nel file strategiaX.py
                 "sumoBinary = checkBinary('sumo')"
-        2. @SCOMMENTARE la riga 386 del file strategiaX.py
+        2. @INSERIRE la seguente riga nel file strategiaX.py
                 "sumoBinary = ('sumo')"
 
-#1: PER AVVIARE SENZA GUI USARE IL COMANDO "python strategiaX.py"
+#1: PER AVVIARE (SENZA GUI) USARE IL COMANDO "python strategiaX.py"
 
 #2: PER AVVIARE CON GUI
-        @SOSTITUIRE la riga 385 del file strategiaX.py
-            "sumoBinary = checkBinary('sumo')" >>> "sumoBinary = checkBinary('sumo-gui')"
+        @SOSTITUIRE la seguente riga nel file strategiaX.py
+            "sumoBinary = checkBinary('sumo')" ---> "sumoBinary = checkBinary('sumo-gui')"
 
 ##########################################################################################
 @COMANDI UTILI:

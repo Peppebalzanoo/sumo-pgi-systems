@@ -1,0 +1,29 @@
+# parkingID = get_parking_from_lane(curr_laneID)
+# if parkingID is not None and check_parking_aviability(parkingID) is True and check_parking_position(vecID, curr_position, parkingID) is True:
+#     try:
+#         # (900sec == 10min, 10800sec == 3hrs)
+#         # ! random_parking_time = random.randint(900, 10800)
+#
+#         if is_parking_already_setted(vecID, parkingID) is False:
+#             traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+#             # Salvo il parcheggio
+#             vecID_to_parkingID_dictionary[vecID] = parkingID
+#
+#     except traci.TraCIException as e:
+#         pass
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ROUTINE
+# parkingID = get_parking_from_lane(last_laneID_excpected)
+        # if parkingID is not None and check_parking_aviability(parkingID) is True:
+        #     try:
+        #         # (900sec == 10min, 10800sec == 3hrs)
+        #         # ! random_parking_time = random.randint(900, 10800)
+        #         if is_parking_already_setted(vecID, parkingID) is False:
+        #             traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+        #             # Salvo il parcheggio
+        #             vecID_to_parkingID_dictionary[vecID] = parkingID
+        #     except traci.TraCIException as e:
+        #         calculate_parkings(vecID, curr_edgeID, last_edgeID, expected_index)
+        # else:
+        #     # Se non c'è parcheggio OPPURE se non ci sono posti disponibili
+        #     calculate_parkings(vecID, curr_edgeID, last_edgeID, expected_index)
