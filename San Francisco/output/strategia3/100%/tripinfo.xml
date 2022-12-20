@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-19 20:57:57 by Eclipse SUMO sumo Version 1.14.1
+<!-- generated on 2022-12-20 12:02:35 by Eclipse SUMO sumo Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -33,7 +33,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="58813"/>
+        <remote-port value="49553"/>
     </traci_server>
 
     <gui_only>
@@ -45,10 +45,10 @@
 -->
 
 <tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
-    <tripinfo id="26" depart="18000.00" departLane="-24310636#2_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="19263.00" arrivalLane="-24310636#2_1" arrivalPos="108.36" arrivalSpeed="10.11" duration="1263.00" routeLength="7235.93" waitingTime="459.00" waitingCount="14" stopTime="3.00" timeLoss="569.78" rerouteNo="2" devices="vehroute_26 tripinfo_26 emissions_26" vType="vecType" speedFactor="0.94" vaporized="">
-        <emissions CO_abs="104545.093654" CO2_abs="2973382.648232" HC_abs="544.581550" PMx_abs="55.076501" NOx_abs="1236.962253" fuel_abs="948406.570086" electricity_abs="0"/>
+    <tripinfo id="4" depart="18000.00" departLane="142972028#1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="19296.00" arrivalLane="142972028#1_0" arrivalPos="161.20" arrivalSpeed="10.67" duration="1296.00" routeLength="9246.39" waitingTime="402.00" waitingCount="19" stopTime="3.00" timeLoss="568.50" rerouteNo="4" devices="vehroute_4 tripinfo_4 emissions_4" vType="vecType" speedFactor="1.06" vaporized="">
+        <emissions CO_abs="104978.971909" CO2_abs="3550942.669950" HC_abs="560.420007" PMx_abs="67.325801" NOx_abs="1472.994182" fuel_abs="1132614.973318" electricity_abs="0"/>
     </tripinfo>
-    <tripinfo id="4" depart="18000.00" departLane="142972028#1_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="19299.00" arrivalLane="142972028#1_0" arrivalPos="161.20" arrivalSpeed="10.57" duration="1299.00" routeLength="7931.59" waitingTime="490.00" waitingCount="18" stopTime="3.00" timeLoss="629.70" rerouteNo="2" devices="vehroute_4 tripinfo_4 emissions_4" vType="vecType" speedFactor="1.06" vaporized="">
-        <emissions CO_abs="111373.264154" CO2_abs="3288767.652760" HC_abs="583.030591" PMx_abs="62.585826" NOx_abs="1373.262233" fuel_abs="1048999.376820" electricity_abs="0"/>
+    <tripinfo id="26" depart="18000.00" departLane="-24310636#2_0" departPos="5.10" departSpeed="0.00" departDelay="0.00" arrival="19353.00" arrivalLane="-24310636#2_1" arrivalPos="108.36" arrivalSpeed="9.62" duration="1353.00" routeLength="7673.05" waitingTime="499.00" waitingCount="15" stopTime="3.00" timeLoss="617.74" rerouteNo="4" devices="vehroute_26 tripinfo_26 emissions_26" vType="vecType" speedFactor="0.94" vaporized="">
+        <emissions CO_abs="113280.595354" CO2_abs="3204565.726696" HC_abs="589.706760" PMx_abs="59.557056" NOx_abs="1334.494672" fuel_abs="1022146.155862" electricity_abs="0"/>
     </tripinfo>
 </tripinfos>
