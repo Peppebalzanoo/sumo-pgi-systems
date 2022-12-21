@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.sf.net/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="../san_francisco.net.xml"/>
+        <route-files value="../san_francisco.rou.xml"/>
+        <gui-settings-file value="../gui-settings.cfg"/>
+	    <additional-files value="../san_francisco.poly.xml,
+	        ../parking_capacity_50%/off_parking_50%.add.xml,
+	            ../parking_capacity_50%/on_parking_50%.add.xml"/>
+    </input>
+
+    <processing>
+        <step-length value="1"/>
+        <ignore-route-errors value="false"/>
+        <time-to-teleport value="-1" />
+        <xml-validation value="never" />
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+    </report>
+
+    <output>
+        <vehroute-output value="../output/strategia2/50%/vehroute.xml"/>
+        <tripinfo-output value="../output/strategia2/50%/tripinfo.xml"/>
+        <collision-output value="../output/strategia2/50%/collision.xml"/>
+        <stop-output value="../output/strategia2/50%/stops.xml"/>
+        <statistic-output value="../output/strategia2/50%/statistic.xml"/>
+        <emission-output value="../output/strategia2/50%/emissions.xml"/>
+    </output>
+
+</configuration>

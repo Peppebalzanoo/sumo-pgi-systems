@@ -440,7 +440,7 @@ def run(strategia, scenario):
                 # Limite superiore della velocità nel prossimo step
                 space_on_next_step = traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel)
 
-                # ___ ROUTINE ___ #
+                # Se il veicolo nel prossimo step arriverà a una destinazione
                 if space_on_next_step >= distance_to_lastedge:
                     next_expected_index = get_expected_index(last_edgeID, curr_lane_index)
                     last_laneID_excpected = get_lane_xml_from_edge_and_index(last_edgeID, next_expected_index)
@@ -476,7 +476,17 @@ def main():
     run("strategia1", "100%")
     traci.close()
 
-    # # STRATEGIA: strategia1, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "75%")  # traci.close()  #  # # STRATEGIA: strategia1, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "50%")  # traci.close()
+    # STRATEGIA: strategia1, SCENARIO: 75%
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "75%")
+    # traci.close()
+
+    # STRATEGIA: strategia1, SCENARIO: 50%
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "50%")
+    # traci.close()
 
 
 # * ********************************************************************************************************************************************************************* * #

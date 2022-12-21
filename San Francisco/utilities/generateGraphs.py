@@ -192,19 +192,19 @@ def main():
     list_vec = get_vehicle_from_xml()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    print("# STRATEGIA: strategia1, SCENARIO: 100% #")
-    read_csv_stopinfo("strategia1", "100%")
-    read_csv_statistics("strategia1", "100%")
-    read_csv_emmissions("strategia1", "100%", len(list_vec))
-    read_csv_trip_and_stop_info("strategia1", "100%")
-    #
+    # print("# STRATEGIA: strategia1, SCENARIO: 100% #")
+    # read_csv_stopinfo("strategia1", "100%")
+    # read_csv_statistics("strategia1", "100%")
+    # read_csv_emmissions("strategia1", "100%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia1", "100%")
+
     # # STRATEGIA: strategia1, SCENARIO: 75%
     # print("\n# STRATEGIA: strategia1, SCENARIO: 75% #")
     # read_csv_stopinfo("strategia1", "75%")
     # read_csv_statistics("strategia1", "75%")
     # read_csv_emmissions("strategia1", "75%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia1", "75%")
-    #
+
     # # STRATEGIA: strategia1, SCENARIO: 50%
     # # print("\n# STRATEGIA: strategia1, SCENARIO: 50% #")
     # read_csv_stopinfo("strategia1", "50%")
@@ -212,15 +212,24 @@ def main():
     # read_csv_emmissions("strategia1", "50%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia1", "50%")
 
-
+# * ********************************************************************************************************************************************************************* * #
 
     # STRATEGIA: strategia2, SCENARIO: 100%
-    print("\n# STRATEGIA: strategia2, SCENARIO: 100% #")
-    read_csv_stopinfo("strategia2", "100%")
-    read_csv_statistics("strategia2", "100%")
-    read_csv_emmissions("strategia2", "100%", len(list_vec))
-    read_csv_trip_and_stop_info("strategia2", "100%")
+    # print("\n# STRATEGIA: strategia2, SCENARIO: 100% #")
+    # read_csv_stopinfo("strategia2", "100%")
+    # read_csv_statistics("strategia2", "100%")
+    # read_csv_emmissions("strategia2", "100%", len(list_vec))
+    # read_csv_trip_and_stop_info("strategia2", "100%")
 
+    # STRATEGIA: strategia2, SCENARIO: 50%
+    print("\n# STRATEGIA: strategia2, SCENARIO: 50% #")
+    read_csv_stopinfo("strategia2", "50%")
+    read_csv_statistics("strategia2", "50%")
+    read_csv_emmissions("strategia2", "50%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia2", "50%")
+
+
+# * ********************************************************************************************************************************************************************* * #
 
 
     # STRATEGIA: strategia3, SCENARIO: 100%
@@ -229,6 +238,17 @@ def main():
     # read_csv_statistics("strategia3", "100%")
     # read_csv_emmissions("strategia3", "100%", len(list_vec))
     # read_csv_trip_and_stop_info("strategia3", "100%")
+
+    # STRATEGIA: strategia3, SCENARIO: 50%
+    print("\n# STRATEGIA: strategia3, SCENARIO: 50% #")
+    read_csv_stopinfo("strategia3", "50%")
+    read_csv_statistics("strategia3", "50%")
+    read_csv_emmissions("strategia3", "50%", len(list_vec))
+    read_csv_trip_and_stop_info("strategia3", "50%")
+
+
+# * ********************************************************************************************************************************************************************* * #
+
 
 if __name__ == "__main__":
     main()

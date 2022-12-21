@@ -328,9 +328,9 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID):
         # ! ####################################################################################
 
         # ! Porzione di codice temporanea ####################################################################################
-        if exists("./parkings/parks"+vecID+".txt"):
+        if exists("./strategia2_config/parkings/parks"+vecID+".txt"):
             list_desc_parking = []
-            with open("./parkings/parks"+vecID+".txt") as f:
+            with open("./strategia2_config/parkings/parks"+vecID+".txt") as f:
                 for line in f:
                     list_desc_parking.append(line.strip())
             vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
@@ -340,7 +340,7 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID):
             list_desc_parking = get_ordred_parkings(list_aviable_lane)
             vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
 
-            fln = open("./parkings/parks"+vecID+".txt", "w")
+            fln = open("./strategia2_config/parkings/parks"+vecID+".txt", "w")
             for elem in list_desc_parking:
                 print(elem, file=fln)
             fln.close()
@@ -455,7 +455,7 @@ def run(strategia, scenario):
                 # Limite superiore della velocità nel prossimo step
                 space_on_next_step = float(traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel))
 
-                # ___ ROUTINE ___ #
+                # Se il veicolo nel prossimo step arriverà a una destinazione
                 if space_on_next_step >= distance_to_lastedge:
                     next_expected_index = get_expected_index(last_edgeID, curr_lane_index)
                     last_laneID_excpected = get_lane_xml_from_edge_and_index(last_edgeID, next_expected_index)
@@ -522,9 +522,15 @@ def main():
     fln.close()
 
     # STRATEGIA: strategia2, SCENARIO: 100%
-    sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
+    # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia2", "100%")
+    # traci.close()
+
+    # STRATEGIA: strategia2, SCENARIO: 50%
+    sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]
     traci.start(sumoCmd)
-    run("strategia2", "100%")
+    run("strategia2", "50%")
     traci.close()
 
 # * ********************************************************************************************************************************************************************* * #
