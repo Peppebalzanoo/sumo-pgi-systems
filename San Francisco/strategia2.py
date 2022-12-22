@@ -73,7 +73,6 @@ def get_parkings_and_index_from_edge(edgeID):
         parkID = lane_to_parking_dictionary.get(laneID)
         if parkID is not None:
             park_index = get_index_xml_of_lane_from_edge_and_lane(edgeID, laneID)
-            print("@@@@@@@@@@@@@@@@@@@@@@@@@@ parkID", parkID, "park_index:", park_index, "laneID:", laneID, "egdeID:", edgeID)
             list_of_tuple_parkID_index.append((parkID, park_index))
     return list_of_tuple_parkID_index
 
@@ -365,6 +364,11 @@ def calculate_parkings(vecID, curr_edgeID, last_edgeID):
 
         new_route = calculate_new_route(vecID, curr_edgeID, last_edgeID, edge_parking)
 
+        fln = open("log_strategia2.txt", "a")
+        print("[INFO_ROUTINE]", vecID, "si sta dirigendo verso il prossimo più grande con indice:", idx, file=fln)
+        fln.close()
+
+
         try:
             # Setto il nuovo percorso calcolato
             traci.vehicle.setRoute(vecID, new_route)
@@ -394,7 +398,7 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                             # ! random_parking_time = random.randint(900, 10800)
                             # Controllo se è stata già settata la fermata a questo parcheggio
                             if is_parking_already_setted(vecID, parkID) is False:
-                                traci.vehicle.setParkingAreaStop(vecID, parkID, 3)
+                                traci.vehicle.setParkingAreaStop(vecID, parkID, 900)
 
                                 # Salvo il parcheggio
                                 vecID_to_parkingID_dictionary[vecID] = parkID
@@ -408,17 +412,19 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                                     print("[INFO_ROUTINE]", vecID, "ha trovato parcheggio alla strada dove è stato indirizzato", parkID, file=fln)
                                     fln.close()
 
-                                # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
-                                break
-
+                            # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
+                            break
                         except traci.TraCIException as e:
-                            calculate_parkings(vecID, curr_edgeID, last_edgeID)
+                            pass
                     else:
                         fln = open("log_strategia2.txt", "a")
                         print("[INFO_ROUTINE]", vecID, "non è riuscito a parcheggiarsi a", parkID, "perchè non c'erano posti disponibili", file=fln)
                         fln.close()
+                # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
+                if vecID_to_parkingID_dictionary.get(vecID) is None:
+                    calculate_parkings(vecID, curr_edgeID, last_edgeID)
             else:
-                # Se non ci sono parcheggi nella strada di destinazione OPPURE non ci sono posti disponibili
+                # Se non ci sono parcheggi nella strada di destinazione
                 calculate_parkings(vecID, curr_edgeID, last_edgeID)
 # 386, 470
 # * ********************************************************************************************************************************************************************* * #
@@ -478,7 +484,7 @@ def run(strategia, scenario):
                                         # (900sec == 10min, 10800sec == 3hrs)
                                         # ! random_parking_time = random.randint(900, 10800)
                                         if is_parking_already_setted(vecID, parkID) is False:
-                                            traci.vehicle.setParkingAreaStop(vecID, parkID, 3)
+                                            traci.vehicle.setParkingAreaStop(vecID, parkID, 900)
                                             # Salvo il parcheggio
                                             vecID_to_parkingID_dictionary[vecID] = parkID
 
@@ -486,8 +492,8 @@ def run(strategia, scenario):
                                             print("[INFO]", vecID, "ha trovato parcheggio lungo la strada verso il più grande", parkID, file=fln)
                                             fln.close()
 
-                                            # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
-                                            break
+                                        # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
+                                        break
 
                                     except traci.TraCIException as e:
                                         pass
@@ -532,6 +538,7 @@ def main():
     traci.start(sumoCmd)
     run("strategia2", "50%")
     traci.close()
+
 
 # * ********************************************************************************************************************************************************************* * #
 

@@ -1,7 +1,0 @@
-parkingArea_37177789#0_0_124
-parkingArea_-143617587_0_714
-parkingArea_-37177689#5_0_814
-parkingArea_37177689#1_0_813
-parkingArea_255351721#0_0_525
-parkingArea_37177689#6_0_830
-parkingArea_255330047#0_0_725

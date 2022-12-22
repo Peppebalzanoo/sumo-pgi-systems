@@ -30,6 +30,7 @@ def set_lane_to_parking_dictionary():
         curr_laneID = traci.parkingarea.getLaneID(parkingID)
         lane_to_parking_dictionary[curr_laneID] = parkingID
 
+
 def get_parkings_and_index_from_edge(edgeID):
     list_of_tuple_parkID_index = []
     list_lanes = get_list_lanes_xml_form_edge(edgeID)
@@ -39,6 +40,7 @@ def get_parkings_and_index_from_edge(edgeID):
             park_index = get_index_xml_of_lane_from_edge_and_lane(edgeID, laneID)
             list_of_tuple_parkID_index.append((parkID, park_index))
     return list_of_tuple_parkID_index
+
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -67,6 +69,7 @@ def get_start_coordinate_from_destination_lane(destEdgeID, index):
     coordinateXY = traci.simulation.convert2D(destEdgeID, 0.0, index, False)
     return coordinateXY
 
+
 # * ********************************************************************************************************************************************************************* * #
 
 def get_vehicle_from_xml():
@@ -84,10 +87,11 @@ def get_list_lanes_xml_form_edge(edgeID):
     tree = ElementTree.parse("san_francisco.net.xml")
     root = tree.getroot()
     list_lanes = []
-    for lane in root.findall(".//edge/[@id='"+edgeID+"']//lane"):
+    for lane in root.findall(".//edge/[@id='" + edgeID + "']//lane"):
         laneID = lane.attrib["id"]
         list_lanes.append(laneID)
     return list_lanes
+
 
 def get_lane_xml_from_edge_and_index(edgeID, index):
     tree = ElementTree.parse('san_francisco.net.xml')
@@ -104,11 +108,13 @@ def get_indexes_xml_from_edge(edgeID):
         list_indexes.append(int(name.attrib['index']))
     return list_indexes
 
+
 def get_index_xml_of_lane_from_edge_and_lane(edgeID, laneID):
     tree = ElementTree.parse("san_francisco.net.xml")
     root = tree.getroot()
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane/[@id='" + laneID + "']"):
         return int(name.attrib['index'])
+
 
 def get_expected_index(edgeID, curr_lane_index):
     list_indexes = get_indexes_xml_from_edge(edgeID)
@@ -246,6 +252,7 @@ def calculate_route_from_curr_edge_to_last_edge(vecID, curr_edgeID):
             route_list1.append(edg)
     return route_list1
 
+
 def calculate_new_route(vecID, curr_edgeID, last_edgeID, random_edgeID):
     new_route = []
     dest_edge_xml = get_destination_xml(vecID)
@@ -259,7 +266,7 @@ def calculate_new_route(vecID, curr_edgeID, last_edgeID, random_edgeID):
         route_list2.pop(0)
         new_route += route_list2
 
-    else:   # Il veicolo, nel prossimo step, raggiungerà una destinazione
+    else:  # Il veicolo, nel prossimo step, raggiungerà una destinazione
         # Recupero il percorso da curr_edge a last_edge
         route_list1 = calculate_route_from_curr_edge_to_last_edge(vecID, curr_edgeID)
         new_route += route_list1
@@ -382,17 +389,20 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
                                     print("[INFO]", vecID, "ha trovato parcheggio alla strada dove è stato indirizzato", parkID, file=fln)
                                     fln.close()
 
-                            reset_vec_to_searchtime_started_dictionary(vecID)
+                                reset_vec_to_searchtime_started_dictionary(vecID)
 
                             # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
                             break
 
                         except traci.TraCIException as e:
-                            search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
+                            pass
                     else:
                         fln = open("log_strategia1.txt", "a")
                         print("[INFO]", vecID, "non è riuscito a parcheggiarsi a", parkID, "perchè non c'erano posti disponibili", file=fln)
                         fln.close()
+                # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
+                if vecID_to_parkingID_dictionary.get(vecID) is None:
+                    search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
             else:
                 # Se non ci sono parcheggi nella strada di destinazione OPPURE non ci sono posti disponibili
                 search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
@@ -476,17 +486,9 @@ def main():
     run("strategia1", "100%")
     traci.close()
 
-    # STRATEGIA: strategia1, SCENARIO: 75%
-    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia1", "75%")
-    # traci.close()
+    # STRATEGIA: strategia1, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "75%")  # traci.close()
 
-    # STRATEGIA: strategia1, SCENARIO: 50%
-    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia1", "50%")
-    # traci.close()
+    # STRATEGIA: strategia1, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "50%")  # traci.close()
 
 
 # * ********************************************************************************************************************************************************************* * #
