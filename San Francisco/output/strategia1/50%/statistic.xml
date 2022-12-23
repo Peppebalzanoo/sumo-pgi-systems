@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-12-23 14:35:01 by Eclipse SUMO sumo Version 1.14.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="./strategia1_config/../san_francisco.net.xml"/>
+        <route-files value="./strategia1_config/../san_francisco.rou.xml"/>
+        <additional-files value="./strategia1_config/../san_francisco.poly.xml,./strategia1_config/../parking_capacity_50%25/off_parking_50%25.add.xml,./strategia1_config/../parking_capacity_50%25/on_parking_50%25.add.xml"/>
+    </input>
+
+    <output>
+        <emission-output value="./strategia1_config/../output/strategia1/50%25/emissions.xml"/>
+        <tripinfo-output value="./strategia1_config/../output/strategia1/50%25/tripinfo.xml"/>
+        <vehroute-output value="./strategia1_config/../output/strategia1/50%25/vehroute.xml"/>
+        <stop-output value="./strategia1_config/../output/strategia1/50%25/stops.xml"/>
+        <collision-output value="./strategia1_config/../output/strategia1/50%25/collision.xml"/>
+        <statistic-output value="./strategia1_config/../output/strategia1/50%25/statistic.xml"/>
+    </output>
+
+    <time>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="false"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+    </report>
+
+    <traci_server>
+        <remote-port value="54631"/>
+    </traci_server>
+
+    <gui_only>
+        <gui-settings-file value="./strategia1_config/../gui-settings.cfg"/>
+        <start value="true"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<statistics xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/statistic_file.xsd">
+    <vehicles loaded="95" inserted="20" running="0" waiting="0"/>
+    <teleports total="0" jam="0" yield="0" wrongLane="0"/>
+    <safety collisions="0" emergencyStops="0"/>
+    <persons loaded="0" running="0" jammed="0"/>
+    <vehicleTripStatistics routeLength="5524.25" speed="5.41" duration="1081.20" waitingTime="506.90" timeLoss="635.34" departDelay="28.50" departDelayWaiting="-1.00" totalTravelTime="21624.00" totalDepartDelay="570.00"/>
+    <pedestrianStatistics number="0" routeLength="0.00" duration="0.00" timeLoss="0.00"/>
+    <rideStatistics number="0"/>
+    <transportStatistics number="0"/>
+</statistics>

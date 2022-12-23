@@ -381,7 +381,7 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
                         # (900sec == 10min, 10800sec == 3hrs)
                         # ! random_parking_time = random.randint(900, 10800)
                         if check_stop_already_set(vecID, parkingID) is False:
-                            traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+                            traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
                             if last_edgeID == get_destination_xml(vecID):
                                 fln = open("log_strategia1.txt", "a")
                                 print("[INFO routine()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "nella strada di destinazione XML", file=fln)
@@ -487,14 +487,22 @@ def main():
     fln.close()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_100%.sumocfg", "--start"]
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_100%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "100%")
+    # traci.close()
+
+    # STRATEGIA: strategia1, SCENARIO: 75%
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "75%")
+    # traci.close()
+
+    # STRATEGIA: strategia1, SCENARIO: 50%
+    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
     traci.start(sumoCmd)
-    run("strategia1", "100%")
+    run("strategia1", "50%")
     traci.close()
-
-    # STRATEGIA: strategia1, SCENARIO: 75%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "75%")  # traci.close()
-
-    # STRATEGIA: strategia1, SCENARIO: 50%  # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]  # traci.start(sumoCmd)  # run("strategia1", "50%")  # traci.close()
 
 
 # * ********************************************************************************************************************************************************************* * #

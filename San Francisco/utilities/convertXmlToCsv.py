@@ -82,10 +82,10 @@ def main():
     # create_csv_tripinfo(list_vec, "strategia1", "75%")
 
     # STRATEGIA: strategia1, SCENARIO: 50%
-    # create_csv_stopinfo(list_vec, "strategia1", "50%")
-    # create_csv_statistics("strategia1", "50%")
-    # create_csv_emmissions("strategia1", "50%")
-    # create_csv_tripinfo(list_vec, "strategia1", "50%")
+    create_csv_stopinfo(list_vec, "strategia1", "50%")
+    create_csv_statistics("strategia1", "50%")
+    create_csv_emmissions("strategia1", "50%")
+    create_csv_tripinfo(list_vec, "strategia1", "50%")
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -122,10 +122,10 @@ def main():
     # create_csv_tripinfo(list_vec, "strategia3", "75%")
 
     # STRATEGIA: strategia3, SCENARIO: 50%
-    create_csv_stopinfo(list_vec, "strategia3", "50%")
-    create_csv_statistics("strategia3", "50%")
-    create_csv_emmissions("strategia3", "50%")
-    create_csv_tripinfo(list_vec, "strategia3", "50%")
+    # create_csv_stopinfo(list_vec, "strategia3", "50%")
+    # create_csv_statistics("strategia3", "50%")
+    # create_csv_emmissions("strategia3", "50%")
+    # create_csv_tripinfo(list_vec, "strategia3", "50%")
 
 if __name__ == "__main__":
     main()

@@ -4,28 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Bug Fix strategia1.py, strategia2.py and strategia3.py">
+    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Bug Fix strategia1 e strategia2.py">
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/collision.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/statistic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/stops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/tripinfo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/vehroute.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/50%/collision.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/50%/statistic.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/50%/stops.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/50%/tripinfo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/San Francisco/output/strategia2/50%/vehroute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/caso_strategia2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/caso_strategia3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/log_strategia1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/log_strategia1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/log_strategia2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/log_strategia2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/emissions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/emissions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/statistics.csv" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/statistics.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/stopinfo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/stopinfo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/tripinfo.csv" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/csv/tripinfo.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_bar__nogrid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_grid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_pie_between_0_and_5min_between_5_and_10min.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_pie_between_0_and_5min_between_5_and_10min.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_pie_between_0_and_5min_between_5_and_10min_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/counter_pie_between_0_and_5min_between_5_and_10min_noexplode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_grid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_nogrid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_pie_co_co2.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_pie_co_co2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_pie_co_co2_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/emissions_pie_co_co2_noexplode.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/statistics_bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/statistics_bar__nogrid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/statistics_grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/statistics_grid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__bar__nogrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__bar__nogrid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__grid.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__grid.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__pie_trovato%_nontrovato%.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__pie_trovato%_nontrovato%.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__pie_trovato%_nontrovato%_noexplode.png" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/50%/plots/stopinfo_%__pie_trovato%_nontrovato%_noexplode.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/parking_capacity_50%/off_parking_50%.add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/parking_capacity_50%/off_parking_50%.add.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/strategia1.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/strategia2.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_50%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia3.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_100%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_50%.sumocfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/checkOutput.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/checkOutput.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/check_output_strategia1_100%.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/check_output_strategia2_100%.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/check_output_strategia3_100%.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/convertXmlToCsv.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/convertXmlToCsv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/utilities/generateGraphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/utilities/generateGraphs.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +92,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/strategia2_config",
+    "last_opened_file_path": "C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "configurable.group.editor",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "two.files.diff.last.used.file": "C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/output/strategia2/100%/vehroute.xml",
     "vue.rearranger.settings.migration": "true"
   }
@@ -91,9 +112,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco" />
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\strategia2_config" />
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\strategia3_config" />
-      <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco" />
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\output\strategia1\100%" />
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects" />
     </key>
@@ -105,7 +126,7 @@
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\output\strategia2\100%" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.strategia2">
+  <component name="RunManager" selected="Python.generateGraphs">
     <configuration name="checkOutput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sumo Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.strategia2" />
         <item itemvalue="Python.generateGraphs" />
         <item itemvalue="Python.convertXmlToCsv" />
-        <item itemvalue="Python.strategia1" />
         <item itemvalue="Python.checkOutput" />
+        <item itemvalue="Python.strategia2" />
+        <item itemvalue="Python.strategia1" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +382,7 @@
       <workItem from="1671716775119" duration="4969000" />
       <workItem from="1671784148719" duration="750000" />
       <workItem from="1671784911984" duration="853000" />
-      <workItem from="1671785780105" duration="12790000" />
+      <workItem from="1671785780105" duration="16076000" />
     </task>
     <task id="LOCAL-00001" summary="Update get_available_edges()&#10;Code refactoring">
       <created>1668681202849</created>
@@ -692,7 +713,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671718952777</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Bug Fix strategia1 e strategia2.py">
+      <created>1671799911082</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1671799911083</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -751,7 +779,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added:&#10;Tested: good.py&#10;Fixed: generateVehicleFromTrips.py" />
     <MESSAGE value="Added: &#10;Tested: san_francisco.py&#10;Updated: san_francisco.py, convertXMLtoCSV.py, san_francisco.sumocfg, old.py, old_v2.py" />
     <MESSAGE value="Title: generate pyplot.plot, pyplot.pie and pyplot.bar&#10;Updated: convertXMLtoCSV.py" />
     <MESSAGE value="Title: reduceParkingCapacity.py, convertoXmlToCsv.py, generateGraphs.py" />
@@ -776,7 +803,8 @@
     <MESSAGE value="Fix multiple stops for strategia1.py e strategia2.py" />
     <MESSAGE value="Added and tested strategia3.py" />
     <MESSAGE value="Bug Fix strategia1.py, strategia2.py and strategia3.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix strategia1.py, strategia2.py and strategia3.py" />
+    <MESSAGE value="Bug Fix strategia1 e strategia2.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix strategia1 e strategia2.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sumo_Projects$generatePlotFromCSV.coverage" NAME="generatePlotFromCSV Coverage Results" MODIFIED="1669802469033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
@@ -785,8 +813,8 @@
     <SUITE FILE_PATH="coverage/Sumo_Projects$strategia1.coverage" NAME="strategia1 Coverage Results" MODIFIED="1671569092023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$convertXMLtoCSV__1_.coverage" NAME="convertXMLtoCSV (1) Coverage Results" MODIFIED="1669810892018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$mioscript.coverage" NAME="mioscript Coverage Results" MODIFIED="1670956644134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
-    <SUITE FILE_PATH="coverage/Sumo_Projects$generateGraphs.coverage" NAME="generateGraphs Coverage Results" MODIFIED="1671707152401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
-    <SUITE FILE_PATH="coverage/Sumo_Projects$checkOutput.coverage" NAME="checkOutput Coverage Results" MODIFIED="1671567985785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$generateGraphs.coverage" NAME="generateGraphs Coverage Results" MODIFIED="1671803129039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$checkOutput.coverage" NAME="checkOutput Coverage Results" MODIFIED="1671803043496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$order.coverage" NAME="order Coverage Results" MODIFIED="1669212111206" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/test" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXmlToCsv.coverage" NAME="convertoXmlToCsv Coverage Results" MODIFIED="1670594300376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$test.coverage" NAME="clearTripFile Coverage Results" MODIFIED="1669230749035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/testing" />
@@ -796,12 +824,12 @@
     <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXmlToCsv__1_.coverage" NAME="convertoXmlToCsv (1) Coverage Results" MODIFIED="1669918783771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$mioscript_up__1_.coverage" NAME="mioscript_up (1) Coverage Results" MODIFIED="1670964106065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/output/strategia2/100%" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$convertoXML__1_.coverage" NAME="convertoXML (1) Coverage Results" MODIFIED="1669882925868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
-    <SUITE FILE_PATH="coverage/Sumo_Projects$convertXmlToCsv.coverage" NAME="convertXmlToCsv Coverage Results" MODIFIED="1671707146753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$convertXmlToCsv.coverage" NAME="convertXmlToCsv Coverage Results" MODIFIED="1671803122651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$version.coverage" NAME="version Coverage Results" MODIFIED="1669311281370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/testing" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$dynamic_area__1_.coverage" NAME="dynamic_area (1) Coverage Results" MODIFIED="1669980369629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$reduceParkingCapacity.coverage" NAME="reduceParkingCapacity Coverage Results" MODIFIED="1670960851309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$refactoring.coverage" NAME="refactoring Coverage Results" MODIFIED="1668779392646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
-    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia2.coverage" NAME="strategia2 Coverage Results" MODIFIED="1671791171349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia2.coverage" NAME="strategia2 Coverage Results" MODIFIED="1671802869044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$demo.coverage" NAME="demo Coverage Results" MODIFIED="1670337170767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$san_francisco.coverage" NAME="san_francisco Coverage Results" MODIFIED="1669894484669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$strategia1__1_.coverage" NAME="strategia1 (1) Coverage Results" MODIFIED="1670925714406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />

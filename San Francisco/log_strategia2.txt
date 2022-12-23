@@ -2,64 +2,46 @@
 [INFO routine()]: Il veicolo 0 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 1 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 2 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 1 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_route()]: Il veicolo 2 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
+[INFO routine()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 2 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 17 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 3 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 2 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
 [INFO set_route()]: Il veicolo 4 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO routine()]: Il veicolo 17 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO routine()]: Il veicolo 3 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO routine()]: Il veicolo 4 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
-[INFO set_route()]: Il veicolo 3 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_route()]: Il veicolo 4 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_parking()]: Il veicolo 4 HA RIMOSSO LA FERMATA A parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 5 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 3 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
 [INFO set_route()]: Il veicolo 6 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 5 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_route()]: Il veicolo 6 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
+[INFO routine()]: Il veicolo 5 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 6 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 7 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO routine()]: Il veicolo 7 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 8 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 9 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 10 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 11 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 8 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO routine()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO set_route()]: Il veicolo 9 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO routine()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
+[INFO routine()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 10 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
 [INFO set_route()]: Il veicolo 11 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
+[INFO set_parking()]: Il veicolo 10 HA RIMOSSO LA FERMATA A parkingArea_255330036#13_0_94
+[INFO set_parking()]: Il veicolo 11 HA RIMOSSO LA FERMATA A parkingArea_255330036#13_0_94
+[INFO set_parking()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 lungo la strada verso il più grande
 [INFO set_route()]: Il veicolo 13 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 12 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO routine()]: Il veicolo 13 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO routine()]: Il veicolo 12 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 12 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_parking()]: Il veicolo 12 HA RIMOSSO LA FERMATA A parkingArea_255330036#13_0_94
-[INFO set_parking()]: Il veicolo 4 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 5 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 6 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
 [INFO set_route()]: Il veicolo 14 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 15 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO set_route()]: Il veicolo 19 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 14 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_route()]: Il veicolo 15 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_route()]: Il veicolo 19 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
+[INFO routine()]: Il veicolo 14 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 15 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO routine()]: Il veicolo 19 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
 [INFO set_route()]: Il veicolo 16 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 18 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
 [INFO routine()]: Il veicolo 16 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
+[INFO set_route()]: Il veicolo 18 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
 [INFO routine()]: Il veicolo 18 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
-[INFO set_route()]: Il veicolo 18 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 1
-[INFO set_parking()]: Il veicolo 18 HA RIMOSSO LA FERMATA A parkingArea_255330036#13_0_94
-[INFO set_parking()]: Il veicolo 12 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 14 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 15 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 19 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 18 HA SETTATO LA FERMATA A parkingArea_-255330036#13_0_407 lungo la strada verso il più grande

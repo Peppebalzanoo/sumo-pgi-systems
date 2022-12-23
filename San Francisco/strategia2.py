@@ -149,6 +149,12 @@ def check_stop_already_set(vecID, parkingID):
             return True
     return False
 
+def clear_all_stops(vecID):
+    tuple_of_stop_data = traci.vehicle.getStops(vecID)
+    for i in range(0, len(tuple_of_stop_data)):
+        curr_stop_data = tuple_of_stop_data[i]
+        traci.vehicle.replaceStop(vecID, i, "")
+
 # * ********************************************************************************************************************************************************************* * #
 
 def send_to_depart_xml(vecID):
@@ -391,8 +397,8 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
 
                     # Controllo se avevo già settato la fermata
                     if check_stop_already_set(vecID, parkingID) is True:
-                        fln = open("log_strategia2.txt", "a")
                         traci.vehicle.replaceStop(vecID, 0, "")
+                        fln = open("log_strategia2.txt", "a")
                         print("[INFO set_parking()]: Il veicolo", vecID, "HA RIMOSSO LA FERMATA A", parkingID, file=fln)
                         fln.close()
             idx += 1
@@ -507,6 +513,10 @@ def run(strategia, scenario):
                 # Setto che il veicolo ha parcheggiato
                 vecID_to_parked_dictionary[vecID] = True
 
+                # Cancello eventuali fermate settate
+                clear_all_stops(vecID)
+
+
         traci.simulation.step()
         step = traci.simulation.getTime()  # step ++
 
@@ -530,6 +540,12 @@ def main():
     # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
     # traci.start(sumoCmd)
     # run("strategia2", "100%")
+    # traci.close()
+
+    # STRATEGIA: strategia2, SCENARIO: 75%
+    # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia2", "75%")
     # traci.close()
 
     # STRATEGIA: strategia2, SCENARIO: 50%
