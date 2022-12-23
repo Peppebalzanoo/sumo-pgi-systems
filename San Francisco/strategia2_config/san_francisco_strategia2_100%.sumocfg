@@ -14,7 +14,7 @@
     <processing>
         <step-length value="1"/>
         <ignore-route-errors value="false"/>
-        <time-to-teleport value="-1" />
+
         <xml-validation value="never" />
     </processing>
 

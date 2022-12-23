@@ -27,3 +27,13 @@ ROUTINE
         # else:
         #     # Se non c'è parcheggio OPPURE se non ci sono posti disponibili
         #     calculate_parkings(vecID, curr_edgeID, last_edgeID, expected_index)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+# ! Commentato temporanemante ####################################################################################
+        # print(" Il veicolo", vecID, "sta calcolando i parcheggi disponibili nell'area corrente di ricerca...")
+        # list_aviable_lane = get_available_lanes(vecID)
+        # list_desc_parking = get_ordred_parkings(list_aviable_lane)
+        # vecID_to_list_parking_index[vecID] = (list_desc_parking, 0)
+        # ! ####################################################################################
+---------------------------------------------------------------------------------------------------
+ parking_capacity = int(traci.simulation.getParameter(parkingID, "parkingArea.capacity"))
+    parking_occupancy = int(traci.simulation.getParameter(parkingID, "parkingArea.occupancy"))

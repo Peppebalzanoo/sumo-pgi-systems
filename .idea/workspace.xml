@@ -4,286 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Added and tested strategia3.py">
+    <list default="true" id="cf314f5d-f6a2-429c-82fe-3f247467c00f" name="Changes" comment="Bug Fix strategia1.py, strategia2.py and strategia3.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/log_strategia1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/log_strategia1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/log_strategia2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/log_strategia2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/log_strategia3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/log_strategia3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/collision.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/statistic.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/stops.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/tripinfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/output/strategia1/100%/vehroute.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/parking_capacity_50%/off_parking_50%.add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/parking_capacity_50%/off_parking_50%.add.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/san_francisco.rou.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/strategia1.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_100%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_50%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia1_config/san_francisco_strategia1_75%.sumocfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/strategia2.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks100.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks101.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks102.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks103.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks104.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks105.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks108.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks110.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks113.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks114.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks116.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks122.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks123.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks124.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks126.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks129.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks130.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks131.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks132.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks134.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks136.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks138.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks140.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks142.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks146.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks147.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks148.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks150.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks151.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks152.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks157.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks160.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks163.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks164.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks168.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks169.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks171.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks174.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks176.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks177.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks182.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks183.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks184.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks185.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks187.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks188.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks189.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks190.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks192.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks194.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks202.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks203.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks204.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks208.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks209.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks21.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks210.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks211.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks212.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks213.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks215.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks218.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks219.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks22.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks221.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks224.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks225.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks226.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks228.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks229.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks230.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks231.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks232.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks233.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks237.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks238.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks239.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks241.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks242.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks243.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks244.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks245.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks247.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks249.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks250.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks252.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks253.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks254.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks255.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks256.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks257.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks259.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks26.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks263.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks265.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks266.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks268.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks269.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks270.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks272.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks274.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks278.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks279.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks28.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks287.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks289.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks29.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks290.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks291.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks292.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks293.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks294.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks295.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks300.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks301.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks302.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks303.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks306.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks307.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks308.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks309.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks310.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks311.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks312.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks313.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks314.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks318.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks32.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks322.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks323.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks325.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks326.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks327.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks328.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks329.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks330.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks331.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks332.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks335.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks336.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks338.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks339.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks340.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks342.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks343.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks344.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks348.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks349.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks35.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks351.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks353.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks354.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks356.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks357.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks359.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks36.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks361.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks363.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks365.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks367.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks368.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks369.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks37.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks370.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks373.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks376.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks378.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks38.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks385.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks39.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks391.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks396.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks397.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks398.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks399.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks40.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks402.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks403.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks405.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks407.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks408.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks411.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks412.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks413.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks415.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks416.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks417.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks419.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks421.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks423.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks424.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks425.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks426.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks43.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks430.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks431.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks434.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks435.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks436.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks441.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks442.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks443.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks447.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks448.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks449.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks450.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks451.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks452.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks455.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks456.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks457.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks465.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks466.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks468.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks47.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks471.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks476.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks478.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks480.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks482.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks485.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks486.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks487.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks488.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks489.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks493.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks495.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks51.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks52.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks53.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks54.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks56.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks57.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks58.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks59.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks62.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks64.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks67.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks68.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks69.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks71.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks74.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks75.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks77.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks79.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks80.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks81.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks86.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks87.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks89.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks92.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks93.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks94.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks96.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks97.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/parkings/parks98.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_100%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia2_config/san_francisco_strategia2_50%.sumocfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/San Francisco/strategia3.py" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_100%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_100%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_50%.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/San Francisco/strategia3_config/san_francisco_strategia3_50%.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/temp.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,26 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/strategia2_config&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/output/strategia2/100%/vehroute.xml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "full.screen.before.presentation.mode": "false",
+    "last_opened_file_path": "C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/strategia2_config",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "configurable.group.editor",
+    "two.files.diff.last.used.file": "C:/Users/Giuseppe/Desktop/Sumo Projects/San Francisco/output/strategia2/100%/vehroute.xml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings module-name="Sumo Tutorials" is-module-sdk="true">
+      <console-settings module-name="Sumo Projects" is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
-        <option name="myModuleName" value="Sumo Tutorials" />
+        <option name="myModuleName" value="Sumo Projects" />
       </console-settings>
     </option>
   </component>
@@ -362,7 +105,7 @@
       <recent name="C:\Users\Giuseppe\Desktop\Sumo Projects\San Francisco\output\strategia2\100%" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.generateGraphs">
+  <component name="RunManager" selected="Python.strategia2">
     <configuration name="checkOutput" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sumo Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -475,10 +218,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.strategia2" />
         <item itemvalue="Python.generateGraphs" />
         <item itemvalue="Python.convertXmlToCsv" />
         <item itemvalue="Python.strategia1" />
-        <item itemvalue="Python.strategia2" />
         <item itemvalue="Python.checkOutput" />
       </list>
     </recent_temporary>
@@ -615,7 +358,10 @@
       <workItem from="1671612412646" duration="9271000" />
       <workItem from="1671698158065" duration="11958000" />
       <workItem from="1671716747145" duration="22000" />
-      <workItem from="1671716775119" duration="2110000" />
+      <workItem from="1671716775119" duration="4969000" />
+      <workItem from="1671784148719" duration="750000" />
+      <workItem from="1671784911984" duration="853000" />
+      <workItem from="1671785780105" duration="12790000" />
     </task>
     <task id="LOCAL-00001" summary="Update get_available_edges()&#10;Code refactoring">
       <created>1668681202849</created>
@@ -939,7 +685,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671639291395</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Bug Fix strategia1.py, strategia2.py and strategia3.py">
+      <created>1671718952777</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1671718952777</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -998,7 +751,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added/Tested good.py and test.py" />
     <MESSAGE value="Added:&#10;Tested: good.py&#10;Fixed: generateVehicleFromTrips.py" />
     <MESSAGE value="Added: &#10;Tested: san_francisco.py&#10;Updated: san_francisco.py, convertXMLtoCSV.py, san_francisco.sumocfg, old.py, old_v2.py" />
     <MESSAGE value="Title: generate pyplot.plot, pyplot.pie and pyplot.bar&#10;Updated: convertXMLtoCSV.py" />
@@ -1023,7 +775,8 @@
     <MESSAGE value="Refactoring strategia1.py e strategia2.py" />
     <MESSAGE value="Fix multiple stops for strategia1.py e strategia2.py" />
     <MESSAGE value="Added and tested strategia3.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added and tested strategia3.py" />
+    <MESSAGE value="Bug Fix strategia1.py, strategia2.py and strategia3.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fix strategia1.py, strategia2.py and strategia3.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Sumo_Projects$generatePlotFromCSV.coverage" NAME="generatePlotFromCSV Coverage Results" MODIFIED="1669802469033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
@@ -1048,7 +801,7 @@
     <SUITE FILE_PATH="coverage/Sumo_Projects$dynamic_area__1_.coverage" NAME="dynamic_area (1) Coverage Results" MODIFIED="1669980369629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$reduceParkingCapacity.coverage" NAME="reduceParkingCapacity Coverage Results" MODIFIED="1670960851309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco/utilities" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$refactoring.coverage" NAME="refactoring Coverage Results" MODIFIED="1668779392646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
-    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia2.coverage" NAME="strategia2 Coverage Results" MODIFIED="1671569059392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
+    <SUITE FILE_PATH="coverage/Sumo_Projects$strategia2.coverage" NAME="strategia2 Coverage Results" MODIFIED="1671791171349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$demo.coverage" NAME="demo Coverage Results" MODIFIED="1670337170767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$san_francisco.coverage" NAME="san_francisco Coverage Results" MODIFIED="1669894484669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />
     <SUITE FILE_PATH="coverage/Sumo_Projects$strategia1__1_.coverage" NAME="strategia1 (1) Coverage Results" MODIFIED="1670925714406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/San Francisco" />

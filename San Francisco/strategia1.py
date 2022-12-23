@@ -6,11 +6,11 @@ from sumolib import checkBinary
 import xml.etree.ElementTree as ElementTree
 
 AREA_INIT = 500
-TIME_SLICE = 600
+TIME = 600
 
 # * ********************************************************************************************************************************************************************* * #
 # (vecID, parkingID)
-vecID_to_parkingID_dictionary = {}
+vecID_to_parked_dictionary = {}
 
 # (vecID, last_route[..])
 vecID_to_last_route_dictionary = {}
@@ -20,7 +20,7 @@ vecID_to_dest_lane_position_dictionary = {}
 
 # * ********************************************************************************************************************************************************************* * #
 
-# (currLaneID, parkingID)
+# (laneID, parkingID)
 lane_to_parking_dictionary = {}
 
 
@@ -44,33 +44,6 @@ def get_parkings_and_index_from_edge(edgeID):
 
 # * ********************************************************************************************************************************************************************* * #
 
-# (vecID, (lato, count_espansione) )
-vecID_to_dynamicarea_counter_dictionary = {}
-
-
-def load_vecID_to_dynamicarea_counter_dictionary(val):
-    for vecID in get_vehicle_from_xml():
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (val, 0)
-
-
-def update_vecID_to_dynamicarea_counter_dictionary(vecID, area, counter):
-    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != area or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != counter:
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (area, counter)
-
-
-def reset_vecID_to_dynamicarea_counter_dictionary(vecID):
-    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != AREA_INIT or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != 0:
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (AREA_INIT, 0)
-
-
-# * ********************************************************************************************************************************************************************* * #
-
-def get_start_coordinate_from_destination_lane(destEdgeID, index):
-    coordinateXY = traci.simulation.convert2D(destEdgeID, 0.0, index, False)
-    return coordinateXY
-
-
-# * ********************************************************************************************************************************************************************* * #
 
 def get_vehicle_from_xml():
     tree = ElementTree.parse('san_francisco.rou.xml')
@@ -82,7 +55,6 @@ def get_vehicle_from_xml():
     return list_vec_xml
 
 
-# * ********************************************************************************************************************************************************************* * #
 def get_list_lanes_xml_form_edge(edgeID):
     tree = ElementTree.parse("san_francisco.net.xml")
     root = tree.getroot()
@@ -124,8 +96,6 @@ def get_expected_index(edgeID, curr_lane_index):
         return 0
 
 
-# * ********************************************************************************************************************************************************************* * #
-
 def get_destination_xml(vecID):
     tree = ElementTree.parse('san_francisco.rou.xml')
     root = tree.getroot()
@@ -136,8 +106,6 @@ def get_destination_xml(vecID):
             return list_edges[len(list_edges) - 1]
     return None
 
-
-# * ********************************************************************************************************************************************************************* * #
 
 def get_depart_xml(vecID):
     tree = ElementTree.parse('san_francisco.rou.xml')
@@ -152,6 +120,7 @@ def get_depart_xml(vecID):
 
 # * ********************************************************************************************************************************************************************* * #
 
+
 def get_distance_to_last(curr_edgeID, last_edgeID, curr_position):
     if curr_edgeID == last_edgeID:
         distance_tolast_edge = 0.0
@@ -159,13 +128,6 @@ def get_distance_to_last(curr_edgeID, last_edgeID, curr_position):
         distance_tolast_edge = traci.simulation.getDistanceRoad(curr_edgeID, curr_position, last_edgeID, 0.0, True)
 
     return distance_tolast_edge
-
-
-# * ********************************************************************************************************************************************************************* * #
-
-def get_parking(laneID):
-    return lane_to_parking_dictionary.get(laneID)
-
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -177,14 +139,13 @@ def check_parking_aviability(parkingID):
     return False
 
 
-def is_parking_already_setted(vecID, parkingID):
-    tuple_of_stop_data = traci.vehicle.getStops(vecID, 1)
+def check_stop_already_set(vecID, parkingID):
+    tuple_of_stop_data = traci.vehicle.getStops(vecID)
     for i in range(0, len(tuple_of_stop_data)):
-        temp_stop_data = tuple_of_stop_data[i]
-        if temp_stop_data.stoppingPlaceID == parkingID:
+        curr_stop_data = tuple_of_stop_data[i]
+        if curr_stop_data.stoppingPlaceID == parkingID:
             return True
     return False
-
 
 # * ********************************************************************************************************************************************************************* * #
 
@@ -197,45 +158,22 @@ def send_to_depart_xml(vecID):
         return True
     return False
 
-
-def set_coordinate_lane_destination_xml(vecID, curr_lane_index):
-    if vecID_to_dest_lane_position_dictionary.get(vecID) is None:
-        coordinateXY = get_start_coordinate_from_destination_lane(get_destination_xml(vecID), curr_lane_index)
-        vecID_to_dest_lane_position_dictionary[vecID] = coordinateXY
-
-
 # * ********************************************************************************************************************************************************************* * #
 
-# (vecID, (counter_step, started))
-vec_to_searchtime_started_dictionary = {}
+def get_start_coordinate_from_destination_lane(destEdgeID, index):
+    coordinateXY = traci.simulation.convert2D(destEdgeID, 0.0, index, False)
+    return coordinateXY
 
 
-def load_vec_to_searchtime_started_dictionary():
-    tree = ElementTree.parse('san_francisco.rou.xml')
-    root = tree.getroot()
-    for elem in root.findall(".//vehicle"):
-        vecID = elem.attrib['id']
-        vec_to_searchtime_started_dictionary[vecID] = (0, False)
+def set_coordinate(vecID, curr_lane_index):
+    coordinateXY = get_start_coordinate_from_destination_lane(get_destination_xml(vecID), curr_lane_index)
+    vecID_to_dest_lane_position_dictionary[vecID] = coordinateXY
 
 
-def update_vec_to_searchtime_started_dictionary(vecID, counter, started):
-    vec_to_searchtime_started_dictionary[vecID] = (counter, started)
-
-
-def reset_vec_to_searchtime_started_dictionary(vecID):
-    if vec_to_searchtime_started_dictionary.get(vecID)[0] != 0 or vec_to_searchtime_started_dictionary.get(vecID)[1] is not False:
-        vec_to_searchtime_started_dictionary[vecID] = (0, False)
-
-
-def check_timeslice(vecID, count):
-    if count == TIME_SLICE:
-        if vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3:
-            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
-            update_vec_to_searchtime_started_dictionary(vecID, 0, True)
-        else:
-            send_to_depart_xml(vecID)
-            reset_vecID_to_dynamicarea_counter_dictionary(vecID)
-            reset_vec_to_searchtime_started_dictionary(vecID)
+def check_coordinate_is_not_already_set(vecID):
+    if vecID_to_dest_lane_position_dictionary.get(vecID) is None:
+        return True
+    return False
 
 
 # * ********************************************************************************************************************************************************************* * #
@@ -282,6 +220,64 @@ def calculate_new_route(vecID, curr_edgeID, last_edgeID, random_edgeID):
 
 # * ********************************************************************************************************************************************************************* * #
 
+# (vecID: (area, counter) )
+vecID_to_dynamicarea_counter_dictionary = {}
+
+
+def load_vecID_to_dynamicarea_counter_dictionary(val):
+    for vecID in get_vehicle_from_xml():
+        vecID_to_dynamicarea_counter_dictionary[vecID] = (val, 0)
+
+
+def update_vecID_to_dynamicarea_counter_dictionary(vecID, area, counter):
+    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != area or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != counter:
+        vecID_to_dynamicarea_counter_dictionary[vecID] = (area, counter)
+
+
+def reset_vecID_to_dynamicarea_counter_dictionary(vecID):
+    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != AREA_INIT or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != 0:
+        vecID_to_dynamicarea_counter_dictionary[vecID] = (AREA_INIT, 0)
+
+
+
+def get_parking(laneID):
+    return lane_to_parking_dictionary.get(laneID)
+
+# * ********************************************************************************************************************************************************************* * #
+
+# (vecID, (counter_step, started))
+vec_to_searchtime_started_dictionary = {}
+
+
+def load_vec_to_searchtime_started_dictionary():
+    tree = ElementTree.parse('san_francisco.rou.xml')
+    root = tree.getroot()
+    for elem in root.findall(".//vehicle"):
+        vecID = elem.attrib['id']
+        vec_to_searchtime_started_dictionary[vecID] = (0, False)
+
+
+def update_vec_to_searchtime_started_dictionary(vecID, counter, started):
+    vec_to_searchtime_started_dictionary[vecID] = (counter, started)
+
+
+def reset_vec_to_searchtime_started_dictionary(vecID):
+    if vec_to_searchtime_started_dictionary.get(vecID)[0] != 0 or vec_to_searchtime_started_dictionary.get(vecID)[1] is not False:
+        vec_to_searchtime_started_dictionary[vecID] = (0, False)
+
+
+def check_time(vecID, count):
+    if count == TIME:
+        if vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3:
+            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
+            update_vec_to_searchtime_started_dictionary(vecID, 0, True)
+        else:
+            send_to_depart_xml(vecID)
+            reset_vecID_to_dynamicarea_counter_dictionary(vecID)
+            reset_vec_to_searchtime_started_dictionary(vecID)
+
+# * ********************************************************************************************************************************************************************* * #
+
 def get_available_edges(vecID, curr_edgeID, expected_index, last_edgeID, list_tuple_links):
     tupla_dynamicarea_counter = vecID_to_dynamicarea_counter_dictionary.get(vecID)
     curr_area = tupla_dynamicarea_counter[0]
@@ -306,6 +302,7 @@ def get_available_edges(vecID, curr_edgeID, expected_index, last_edgeID, list_tu
 
     return list_available
 
+# * ********************************************************************************************************************************************************************* * #
 
 def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario):
     # Notifico che da questo momento il veicolo sta cercando parcheggio
@@ -321,8 +318,6 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
 
             if len(list_available_edgs) > 0:
                 random_edgeID = random.choice(list_available_edgs)
-                # random_index = get_expected_index(random_edgeID, expected_index)
-                # random_laneID = get_lane_xml_from_edge_and_index(random_edgeID, random_index)
 
                 # Calcolo il nuovo percorso
                 new_route = calculate_new_route(vecID, curr_edgeID, last_edgeID, random_edgeID)
@@ -334,7 +329,7 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
                 except traci.TraCIException as e:
                     traci.vehicle.changeTarget(vecID, random_edgeID)
                     fln = open("log_strategia1.txt", "a")
-                    print("[@EXCEPETION@]", vecID, e, file=fln)
+                    print("[EXCEPETION set_route()]: Il veicolo", vecID, "HA SOLLEVATO", e, file=fln)
                     fln.close()
 
                 exit_cond = True
@@ -351,7 +346,7 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
     else:
         # Non c'è nessuna strada collegata a quella corrente
         file = open("log_strategia1.txt", "a")
-        print("[EXIT]", vecID, "è uscito perchè NON ci sono piu' strade fisicamente percorribili", file=file)
+        print("[INFO search()]: Il veicolo", vecID, "è uscito perchè NON CI SONO PIU' STRADE FISICAMENTE PERCORRIBILI", file=file)
         file.close()
 
 
@@ -360,51 +355,58 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
 def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected, expected_index, scenario):
     # Controllo se non sono arrivato al mio indirizzo di partenza, cioè destinazione xml oppure a una destinazione casuale
     if last_edgeID != get_depart_xml(vecID):
+
         # Assegno al veicolo le coordinate (x, y) del suo indirizzo di destinazione xml
-        set_coordinate_lane_destination_xml(vecID, expected_index)
+        if check_coordinate_is_not_already_set(vecID) is True:
+            set_coordinate(vecID, expected_index)
 
-        # Controllo se non mi sono mai parcheggiato
-        if vecID_to_parkingID_dictionary.get(vecID) is None:
-            # Controllo se nella strada di destinazione corrente c'è un parcheggio
-            list_of_tuple_parkID_index = get_parkings_and_index_from_edge(last_edgeID)
-            if len(list_of_tuple_parkID_index) > 0:
-                for parkID, index in list_of_tuple_parkID_index:
-                    if check_parking_aviability(parkID) is True:
-                        try:
-                            # (900sec == 10min, 10800sec == 3hrs)
-                            # ! random_parking_time = random.randint(900, 10800)
-                            # Controllo se è stata già settata la fermata a questo parcheggio
-                            if is_parking_already_setted(vecID, parkID) is False:
-                                traci.vehicle.setParkingAreaStop(vecID, parkID, 3)
+        # Recupero la lista di parcheggi nella strada di destinazione
+        list_of_tuple_parkID_index = get_parkings_and_index_from_edge(last_edgeID)
 
-                                # Salvo il parcheggio
-                                vecID_to_parkingID_dictionary[vecID] = parkID
+        # Controllo se non mi sono mai parcheggiato e se ci sono parcheggi nella strada di destinazione
+        if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index) > 0:
+            idx = 0
+            setted = False
+            while idx <= len(list_of_tuple_parkID_index) - 1 and setted is False:
+                # Nel caso in cui ci fossero più parcheggi disponibili nella strada di destinazione
+                # Ne seleziono uno di questi a caso
+                curr_tuple_parkID_index = random.choice(list_of_tuple_parkID_index)
+                parkingID = curr_tuple_parkID_index[0]
+                parking_index = curr_tuple_parkID_index[1]
 
-                                if last_edgeID == get_destination_xml(vecID):
-                                    fln = open("log_strategia1.txt", "a")
-                                    print("[INFO]", vecID, "ha trovato parcheggio alla strada di destinazione xml", parkID, file=fln)
-                                    fln.close()
-                                else:
-                                    fln = open("log_strategia1.txt", "a")
-                                    print("[INFO]", vecID, "ha trovato parcheggio alla strada dove è stato indirizzato", parkID, file=fln)
-                                    fln.close()
+                # Controllo la disponibilità di posti effettivamente liberi prima dello step che mi permette di arrivare a destinazione
+                if check_parking_aviability(parkingID) is True:
 
-                                reset_vec_to_searchtime_started_dictionary(vecID)
+                    try:
+                        # (900sec == 10min, 10800sec == 3hrs)
+                        # ! random_parking_time = random.randint(900, 10800)
+                        if check_stop_already_set(vecID, parkingID) is False:
+                            traci.vehicle.setParkingAreaStop(vecID, parkingID, 3)
+                            if last_edgeID == get_destination_xml(vecID):
+                                fln = open("log_strategia1.txt", "a")
+                                print("[INFO routine()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "nella strada di destinazione XML", file=fln)
+                                fln.close()
+                            else:
+                                fln = open("log_strategia1.txt", "a")
+                                print("[INFO routine()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "nella strada dove è stato indirizzato", parkingID, file=fln)
+                                fln.close()
+
+                            reset_vec_to_searchtime_started_dictionary(vecID)
 
                             # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
-                            break
+                            setted = True
 
-                        except traci.TraCIException as e:
-                            pass
-                    else:
-                        fln = open("log_strategia1.txt", "a")
-                        print("[INFO]", vecID, "non è riuscito a parcheggiarsi a", parkID, "perchè non c'erano posti disponibili", file=fln)
-                        fln.close()
-                # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
-                if vecID_to_parkingID_dictionary.get(vecID) is None:
-                    search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
-            else:
-                # Se non ci sono parcheggi nella strada di destinazione OPPURE non ci sono posti disponibili
+                    except traci.TraCIException as e:
+                        pass
+                idx += 1
+
+            # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
+            if setted is False:
+                search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
+        else:
+            # Controllo se non mi sono mai parcheggiato e non ci sono parcheggi nella strada di destinazione corrente
+            if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index) <= 0:
+                # Se non ci sono parcheggi nella strada di destinazione
                 search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_index, last_edgeID, last_laneID_excpected, scenario)
 
 
@@ -418,8 +420,8 @@ def run(strategia, scenario):
     step = traci.simulation.getTime()  # step = 0.0
 
     while traci.simulation.getMinExpectedNumber() != 0:
-
         count = traci.vehicle.getIDCount()
+
         print("\n ###################### STEP: " + str(step) + " NUM_VEICOLI: " + str(count) + " STRATEGIA: " + strategia + " SCENARIO: " + scenario + " ######################")
 
         curr_vehicles_List = traci.vehicle.getIDList()
@@ -429,26 +431,26 @@ def run(strategia, scenario):
             # Se il veicolo non è attualmente parcheggiato
             if traci.vehicle.isStoppedParking(vecID) is False:
 
+                # Controllo se il veicolo ha iniziato la ricerca del parcheggio
                 started_research = vec_to_searchtime_started_dictionary.get(vecID)[1]
                 if started_research is True:
                     count_timeslice = vec_to_searchtime_started_dictionary.get(vecID)[0] + 1
                     update_vec_to_searchtime_started_dictionary(vecID, count_timeslice, True)
-                    check_timeslice(vecID, count_timeslice)
+                    check_time(vecID, count_timeslice)
 
                 curr_route_list = traci.vehicle.getRoute(vecID)
                 last_edgeID = curr_route_list[len(curr_route_list) - 1]
                 curr_laneID = traci.vehicle.getLaneID(vecID)
                 curr_position = traci.vehicle.getLanePosition(vecID)
                 curr_speed = traci.vehicle.getSpeed(vecID)
-                curr_acc = traci.vehicle.getAcceleration(vecID)
                 curr_edgeID = traci.lane.getEdgeID(curr_laneID)
                 curr_lane_index = traci.vehicle.getLaneIndex(vecID)
                 leader_speed = traci.vehicle.getAllowedSpeed(vecID)
                 max_decel = traci.vehicle.getDecel(vecID)
-                distance_to_lastedge = get_distance_to_last(curr_edgeID, last_edgeID, curr_position)
+                distance_to_lastedge = float(get_distance_to_last(curr_edgeID, last_edgeID, curr_position))
 
                 # Limite superiore della velocità nel prossimo step
-                space_on_next_step = traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel)
+                space_on_next_step = float(traci.vehicle.getFollowSpeed(vecID, curr_speed, distance_to_lastedge, leader_speed, max_decel))
 
                 # Se il veicolo nel prossimo step arriverà a una destinazione
                 if space_on_next_step >= distance_to_lastedge:
@@ -459,6 +461,10 @@ def run(strategia, scenario):
             else:
                 # Se il veicolo è attualmente parcheggiato
                 send_to_depart_xml(vecID)
+
+                # Setto che il veicolo ha parcheggiato
+                vecID_to_parked_dictionary[vecID] = True
+
                 reset_vecID_to_dynamicarea_counter_dictionary(vecID)
 
         traci.simulation.step()
