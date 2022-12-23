@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2022-12-23 14:41:10 by Eclipse SUMO sumo Version 1.14.1
+<!-- generated on 2022-12-23 16:28:17 by Eclipse SUMO sumo Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -32,7 +32,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="55072"/>
+        <remote-port value="63002"/>
     </traci_server>
 
     <gui_only>
@@ -44,24 +44,10 @@
 -->
 
 <stops xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/stopinfo_file.xsd">
-    <stopinfo id="0" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18313.00" ended="18314.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="1" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18406.00" ended="18407.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="2" type="vecType" lane="255330036#13_0" pos="121.05" parking="1" started="18411.00" ended="18412.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="17" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18495.00" ended="18496.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="3" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18500.00" ended="18501.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="4" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18506.00" ended="18507.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="5" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18590.00" ended="18591.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="6" type="vecType" lane="255330036#13_0" pos="121.06" parking="1" started="18595.00" ended="18596.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="7" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18677.00" ended="18678.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="8" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18765.00" ended="18766.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="9" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18770.00" ended="18771.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="10" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18773.00" ended="18774.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="13" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18849.00" ended="18850.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="12" type="vecType" lane="255330036#13_0" pos="121.07" parking="1" started="18857.00" ended="18858.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="14" type="vecType" lane="255330036#13_0" pos="121.06" parking="1" started="18944.00" ended="18945.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="15" type="vecType" lane="255330036#13_0" pos="121.08" parking="1" started="18948.00" ended="18949.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="19" type="vecType" lane="255330036#13_0" pos="121.07" parking="1" started="18951.00" ended="18952.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="16" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="19038.00" ended="19039.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
-    <stopinfo id="11" type="vecType" lane="-255330036#13_0" pos="79.33" parking="1" started="19096.00" ended="19097.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_-255330036#13_0_407"/>
-    <stopinfo id="18" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="19126.00" ended="19127.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
+    <stopinfo id="0" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18313.00" ended="18413.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
+    <stopinfo id="1" type="vecType" lane="-255330036#13_0" pos="79.33" parking="1" started="18461.00" ended="18561.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_-255330036#13_0_407"/>
+    <stopinfo id="2" type="vecType" lane="-255330036#13_0" pos="73.73" parking="1" started="18464.00" ended="18564.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_-255330036#13_0_407"/>
+    <stopinfo id="17" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18496.00" ended="18596.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
+    <stopinfo id="3" type="vecType" lane="-255330036#13_0" pos="84.93" parking="1" started="18552.00" ended="18652.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_-255330036#13_0_407"/>
+    <stopinfo id="7" type="vecType" lane="255330036#13_0" pos="121.09" parking="1" started="18676.00" ended="18776.00" delay="-1.00" initialPersons="0" loadedPersons="0" unloadedPersons="0" initialContainers="0" loadedContainers="0" unloadedContainers="0" parkingArea="parkingArea_255330036#13_0_94"/>
 </stops>

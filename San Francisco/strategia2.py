@@ -149,12 +149,15 @@ def check_stop_already_set(vecID, parkingID):
             return True
     return False
 
-def clear_all_stops(vecID):
+
+def clear_others_stops(vecID, new_parkingID):
     tuple_of_stop_data = traci.vehicle.getStops(vecID)
-    for i in range(0, len(tuple_of_stop_data)):
+    for i in range(1, len(tuple_of_stop_data)):
         curr_stop_data = tuple_of_stop_data[i]
         traci.vehicle.replaceStop(vecID, i, "")
-
+        fln = open("log_strategia2.txt", "a")
+        print("[INFO clear_stops()]: Il veicolo:", vecID, "HA RIMOSSO:", curr_stop_data.stoppingPlaceID, "perchè HA SETTATO:", new_parkingID, file=fln)
+        fln.close()
 # * ********************************************************************************************************************************************************************* * #
 
 def send_to_depart_xml(vecID):
@@ -382,6 +385,9 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
                     if check_stop_already_set(vecID, parkingID) is False:
                         traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
 
+                        # ! ##############################################
+                        clear_others_stops(vecID, parkingID)
+
                         fln = open("log_strategia2.txt", "a")
                         print("[INFO set_parking()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "lungo la strada verso il più grande", file=fln)
                         fln.close()
@@ -397,7 +403,10 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
 
                     # Controllo se avevo già settato la fermata
                     if check_stop_already_set(vecID, parkingID) is True:
+
+                        # ! ##############################################
                         traci.vehicle.replaceStop(vecID, 0, "")
+
                         fln = open("log_strategia2.txt", "a")
                         print("[INFO set_parking()]: Il veicolo", vecID, "HA RIMOSSO LA FERMATA A", parkingID, file=fln)
                         fln.close()
@@ -435,6 +444,10 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                         # ! random_parking_time = random.randint(900, 10800)
                         if check_stop_already_set(vecID, parkingID) is False:
                             traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
+
+                            # ! ##############################################
+                            clear_others_stops(vecID, parkingID)
+
                             if last_edgeID == get_destination_xml(vecID):
                                 fln = open("log_strategia2.txt", "a")
                                 print("[INFO routine()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "nella strada di destinazione XML", file=fln)
@@ -514,7 +527,7 @@ def run(strategia, scenario):
                 vecID_to_parked_dictionary[vecID] = True
 
                 # Cancello eventuali fermate settate
-                clear_all_stops(vecID)
+                # clear_all_stops()
 
 
         traci.simulation.step()
