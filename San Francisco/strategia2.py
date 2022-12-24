@@ -149,6 +149,18 @@ def check_stop_already_set(vecID, parkingID):
             return True
     return False
 
+def clear_stop(vecID, parkingID):
+    tuple_of_stop_data = traci.vehicle.getStops(vecID)
+    trovato = False
+    i = 0
+    while i in range(0, len(tuple_of_stop_data)) and trovato is False:
+        curr_stop_data = tuple_of_stop_data[i]
+        if curr_stop_data.stoppingPlaceID == parkingID:
+            traci.vehicle.replaceStop(vecID, i, "")
+            trovato = True
+            fln = open("log_strategia2.txt", "a")
+            print("[INFO clear_stops()]: Il veicolo:", vecID, "HA RIMOSSO:", curr_stop_data.stoppingPlaceID, "perchè NON HA PIU' POSTI DISPONIBILI", file=fln)
+            fln.close()
 
 def clear_others_stops(vecID, new_parkingID):
     tuple_of_stop_data = traci.vehicle.getStops(vecID)
@@ -156,8 +168,9 @@ def clear_others_stops(vecID, new_parkingID):
         curr_stop_data = tuple_of_stop_data[i]
         traci.vehicle.replaceStop(vecID, i, "")
         fln = open("log_strategia2.txt", "a")
-        print("[INFO clear_stops()]: Il veicolo:", vecID, "HA RIMOSSO:", curr_stop_data.stoppingPlaceID, "perchè HA SETTATO:", new_parkingID, file=fln)
+        print("[INFO clear_others_stops()]: Il veicolo:", vecID, "HA RIMOSSO:", curr_stop_data.stoppingPlaceID, "perchè HA SETTATO:", new_parkingID, file=fln)
         fln.close()
+
 # * ********************************************************************************************************************************************************************* * #
 
 def send_to_depart_xml(vecID):
@@ -385,7 +398,7 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
                     if check_stop_already_set(vecID, parkingID) is False:
                         traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
 
-                        # ! ##############################################
+                        # Controllo ed elimino le fermate settate prima di quest'ultima
                         clear_others_stops(vecID, parkingID)
 
                         fln = open("log_strategia2.txt", "a")
@@ -404,12 +417,9 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
                     # Controllo se avevo già settato la fermata
                     if check_stop_already_set(vecID, parkingID) is True:
 
-                        # ! ##############################################
-                        traci.vehicle.replaceStop(vecID, 0, "")
+                        # Elimino la fermata settata a questo parcheggio
+                        clear_stop(vecID, parkingID)
 
-                        fln = open("log_strategia2.txt", "a")
-                        print("[INFO set_parking()]: Il veicolo", vecID, "HA RIMOSSO LA FERMATA A", parkingID, file=fln)
-                        fln.close()
             idx += 1
 
 # * ********************************************************************************************************************************************************************* * #
@@ -445,7 +455,7 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                         if check_stop_already_set(vecID, parkingID) is False:
                             traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
 
-                            # ! ##############################################
+                            # Controllo ed elimino le fermate settate prima di quest'ultima
                             clear_others_stops(vecID, parkingID)
 
                             if last_edgeID == get_destination_xml(vecID):
@@ -455,6 +465,7 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                             else:
                                 fln = open("log_strategia2.txt", "a")
                                 print("[INFO routine()]: Il veicolo", vecID, "HA SETTATO LA FERMATA A", parkingID, "nella strada dove è stato indirizzato", parkingID, file=fln)
+                                print("[INFO routine()]: Il veicolo", vecID, "curr_edgeID:", curr_edgeID, "last_edgeID:", last_edgeID, file=fln)
                                 fln.close()
 
                         # Forzo l'uscita dal for per evitare che venga settata qualche altra fermata
@@ -550,10 +561,10 @@ def main():
     fln.close()
 
     # STRATEGIA: strategia2, SCENARIO: 100%
-    # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia2", "100%")
-    # traci.close()
+    sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run("strategia2", "100%")
+    traci.close()
 
     # STRATEGIA: strategia2, SCENARIO: 75%
     # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_100%.sumocfg", "--start"]
@@ -562,10 +573,10 @@ def main():
     # traci.close()
 
     # STRATEGIA: strategia2, SCENARIO: 50%
-    sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]
-    traci.start(sumoCmd)
-    run("strategia2", "50%")
-    traci.close()
+    # sumoCmd = [sumoBinary, "-c", "./strategia2_config/san_francisco_strategia2_50%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia2", "50%")
+    # traci.close()
 
 
 # * ********************************************************************************************************************************************************************* * #

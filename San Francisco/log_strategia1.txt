@@ -1,20 +1,50 @@
-[INFO routine()]: Il veicolo 0 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO routine()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 2 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 3 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO routine()]: Il veicolo 17 HA SETTATO LA FERMATA A parkingArea_111550910#2_0_479 nella strada dove è stato indirizzato parkingArea_111550910#2_0_479
-[INFO routine()]: Il veicolo 4 HA SETTATO LA FERMATA A parkingArea_-8921907_0_473 nella strada dove è stato indirizzato parkingArea_-8921907_0_473
-[INFO routine()]: Il veicolo 5 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO routine()]: Il veicolo 6 HA SETTATO LA FERMATA A parkingArea_43100047#2_0_406 nella strada dove è stato indirizzato parkingArea_43100047#2_0_406
-[INFO routine()]: Il veicolo 7 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_-111550910#1_0_480 nella strada dove è stato indirizzato parkingArea_-111550910#1_0_480
-[INFO routine()]: Il veicolo 13 HA SETTATO LA FERMATA A parkingArea_88559680#5_0_474 nella strada dove è stato indirizzato parkingArea_88559680#5_0_474
-[INFO routine()]: Il veicolo 12 HA SETTATO LA FERMATA A parkingArea_88559680#5_0_474 nella strada dove è stato indirizzato parkingArea_88559680#5_0_474
-[INFO routine()]: Il veicolo 14 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
-[INFO routine()]: Il veicolo 19 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 15 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO routine()]: Il veicolo 16 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
-[INFO routine()]: Il veicolo 18 HA SETTATO LA FERMATA A parkingArea_-255330036#11_0_91 nella strada dove è stato indirizzato parkingArea_-255330036#11_0_91
+[INFO routine()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_8922291#0_0_762 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 30 HA SETTATO LA FERMATA A parkingArea_206662304#13_0_660 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 45 HA SETTATO LA FERMATA A parkingArea_-43100739_0_743 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 16 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 21 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 47 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 0 HA SETTATO LA FERMATA A parkingArea_-225853134_0_680 nella strada dove è stato indirizzato parkingArea_-225853134_0_680
+[INFO routine()]: Il veicolo 28 HA SETTATO LA FERMATA A parkingArea_8919616#1_0_491 nella strada dove è stato indirizzato parkingArea_8919616#1_0_491
+[INFO routine()]: Il veicolo 33 HA SETTATO LA FERMATA A parkingArea_224316522#0_0_572 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 27 HA SETTATO LA FERMATA A parkingArea_135110258#0_0_410 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 39 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada dove è stato indirizzato parkingArea_-225518512#1_0_517
+[INFO routine()]: Il veicolo 13 HA SETTATO LA FERMATA A parkingArea_91181771#5_0_513 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 29 HA SETTATO LA FERMATA A parkingArea_224199013#1_0_353 nella strada dove è stato indirizzato parkingArea_224199013#1_0_353
+[INFO routine()]: Il veicolo 20 HA SETTATO LA FERMATA A parkingArea_91181771#5_0_513 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 36 HA SETTATO LA FERMATA A parkingArea_-255330036#12_0_93 nella strada dove è stato indirizzato parkingArea_-255330036#12_0_93
+[INFO routine()]: Il veicolo 42 HA SETTATO LA FERMATA A parkingArea_-99231475_0_428 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 41 HA SETTATO LA FERMATA A parkingArea_88597553#2_0_369 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 15 HA SETTATO LA FERMATA A parkingArea_254299142#3_0_508 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 22 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada dove è stato indirizzato parkingArea_8916922#3_0_423
+[INFO routine()]: Il veicolo 12 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 14 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 25 HA SETTATO LA FERMATA A parkingArea_35675861#0_0_89 nella strada dove è stato indirizzato parkingArea_35675861#0_0_89
+[INFO routine()]: Il veicolo 40 HA SETTATO LA FERMATA A parkingArea_26938124#1_0_1051 nella strada dove è stato indirizzato parkingArea_26938124#1_0_1051
+[INFO routine()]: Il veicolo 2 HA SETTATO LA FERMATA A parkingArea_8919338_0_468 nella strada dove è stato indirizzato parkingArea_8919338_0_468
+[INFO routine()]: Il veicolo 34 HA SETTATO LA FERMATA A parkingArea_133733593#1_0_571 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_143617589#2_0_527 nella strada dove è stato indirizzato parkingArea_143617589#2_0_527
+[INFO routine()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_99231482_0_58 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 6 HA SETTATO LA FERMATA A parkingArea_8922307_0_62 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 17 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 31 HA SETTATO LA FERMATA A parkingArea_111089307#4_0_960 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 37 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 3 HA SETTATO LA FERMATA A parkingArea_-27397692_0_397 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 5 HA SETTATO LA FERMATA A parkingArea_283537380#1_0_469 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 24 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO routine()]: Il veicolo 49 HA SETTATO LA FERMATA A parkingArea_31129732#0_0_532 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 7 HA SETTATO LA FERMATA A parkingArea_24310636#1_0_934 nella strada dove è stato indirizzato parkingArea_24310636#1_0_934
+[INFO routine()]: Il veicolo 23 HA SETTATO LA FERMATA A parkingArea_8919338_0_468 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 4 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada dove è stato indirizzato parkingArea_8916922#3_0_423
+[INFO routine()]: Il veicolo 35 HA SETTATO LA FERMATA A parkingArea_28843496_0_299 nella strada dove è stato indirizzato parkingArea_28843496_0_299
+[INFO routine()]: Il veicolo 26 HA SETTATO LA FERMATA A parkingArea_27054213#6_0_357 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 43 HA SETTATO LA FERMATA A parkingArea_26988030#3_0_1200 nella strada dove è stato indirizzato parkingArea_26988030#3_0_1200
+[INFO routine()]: Il veicolo 18 HA SETTATO LA FERMATA A parkingArea_8922263#1_0_440 nella strada dove è stato indirizzato parkingArea_8922263#1_0_440
+[INFO routine()]: Il veicolo 44 HA SETTATO LA FERMATA A parkingArea_-254971068_0_334 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 48 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_359898521#0_0_374 nella strada dove è stato indirizzato parkingArea_359898521#0_0_374
+[INFO routine()]: Il veicolo 38 HA SETTATO LA FERMATA A parkingArea_27398048#2_0_237 nella strada dove è stato indirizzato parkingArea_27398048#2_0_237
+[INFO routine()]: Il veicolo 32 HA SETTATO LA FERMATA A parkingArea_32931798#2_0_297 nella strada dove è stato indirizzato parkingArea_32931798#2_0_297
+[INFO routine()]: Il veicolo 19 HA SETTATO LA FERMATA A parkingArea_47172745_0_65 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 46 HA SETTATO LA FERMATA A parkingArea_206662304#13_0_660 nella strada di destinazione XML

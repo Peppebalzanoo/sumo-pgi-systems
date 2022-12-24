@@ -36,4 +36,8 @@ ROUTINE
         # ! ####################################################################################
 ---------------------------------------------------------------------------------------------------
  parking_capacity = int(traci.simulation.getParameter(parkingID, "parkingArea.capacity"))
-    parking_occupancy = int(traci.simulation.getParameter(parkingID, "parkingArea.occupancy"))
+ parking_occupancy = int(traci.simulation.getParameter(parkingID, "parkingArea.occupancy"))
+----------------------------------------------------------------------------------------------------
+<vehicle id="0" type="vecType" depart="18000">
+        <route edges="123867455 8920391#0 255330048 255351721#0 -27656675 26943623 -111550911#3 -111550911#2 -111550911#1 -111550911#0 -88559680#5 255330036#10 255330036#11"/>
+    </vehicle>
