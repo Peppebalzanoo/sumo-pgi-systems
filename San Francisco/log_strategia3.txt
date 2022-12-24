@@ -1,21 +1,17 @@
-[INFO_ROUTINE] 0 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 1 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 2 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 3 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 01 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 30 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 4 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO] 5 non è riuscito a parcheggiarsi a parkingArea_255330036#10_0_92 perchè l'ha già superato
-[INFO] 70 non è riuscito a parcheggiarsi a parkingArea_255330036#10_0_92 perchè l'ha già superato
-[INFO_ROUTINE] 5 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 70 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 6 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 90 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 7 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 190 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 8 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO] 11 non è riuscito a parcheggiarsi a parkingArea_255330036#10_0_92 perchè l'ha già superato
-[INFO_ROUTINE] 9 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 10 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 11 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
-[INFO_ROUTINE] 13 ha trovato parcheggio alla strada dove è stato indirizzato parkingArea_-255330036#12_0_93
+[INFO routine()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_8922291#0_0_762 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 30 HA SETTATO LA FERMATA A parkingArea_206662304#13_0_660 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 60 HA SETTATO LA FERMATA A parkingArea_247966218#3_0_791 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 45 HA SETTATO LA FERMATA A parkingArea_-43100739_0_743 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 16 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 0 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE:
+[INFO routine()]: Il veicolo 21 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 0 HA SETTATO LA FERMATA A parkingArea_26988030#3_0_1200 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 74 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE:
+[INFO routine()]: Il veicolo 47 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 28 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE:
+[INFO routine()]: Il veicolo 76 HA SETTATO LA FERMATA A parkingArea_-25371463_0_928 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 28 HA SETTATO LA FERMATA A parkingArea_254299117#1_0_500 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 40 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE:
+[INFO set_route()]: Il veicolo 93 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE:
+[INFO routine()]: Il veicolo 77 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
