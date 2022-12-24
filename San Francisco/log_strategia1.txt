@@ -204,3 +204,5 @@
 [INFO routine()]: Il veicolo 141 HA SETTATO LA FERMATA A parkingArea_-27398032#0_0_399 nella strada di destinazione XML
 [INFO routine()]: Il veicolo 92 HA SETTATO LA FERMATA A parkingArea_283512618#0_1_373 nella strada dove è stato indirizzato parkingArea_283512618#0_1_373
 [INFO routine()]: Il veicolo 149 HA SETTATO LA FERMATA A parkingArea_-255330036#7_0_494 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 144 HA SETTATO LA FERMATA A parkingArea_120256350#3_0_52 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 143 HA SETTATO LA FERMATA A parkingArea_27397692_0_57 nella strada di destinazione XML
