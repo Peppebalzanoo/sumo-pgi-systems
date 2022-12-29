@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ElementTree
-
+import math
 
 def reduce_to(percentage):
     tree = ElementTree.parse('../parking_capacity_100%/on_parking_100%.add.xml')
@@ -10,7 +10,7 @@ def reduce_to(percentage):
 
         # old_capacitiy : 100% = X : percentage% ---> X = (old_capacity * percentage)/100
         old_capacity = int(elem.attrib["roadsideCapacity"])
-        new_capacity = int((old_capacity * percentage)/100)
+        new_capacity = math.ceil(((old_capacity * percentage)/100))
 
         temp_attr_dictionary["roadsideCapacity"] = str(new_capacity)
         new_root.append(elem)
@@ -27,7 +27,7 @@ def reduce_to(percentage):
 
         # old_capacitiy : 100% = X : percentage% ---> X = (old_capacity * percentage)/100
         old_capacity = int(elem.attrib["roadsideCapacity"])
-        new_capacity = int((old_capacity * percentage)/100)
+        new_capacity = math.ceil((old_capacity * percentage)/100)
 
         temp_attr_dictionary["roadsideCapacity"] = str(new_capacity)
         new_root.append(elem)
@@ -37,7 +37,7 @@ def reduce_to(percentage):
 
 
 def main():
-    reduce_to(75)
+    reduce_to(50)
 
 if __name__ == "__main__":
     main()

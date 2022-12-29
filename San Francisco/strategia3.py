@@ -294,7 +294,7 @@ def get_available_lanes(vecID):
 
 # (vecID : (list_ordred_parking[...])))
 
-vecID_to_list_parking_index = {}
+vecID_to_list_parking = {}
 
 def get_ordred_parkings(list_aviable_lane):
     temp_dict = {}
@@ -315,13 +315,13 @@ def calculate_parkings(vecID):
     list_desc_parking = get_ordred_parkings(list_aviable_lane)
 
     # Setto i parcheggi nel dizionario
-    vecID_to_list_parking_index[vecID] = list_desc_parking
+    vecID_to_list_parking[vecID] = list_desc_parking
 
 # * ********************************************************************************************************************************************************************* * #
 
 def set_route_to_parking_edge(vecID, curr_edgeID, last_edgeID):
     # Recupero la lista dei parcheggi
-    list_parking = list(vecID_to_list_parking_index.get(vecID))
+    list_parking = list(vecID_to_list_parking.get(vecID))
 
     parkingID = list_parking[0]
 
@@ -389,6 +389,9 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
             else:
                 # Controllo se non ci sono più posti disponibili
                 if check_parking_aviability(parkingID) is False:
+                    fln = open("log_strategia3.txt", "a")
+                    print("[INFO set_parking()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
+                    fln.close()
 
                     # Controllo se avevo già settato la fermata
                     if check_stop_already_set(vecID, parkingID) is True:
@@ -449,6 +452,10 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
 
                     except traci.TraCIException as e:
                         pass
+                else:
+                    fln = open("log_strategia3.txt", "a")
+                    print("[INFO routine()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
+                    fln.close()
                 idx += 1
 
             # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
@@ -502,7 +509,7 @@ def run(strategia, scenario):
                 else:
                     # Se trovo parcheggio mentre mi dirigo verso una destinazione
                     # Controllo se non mi sono mai parcheggiato e se ho raggiunto la mia destinazione xml e non ho trovato parcheggio (controllo se ho settato i parcheggi)
-                    if vecID_to_parked_dictionary.get(vecID) is None and vecID_to_list_parking_index.get(vecID) is not None:
+                    if vecID_to_parked_dictionary.get(vecID) is None and vecID_to_list_parking.get(vecID) is not None:
                         # Controllo se ci sono parcheggi nella strada corrente e setto le fermata
                         set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_index)
 
@@ -512,10 +519,6 @@ def run(strategia, scenario):
 
                 # Setto che il veicolo ha parcheggiato
                 vecID_to_parked_dictionary[vecID] = True
-
-                # Cancello eventuali fermate settate
-                # clear_all_stops()
-
 
         traci.simulation.step()
         step = traci.simulation.getTime()  # step ++

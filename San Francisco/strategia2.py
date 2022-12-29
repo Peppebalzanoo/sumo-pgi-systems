@@ -413,7 +413,9 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
             else:
                 # Controllo se non ci sono più posti disponibili
                 if check_parking_aviability(parkingID) is False:
-
+                    fln = open("log_strategia2.txt", "a")
+                    print("[INFO set_parking()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
+                    fln.close()
                     # Controllo se avevo già settato la fermata
                     if check_stop_already_set(vecID, parkingID) is True:
 
@@ -473,6 +475,10 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
 
                     except traci.TraCIException as e:
                         pass
+                else:
+                    fln = open("log_strategia2.txt", "a")
+                    print("[INFO routine()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
+                    fln.close()
                 idx += 1
 
             # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
@@ -536,10 +542,6 @@ def run(strategia, scenario):
 
                 # Setto che il veicolo ha parcheggiato
                 vecID_to_parked_dictionary[vecID] = True
-
-                # Cancello eventuali fermate settate
-                # clear_all_stops()
-
 
         traci.simulation.step()
         step = traci.simulation.getTime()  # step ++

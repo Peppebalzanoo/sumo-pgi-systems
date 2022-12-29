@@ -411,6 +411,10 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 
                     except traci.TraCIException as e:
                         pass
+                else:
+                    fln = open("log_strategia1.txt", "a")
+                    print("[INFO routine()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
+                    fln.close()
                 idx += 1
 
             # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione
