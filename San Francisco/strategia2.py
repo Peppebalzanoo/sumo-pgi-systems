@@ -41,6 +41,26 @@ def get_parkings_and_index_from_edge(edgeID):
             list_of_tuple_parkID_index.append((parkID, park_index))
     return list_of_tuple_parkID_index
 
+def sort_parking_by_distance_current(list_of_tuple_parkID_index, curr_edgeID, vec_position):
+    list_of_tuple_parkID_index_dist = []
+    for curr_tuple in list_of_tuple_parkID_index:
+        parkID = curr_tuple[0]
+        park_index = curr_tuple[1]
+        start_parkID = traci.parkingarea.getStartPos(parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, curr_edgeID, start_parkID, True)
+        list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
+    return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
+
+
+def sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, vec_position, last_edgeID):
+    list_of_tuple_parkID_index_dist = []
+    for curr_tuple in list_of_tuple_parkID_index:
+        parkID = curr_tuple[0]
+        park_index = traci.parkingarea.getStartPos(parkID)
+        start_parkID = traci.parkingarea.getStartPos(parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID, True)
+        list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
+    return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
 # * ********************************************************************************************************************************************************************* * #
 
 def get_vehicle_from_xml():
@@ -246,6 +266,7 @@ vecID_to_available_lanes = {}
 
 def get_available_lanes(vecID):
     list_aviable_lane = []
+
     if vecID_to_available_lanes.get(vecID) is None:
         # Tutte le corsie che hanno un parcheggio
         list_lane_parking = list(lane_to_parking_dictionary.keys())
@@ -373,17 +394,18 @@ def set_route_to_parking_edge(vecID, curr_edgeID, last_edgeID):
 def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_index):
     # Recupero i parcheggi nella strada corrente
     list_of_tuple_parkID_index = get_parkings_and_index_from_edge(curr_edgeID)
+    list_of_tuple_parkID_index_dist = sort_parking_by_distance_current(list_of_tuple_parkID_index, curr_edgeID, curr_position)
 
-    if len(list_of_tuple_parkID_index) > 0:
+
+    if len(list_of_tuple_parkID_index_dist) > 0:
         idx = 0
         setted = False
 
-        while idx <= len(list_of_tuple_parkID_index) - 1 and setted is False:
-            # Nel caso in cui ci fossero più parcheggi disponibili nella strada di destinazione
-            # Ne seleziono uno di questi a caso
-            curr_tuple_parkID_index = random.choice(list_of_tuple_parkID_index)
-            parkingID = curr_tuple_parkID_index[0]
-            parking_index = curr_tuple_parkID_index[1]
+        while idx <= len(list_of_tuple_parkID_index_dist) - 1 and setted is False:
+
+            curr_tuple_parkID_index_dist = list_of_tuple_parkID_index_dist[idx]
+            parkingID = curr_tuple_parkID_index_dist[0]
+            parking_index = curr_tuple_parkID_index_dist[1]
 
             # Controllo la disponibilità di posti effettivamente liberi e la posizione
             if check_parking_aviability(parkingID) is True and check_parking_position(vecID, curr_position, parkingID) is True:
@@ -436,17 +458,17 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
 
         # Recupero la lista di parcheggi nella strada di destinazione
         list_of_tuple_parkID_index = get_parkings_and_index_from_edge(last_edgeID)
+        list_of_tuple_parkID_index_dist = sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, traci.vehicle.getLanePosition(vecID), last_edgeID)
 
         # Controllo se non mi sono mai parcheggiato e se ci sono parcheggi nella strada di destinazione
-        if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index) > 0:
+        if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index_dist) > 0:
             idx = 0
             setted = False
-            while idx <= len(list_of_tuple_parkID_index) - 1 and setted is False:
-                # Nel caso in cui ci fossero più parcheggi disponibili nella strada di destinazione
-                # Ne seleziono uno di questi a caso
-                curr_tuple_parkID_index = random.choice(list_of_tuple_parkID_index)
-                parkingID = curr_tuple_parkID_index[0]
-                parking_index = curr_tuple_parkID_index[1]
+            while idx <= len(list_of_tuple_parkID_index_dist) - 1 and setted is False:
+
+                curr_tuple_parkID_index_dist = list_of_tuple_parkID_index_dist[idx]
+                parkingID = curr_tuple_parkID_index_dist[0]
+                parking_index = curr_tuple_parkID_index_dist[1]
 
                 # Controllo la disponibilità di posti effettivamente liberi prima dello step che mi permette di arrivare a destinazione
                 if check_parking_aviability(parkingID) is True:
@@ -479,6 +501,7 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
                     fln = open("log_strategia2.txt", "a")
                     print("[INFO routine()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
                     fln.close()
+
                 idx += 1
 
             # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione

@@ -42,11 +42,20 @@ def get_parkings_and_index_from_edge(edgeID):
     return list_of_tuple_parkID_index
 
 
+def sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, vec_position, last_edgeID):
+    list_of_tuple_parkID_index_dist = []
+    for curr_tuple in list_of_tuple_parkID_index:
+        parkID = curr_tuple[0]
+        park_index = traci.parkingarea.getStartPos(parkID)
+        start_parkID = traci.parkingarea.getStartPos(parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID)
+        list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
+    return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
 # * ********************************************************************************************************************************************************************* * #
 
 
 def get_vehicle_from_xml():
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse("san_francisco.rou.xml")
     root = tree.getroot()
     list_vec_xml = []
     for elem in root.findall(".//vehicle"):
@@ -66,14 +75,14 @@ def get_list_lanes_xml_form_edge(edgeID):
 
 
 def get_lane_xml_from_edge_and_index(edgeID, index):
-    tree = ElementTree.parse('san_francisco.net.xml')
+    tree = ElementTree.parse("san_francisco.net.xml")
     root = tree.getroot()
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane/[@index='" + str(index) + "']"):
         return name.attrib['id']
 
 
 def get_indexes_xml_from_edge(edgeID):
-    tree = ElementTree.parse('san_francisco.net.xml')
+    tree = ElementTree.parse("san_francisco.net.xml")
     root = tree.getroot()
     list_indexes = []
     for name in root.findall(".//edge/[@id='" + edgeID + "']//lane"):
@@ -108,7 +117,7 @@ def get_destination_xml(vecID):
 
 
 def get_depart_xml(vecID):
-    tree = ElementTree.parse('san_francisco.rou.xml')
+    tree = ElementTree.parse("san_francisco.rou.xml")
     root = tree.getroot()
     for elem in root.findall(".//vehicle/[@id='" + vecID + "']//route"):
         temp = elem.get("edges")
@@ -371,17 +380,17 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 
         # Recupero la lista di parcheggi nella strada di destinazione
         list_of_tuple_parkID_index = get_parkings_and_index_from_edge(last_edgeID)
+        list_of_tuple_parkID_index_dist = sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, traci.vehicle.getLanePosition(vecID), last_edgeID)
 
         # Controllo se non mi sono mai parcheggiato e se ci sono parcheggi nella strada di destinazione
-        if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index) > 0:
+        if vecID_to_parked_dictionary.get(vecID) is None and len(list_of_tuple_parkID_index_dist) > 0:
             idx = 0
             setted = False
-            while idx <= len(list_of_tuple_parkID_index) - 1 and setted is False:
-                # Nel caso in cui ci fossero più parcheggi disponibili nella strada di destinazione
-                # Ne seleziono uno di questi a caso
-                curr_tuple_parkID_index = random.choice(list_of_tuple_parkID_index)
-                parkingID = curr_tuple_parkID_index[0]
-                parking_index = curr_tuple_parkID_index[1]
+            while idx <= len(list_of_tuple_parkID_index_dist) - 1 and setted is False:
+
+                curr_tuple_parkID_index_dist = list_of_tuple_parkID_index_dist[idx]
+                parkingID = curr_tuple_parkID_index_dist[0]
+                parking_index = curr_tuple_parkID_index_dist[1]
 
                 # Controllo la disponibilità di posti effettivamente liberi prima dello step che mi permette di arrivare a destinazione
                 if check_parking_aviability(parkingID) is True:
@@ -415,6 +424,7 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
                     fln = open("log_strategia1.txt", "a")
                     print("[INFO routine()]: Il veicolo", vecID, "NON E' RIUSCITO A PARCHEGGIARE IN:", parkingID, "PER INDISPONIBILITA' DI POSTI LIBERI", file=fln)
                     fln.close()
+
                 idx += 1
 
             # Se non sono riuscito a parcheggiarmi nei parcheggi presenti nella strada di destinazione

@@ -69,3 +69,56 @@ count_between_0_and_5min: 16
 count_between_5_and_10min: 92
 count_plus_10min: 42
 -------------------------------------------------------------------------------------------------------------------------------------------------------
+# STRATEGIA: strategia1, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 145 , NON HANNO PARCHEGGIATO: 5
+Lunghezza media: 7578.63
+Duarata media: 1043.53
+Velocità media: 7.61
+count_between_0_and_5min: 16
+count_between_5_and_10min: 97
+count_plus_10min: 32
+
+# STRATEGIA: strategia2, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 150 , NON HANNO PARCHEGGIATO: 0
+Lunghezza media: 7582.75
+Duarata media: 1061.38
+Velocità media: 7.51
+count_between_0_and_5min: 16
+count_between_5_and_10min: 92
+count_plus_10min: 42
+
+# STRATEGIA: strategia3, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 150 , NON HANNO PARCHEGGIATO: 0
+Lunghezza media: 7582.75
+Duarata media: 1061.38
+Velocità media: 7.51
+count_between_0_and_5min: 16
+count_between_5_and_10min: 92
+count_plus_10min: 42
+
+# STRATEGIA: strategia1, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 142 , NON HANNO PARCHEGGIATO: 8
+Lunghezza media: 7704.4
+Duarata media: 1794.62
+Velocità media: 4.43
+count_between_0_and_5min: 30
+count_between_5_and_10min: 73
+count_plus_10min: 39
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# STRATEGIA: strategia2, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 150 , NON HANNO PARCHEGGIATO: 0
+Lunghezza media: 7671.94
+Duarata media: 1858.78
+Velocità media: 4.16
+count_between_0_and_5min: 30
+count_between_5_and_10min: 77
+count_plus_10min: 43
+
+# STRATEGIA: strategia3, SCENARIO: 5% #
+SU UN TOTALE DI 150 VEICOLO, HANNO PARCHEGGIATO: 150 , NON HANNO PARCHEGGIATO: 0
+Lunghezza media: 7677.75
+Duarata media: 1860.99
+Velocità media: 4.16
+count_between_0_and_5min: 30
+count_between_5_and_10min: 78
+count_plus_10min: 42

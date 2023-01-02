@@ -36,32 +36,32 @@ def get_vehicle_from_xml():
     return list_vec_xml
 
 
-# def check_parking_lanes(filename):
-#     calculate_lane_to_edge_dict()
-#     temp_dict = {}
-#     file = open(filename, "a")
-#
-#     tree = ET.parse("../parking_capacity_100%/on_parking_100%.add.xml")
-#     root = tree.getroot()
-#     for park in root.findall(".//parkingArea"):
-#         parkID = park.get("id")
-#         laneID = park.get("lane")
-#         temp_dict[parkID] = laneID
-#
-#     tree = ET.parse("../parking_capacity_100%/off_parking_100%.add.xml")
-#     root = tree.getroot()
-#     for park in root.findall(".//parkingArea"):
-#         parkID = park.get("id")
-#         laneID = park.get("lane")
-#         temp_dict[parkID] = laneID
-#
-#     for parkID, lane in temp_dict.items():
-#         curr_edge = lane_to_edge_dict.get(lane)
-#         curr_index = get_index_xml_of_lane_from_edge_and_lane(curr_edge, lane)
-#         list_indexes = get_indexes_xml_from_edge(curr_edge)
-#         max_index = max(list_indexes)
-#         print("parkingID:", parkID, "index:", curr_index, "max_index_lane:", max_index, file=file)
-#     file.close()
+def get_num_parking_for_edge():
+    tree = ET.parse("../san_francisco.net.xml")
+    root = tree.getroot()
+
+    tree_on_parking = ET.parse("../parking_capacity_100%/on_parking_100%.add.xml")
+    root_on_parking = tree_on_parking.getroot()
+
+    tree_off_parking = ET.parse("../parking_capacity_100%/off_parking_100%.add.xml")
+    root_off_parking = tree_off_parking.getroot()
+
+    map_edge_num = {}
+    for edge in root.findall(".//edge"):
+        edgeID = edge.attrib["id"]
+        count = 0
+        for lane in root.findall(".//edge/[@id='"+edgeID+"']/lane"):
+            laneID = lane.attrib["id"]
+            for park in root_on_parking.findall(".//parkingArea"):
+                if park.attrib["lane"] == laneID:
+                    count += 1
+            for park in root_off_parking.findall(".//parkingArea"):
+                if park.attrib["lane"] == laneID:
+                    count += 1
+        map_edge_num[edgeID] = count
+
+    for elem1, elem2 in map_edge_num.items():
+        print(elem1, elem2)
 
 def check_not_parking_vehicle(filename, strategia, scenario):
     file = open(filename, "a")
@@ -133,6 +133,8 @@ def main():
     run("strategia3", "100%")
     # run("strategia3", "75%")
     # run("strategia3", "50%")
+
+    # get_num_parking_for_edge()
 
 
 if __name__ == "__main__":
