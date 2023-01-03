@@ -1,210 +1,303 @@
-[INFO routine()]: Il veicolo 1 HA SETTATO LA FERMATA A parkingArea_8922291#0_0_762 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 30 HA SETTATO LA FERMATA A parkingArea_206662304#13_0_660 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 60 HA SETTATO LA FERMATA A parkingArea_247966218#3_0_791 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 45 HA SETTATO LA FERMATA A parkingArea_-43100739_0_743 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 16 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 10 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 0 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 21 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 0 HA SETTATO LA FERMATA A parkingArea_26988030#3_0_1200 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 74 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 47 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 28 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 76 HA SETTATO LA FERMATA A parkingArea_-25371463_0_928 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 28 HA SETTATO LA FERMATA A parkingArea_254299117#1_0_500 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 40 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 93 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 77 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 39 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 64 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 74 HA SETTATO LA FERMATA A parkingArea_225806031#2_0_677 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 39 HA SETTATO LA FERMATA A parkingArea_88559702#0_0_454 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 22 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 27 HA SETTATO LA FERMATA A parkingArea_135110258#0_0_410 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 33 HA SETTATO LA FERMATA A parkingArea_224316522#0_0_572 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 63 HA SETTATO LA FERMATA A parkingArea_224199018#4_0_322 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 13 HA SETTATO LA FERMATA A parkingArea_91181771#5_0_513 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 93 HA SETTATO LA FERMATA A parkingArea_-87297168_0_1209 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 29 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 36 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 29 HA SETTATO LA FERMATA A parkingArea_224199018#1_0_319 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 85 HA SETTATO LA FERMATA A parkingArea_242896157#1_0_435 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 20 HA SETTATO LA FERMATA A parkingArea_91181771#5_0_513 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 36 HA SETTATO LA FERMATA A parkingArea_255330036#13_0_94 nella strada dove è stato indirizzato parkingArea_255330036#13_0_94
-[INFO routine()]: Il veicolo 36 curr_edgeID: 255330036#12 last_edgeID: 255330036#13
-[INFO set_route()]: Il veicolo 71 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 41 HA SETTATO LA FERMATA A parkingArea_88597553#2_0_369 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 40 HA SETTATO LA FERMATA A parkingArea_144489134#2_0_601 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 15 HA SETTATO LA FERMATA A parkingArea_254299142#3_0_508 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 68 HA SETTATO LA FERMATA A parkingArea_35675861#0_0_89 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 42 HA SETTATO LA FERMATA A parkingArea_-99231475_0_428 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 72 HA SETTATO LA FERMATA A parkingArea_91181767_0_670 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 12 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 25 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 2 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 73 HA SETTATO LA FERMATA A parkingArea_254758122#4_0_1183 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 14 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 9 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 22 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 84 HA SETTATO LA FERMATA A parkingArea_24335490#0_0_439 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 100 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 2 HA SETTATO LA FERMATA A parkingArea_283537380#1_0_469 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 34 HA SETTATO LA FERMATA A parkingArea_133733593#1_0_571 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 56 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 51 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 82 HA SETTATO LA FERMATA A parkingArea_8922858#0_0_539 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 86 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 9 HA SETTATO LA FERMATA A parkingArea_143617589#2_0_527 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 24 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 17 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 31 HA SETTATO LA FERMATA A parkingArea_111089307#4_0_960 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 86 HA SETTATO LA FERMATA A parkingArea_254758131#2_0_327 nella strada dove è stato indirizzato parkingArea_254758131#2_0_327
-[INFO routine()]: Il veicolo 86 curr_edgeID: 26938124#4 last_edgeID: 254758131#2
-[INFO routine()]: Il veicolo 11 HA SETTATO LA FERMATA A parkingArea_99231482_0_58 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 3 HA SETTATO LA FERMATA A parkingArea_-27397692_0_397 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 37 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 25 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada dove è stato indirizzato parkingArea_8918460#0_0_56
-[INFO routine()]: Il veicolo 25 curr_edgeID: 27397692 last_edgeID: 8918460#0
-[INFO routine()]: Il veicolo 91 HA SETTATO LA FERMATA A parkingArea_225518502#3_0_85 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 5 HA SETTATO LA FERMATA A parkingArea_283537380#1_0_469 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 24 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
-[INFO routine()]: Il veicolo 24 curr_edgeID: -p4#0 last_edgeID: -p4#0
-[INFO routine()]: Il veicolo 6 HA SETTATO LA FERMATA A parkingArea_8922307_0_62 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 49 HA SETTATO LA FERMATA A parkingArea_31129732#0_0_532 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 114 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 53 HA SETTATO LA FERMATA A parkingArea_-242896157#0_0_442 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 75 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 90 HA SETTATO LA FERMATA A parkingArea_8919328#0_0_377 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 7 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 66 HA SETTATO LA FERMATA A parkingArea_99231463#0_0_394 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 55 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 52 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 104 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 75 HA SETTATO LA FERMATA A parkingArea_28231602#0_0_18 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 59 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 89 HA SETTATO LA FERMATA A parkingArea_254306572#0_0_372 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 7 HA SETTATO LA FERMATA A parkingArea_-24310636#0_0_933 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 101 HA SETTATO LA FERMATA A parkingArea_120256350#3_0_52 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 135 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 23 HA SETTATO LA FERMATA A parkingArea_8919338_0_468 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 62 HA SETTATO LA FERMATA A parkingArea_254306572#0_0_372 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 88 HA SETTATO LA FERMATA A parkingArea_-8922307_0_63 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 119 HA SETTATO LA FERMATA A parkingArea_-254466686#4_0_360 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 104 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 79 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 8 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 127 HA SETTATO LA FERMATA A parkingArea_27054213#4_0_345 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 4 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 59 HA SETTATO LA FERMATA A parkingArea_-242896157#3_0_434 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 80 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 18 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 129 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 114 HA SETTATO LA FERMATA A parkingArea_225806056_0_688 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 70 HA SETTATO LA FERMATA A parkingArea_24310636#2_0_938 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 50 HA SETTATO LA FERMATA A parkingArea_27054213#4_0_345 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 131 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 35 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 94 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 105 HA SETTATO LA FERMATA A parkingArea_91181771#3_3_519 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 35 HA SETTATO LA FERMATA A parkingArea_28843496_0_299 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 38 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 26 HA SETTATO LA FERMATA A parkingArea_27054213#6_0_357 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 64 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 52 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 115 HA SETTATO LA FERMATA A parkingArea_254756520#0_0_352 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 43 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 57 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 4 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 131 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
-[INFO routine()]: Il veicolo 131 curr_edgeID: -224384019#1 last_edgeID: -224384018
-[INFO set_parking()]: Il veicolo 43 HA SETTATO LA FERMATA A parkingArea_26988030#3_0_1200 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 80 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 111 HA SETTATO LA FERMATA A parkingArea_133733593#1_0_571 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 58 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 8 HA SETTATO LA FERMATA A parkingArea_27571801_0_414 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 18 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 99 HA SETTATO LA FERMATA A parkingArea_-88559691#6_0_82 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 44 HA SETTATO LA FERMATA A parkingArea_-254971068_0_334 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 57 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 129 HA SETTATO LA FERMATA A parkingArea_8919328#1_0_378 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 48 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 140 HA SETTATO LA FERMATA A parkingArea_286003244#9_0_598 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 78 HA SETTATO LA FERMATA A parkingArea_99231463#0_0_394 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 65 HA SETTATO LA FERMATA A parkingArea_111319423_0_83 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 132 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 58 HA SETTATO LA FERMATA A parkingArea_26938124#1_0_1051 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 67 HA SETTATO LA FERMATA A parkingArea_35675861#0_0_89 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 38 HA SETTATO LA FERMATA A parkingArea_27398048#2_0_237 nella strada dove è stato indirizzato parkingArea_27398048#2_0_237
-[INFO routine()]: Il veicolo 38 curr_edgeID: 27398048#2 last_edgeID: 27398048#2
-[INFO routine()]: Il veicolo 132 HA SETTATO LA FERMATA A parkingArea_-8920242#0_0_115 nella strada dove è stato indirizzato parkingArea_-8920242#0_0_115
-[INFO routine()]: Il veicolo 132 curr_edgeID: 8920242#0 last_edgeID: -8920242#0
-[INFO set_parking()]: Il veicolo 71 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 32 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 32 HA SETTATO LA FERMATA A parkingArea_32931798#2_0_297 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 19 HA SETTATO LA FERMATA A parkingArea_47172745_0_65 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 69 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 117 HA SETTATO LA FERMATA A parkingArea_329607867_0_466 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 112 HA SETTATO LA FERMATA A parkingArea_287958606#0_0_568 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 95 HA SETTATO LA FERMATA A parkingArea_228186482#0_0_71 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 134 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 61 HA SETTATO LA FERMATA A parkingArea_-37177689#5_0_814 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 126 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 126 HA SETTATO LA FERMATA A parkingArea_262943781_0_356 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 83 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 103 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 54 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 134 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 110 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 109 HA SETTATO LA FERMATA A parkingArea_99231482_0_58 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 81 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 102 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 106 HA SETTATO LA FERMATA A parkingArea_255330036#9_0_492 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 146 HA SETTATO LA FERMATA A parkingArea_91181771#3_3_519 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 96 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 97 HA SETTATO LA FERMATA A parkingArea_-202485361#1_0_445 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 123 HA SETTATO LA FERMATA A parkingArea_-99231475_0_428 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 81 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 121 HA SETTATO LA FERMATA A parkingArea_254971067#0_0_370 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 148 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 113 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 87 HA SETTATO LA FERMATA A parkingArea_99231460_0_88 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 137 HA SETTATO LA FERMATA A parkingArea_290080809#4_0_626 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 98 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 98 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 148 HA SETTATO LA FERMATA A parkingArea_283537644#0_0_456 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 136 HA SETTATO LA FERMATA A parkingArea_254306572#0_0_372 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 54 HA SETTATO LA FERMATA A parkingArea_-242896157#3_0_434 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 110 HA SETTATO LA FERMATA A parkingArea_-242896157#3_0_434 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 103 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada dove è stato indirizzato parkingArea_8918460#0_0_56
-[INFO routine()]: Il veicolo 103 curr_edgeID: 99231482 last_edgeID: 8918460#0
-[INFO routine()]: Il veicolo 139 HA SETTATO LA FERMATA A parkingArea_-254466686#4_0_360 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 113 HA SETTATO LA FERMATA A parkingArea_143617589#2_0_527 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 130 HA SETTATO LA FERMATA A parkingArea_-35675861#1_0_460 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 96 HA SETTATO LA FERMATA A parkingArea_26938124#1_0_1051 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 122 HA SETTATO LA FERMATA A parkingArea_224373753_0_53 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 116 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 94 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 120 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 108 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 120 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 125 HA SETTATO LA FERMATA A parkingArea_8916867#2_0_325 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 118 HA SETTATO LA FERMATA A parkingArea_278995391#0_0_106 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 128 HA SETTATO LA FERMATA A parkingArea_88463829#0_0_44 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 138 HA SETTATO LA FERMATA A parkingArea_120256350#3_0_52 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 133 HA SETTATO LA FERMATA A parkingArea_111319423_0_83 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 107 HA SETTATO LA FERMATA A parkingArea_111319423_0_83 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 145 HA SETTATO LA FERMATA A parkingArea_8919328#0_0_377 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 116 HA SETTATO LA FERMATA A parkingArea_28518571#0_0_827 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 147 HA SETTATO LA FERMATA A parkingArea_99231475_0_55 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 46 HA SETTATO LA FERMATA A parkingArea_206662304#13_0_660 nella strada di destinazione XML
-[INFO routine()]: Il veicolo 141 HA SETTATO LA FERMATA A parkingArea_-27398032#0_0_399 nella strada di destinazione XML
-[INFO set_route()]: Il veicolo 142 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_route()]: Il veicolo 124 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO set_parking()]: Il veicolo 124 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
-[INFO set_parking()]: Il veicolo 108 HA SETTATO LA FERMATA A parkingArea_-88597577#2_0_514 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 144 HA SETTATO LA FERMATA A parkingArea_120256350#3_0_52 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 142 HA SETTATO LA FERMATA A parkingArea_-242896157#3_0_434 lungo la strada verso il più grande
-[INFO set_route()]: Il veicolo 92 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
-[INFO routine()]: Il veicolo 149 HA SETTATO LA FERMATA A parkingArea_-255330036#7_0_494 nella strada di destinazione XML
-[INFO set_parking()]: Il veicolo 92 HA SETTATO LA FERMATA A parkingArea_32931798#2_0_297 lungo la strada verso il più grande
-[INFO routine()]: Il veicolo 143 HA SETTATO LA FERMATA A parkingArea_27397692_0_57 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 302 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 301 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 311 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 301 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 302 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 318 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 306 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 303 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 303 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 306 HA SETTATO LA FERMATA A parkingArea_86303763#1_0_669 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 314 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 317 HA SETTATO LA FERMATA A parkingArea_27029200#2_0_964 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 305 HA SETTATO LA FERMATA A parkingArea_254758126#3_0_1135 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 313 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 311 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 314 HA SETTATO LA FERMATA A parkingArea_254299118#0_0_1350 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 308 HA SETTATO LA FERMATA A parkingArea_-35675861#1_0_460 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 300 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 313 HA SETTATO LA FERMATA A parkingArea_37177789#0_0_124 nella strada dove è stato indirizzato parkingArea_37177789#0_0_124
+[INFO routine()]: Il veicolo 313 curr_edgeID: 52432938#0 last_edgeID: 37177789#0
+[INFO set_route()]: Il veicolo 312 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 319 HA SETTATO LA FERMATA A parkingArea_254297762#1_0_1204 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 310 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 326 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 300 HA SETTATO LA FERMATA A parkingArea_-87297168_0_1209 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 312 HA SETTATO LA FERMATA A parkingArea_27398045#2_0_663 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 309 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 304 HA SETTATO LA FERMATA A parkingArea_-133733582#3_0_684 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 321 HA SETTATO LA FERMATA A parkingArea_91181767_0_670 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 318 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 323 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 325 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 309 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO routine()]: Il veicolo 309 curr_edgeID: 224200967 last_edgeID: -224384018
+[INFO set_route()]: Il veicolo 307 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 323 HA SETTATO LA FERMATA A parkingArea_-87297168_0_1209 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 322 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 325 HA SETTATO LA FERMATA A parkingArea_-37177689#11_0_829 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 324 HA SETTATO LA FERMATA A parkingArea_8918381#1_0_536 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 332 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 320 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 315 HA SETTATO LA FERMATA A parkingArea_48211062#12_0_1219 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 307 HA SETTATO LA FERMATA A parkingArea_141688972#1_0_799 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 316 HA SETTATO LA FERMATA A parkingArea_-287958606#1_0_355 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 326 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 328 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 322 HA SETTATO LA FERMATA A parkingArea_28518571#0_0_827 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 327 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 329 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 327 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 328 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 329 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 332 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 335 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 335 HA SETTATO LA FERMATA A parkingArea_-p2#3_0_126 nella strada dove è stato indirizzato parkingArea_-p2#3_0_126
+[INFO routine()]: Il veicolo 335 curr_edgeID: -51392402#0 last_edgeID: -p2#3
+[INFO set_route()]: Il veicolo 330 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 330 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO routine()]: Il veicolo 330 curr_edgeID: -p4#0 last_edgeID: -p4#0
+[INFO routine()]: Il veicolo 334 HA SETTATO LA FERMATA A parkingArea_224316522#0_0_572 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 333 HA SETTATO LA FERMATA A parkingArea_-254758121#3_0_1161 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 331 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 336 HA SETTATO LA FERMATA A parkingArea_-99231486_0_446 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 331 HA SETTATO LA FERMATA A parkingArea_-37177689#11_0_829 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 342 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 346 HA SETTATO LA FERMATA A parkingArea_225432457_0_400 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 347 HA SETTATO LA FERMATA A parkingArea_8916551_0_487 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 372 HA SETTATO LA FERMATA A parkingArea_24335439#0_0_931 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 353 HA SETTATO LA FERMATA A parkingArea_247966218#4_0_793 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 337 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 356 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 352 HA SETTATO LA FERMATA A parkingArea_43100046_0_404 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 341 HA SETTATO LA FERMATA A parkingArea_-99231475_0_428 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 356 HA SETTATO LA FERMATA A parkingArea_144489134#2_0_601 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 360 HA SETTATO LA FERMATA A parkingArea_254448252#1_0_351 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 342 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 339 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 339 HA SETTATO LA FERMATA A parkingArea_283537644#0_0_456 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 355 HA SETTATO LA FERMATA A parkingArea_88463829#0_0_44 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 359 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 363 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 371 HA SETTATO LA FERMATA A parkingArea_27397937_0_384 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 354 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 358 HA SETTATO LA FERMATA A parkingArea_224316514#0_0_570 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 367 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 343 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 379 HA SETTATO LA FERMATA A parkingArea_256787755#3_0_874 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 348 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 367 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO routine()]: Il veicolo 367 curr_edgeID: -p4#0 last_edgeID: -p4#0
+[INFO routine()]: Il veicolo 348 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO routine()]: Il veicolo 348 curr_edgeID: -224384019#1 last_edgeID: -224384018
+[INFO set_parking()]: Il veicolo 343 HA SETTATO LA FERMATA A parkingArea_8919328#0_0_377 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 350 HA SETTATO LA FERMATA A parkingArea_224316522#0_0_572 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 338 HA SETTATO LA FERMATA A parkingArea_287958607#2_0_327 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 359 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada dove è stato indirizzato parkingArea_8918460#0_0_56
+[INFO routine()]: Il veicolo 359 curr_edgeID: 99231482 last_edgeID: 8918460#0
+[INFO routine()]: Il veicolo 364 HA SETTATO LA FERMATA A parkingArea_-224316527_0_332 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 344 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 369 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 375 HA SETTATO LA FERMATA A parkingArea_91181771#15_0_723 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 349 HA SETTATO LA FERMATA A parkingArea_-99231486_0_446 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 361 HA SETTATO LA FERMATA A parkingArea_-99231486_0_446 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 369 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 344 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 357 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 380 HA SETTATO LA FERMATA A parkingArea_24335441_0_923 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 370 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 370 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 366 HA SETTATO LA FERMATA A parkingArea_287958607#0_0_326 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 368 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 365 HA SETTATO LA FERMATA A parkingArea_262943781_0_356 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 368 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 362 HA SETTATO LA FERMATA A parkingArea_225518512#0_0_107 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 351 HA SETTATO LA FERMATA A parkingArea_225518502#0_0_84 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 340 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 404 HA SETTATO LA FERMATA A parkingArea_224316514#0_0_570 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 340 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 384 HA SETTATO LA FERMATA A parkingArea_24335441_0_923 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 345 HA SETTATO LA FERMATA A parkingArea_27397919_0_66 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 394 HA SETTATO LA FERMATA A parkingArea_254971068_0_335 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 389 HA SETTATO LA FERMATA A parkingArea_-225518512#1_0_517 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 391 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 377 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 415 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 391 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 405 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 373 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 405 HA SETTATO LA FERMATA A parkingArea_224199018#1_0_319 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 381 HA SETTATO LA FERMATA A parkingArea_-99231486_0_446 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 386 HA SETTATO LA FERMATA A parkingArea_255168046#2_0_453 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 383 HA SETTATO LA FERMATA A parkingArea_254448252#1_0_351 nella strada di destinazione XML
+[INFO clear_others_stops()]: Il veicolo: 386 HA RIMOSSO: parkingArea_255168046#2_1_516 perchè HA SETTATO: parkingArea_255168046#2_1_516
+[INFO routine()]: Il veicolo 386 HA SETTATO LA FERMATA A parkingArea_255168046#2_1_516 nella strada di destinazione XML
+[INFO clear_others_stops()]: Il veicolo: 386 HA RIMOSSO: parkingArea_255168046#2_1_516 perchè HA SETTATO: parkingArea_255168046#2_1_516
+[INFO routine()]: Il veicolo 386 HA SETTATO LA FERMATA A parkingArea_255168046#2_1_516 nella strada di destinazione XML
+[INFO clear_others_stops()]: Il veicolo: 386 HA RIMOSSO: parkingArea_255168046#2_1_516 perchè HA SETTATO: parkingArea_255168046#2_1_516
+[INFO routine()]: Il veicolo 386 HA SETTATO LA FERMATA A parkingArea_255168046#2_1_516 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 403 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 382 HA SETTATO LA FERMATA A parkingArea_24310636#2_0_938 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 378 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 415 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 418 HA SETTATO LA FERMATA A parkingArea_256787755#0_0_876 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 465 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 373 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 374 HA SETTATO LA FERMATA A parkingArea_364480601#1_0_451 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 385 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 390 HA SETTATO LA FERMATA A parkingArea_-8922307_0_63 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 376 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 376 HA SETTATO LA FERMATA A parkingArea_27398048#2_0_237 nella strada dove è stato indirizzato parkingArea_27398048#2_0_237
+[INFO routine()]: Il veicolo 376 curr_edgeID: 27398048#4 last_edgeID: 27398048#2
+[INFO set_route()]: Il veicolo 402 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 387 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 492 HA SETTATO LA FERMATA A parkingArea_47108420#0_0_17 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 392 HA SETTATO LA FERMATA A parkingArea_8916867#2_0_325 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 440 HA SETTATO LA FERMATA A parkingArea_27397691_0_443 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 482 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 422 HA SETTATO LA FERMATA A parkingArea_-122498865_0_730 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 475 HA SETTATO LA FERMATA A parkingArea_-254971068_0_334 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 480 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 399 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 406 HA SETTATO LA FERMATA A parkingArea_111049100#0_0_64 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 484 HA SETTATO LA FERMATA A parkingArea_224316513#0_0_371 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 407 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 412 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 434 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 403 HA SETTATO LA FERMATA A parkingArea_28518571#0_0_827 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 397 HA SETTATO LA FERMATA A parkingArea_91181771#5_0_513 nella strada di destinazione XML
+[INFO clear_others_stops()]: Il veicolo: 376 HA RIMOSSO: parkingArea_27398048#2_0_237 perchè HA SETTATO: parkingArea_27146036#2_0_294
+[INFO set_parking()]: Il veicolo 376 HA SETTATO LA FERMATA A parkingArea_27146036#2_0_294 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 412 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 399 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 402 HA SETTATO LA FERMATA A parkingArea_-35675861#1_0_460 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 438 HA SETTATO LA FERMATA A parkingArea_225432457_0_400 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 470 HA SETTATO LA FERMATA A parkingArea_255168046#2_0_453 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 411 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 445 HA SETTATO LA FERMATA A parkingArea_8922858#0_0_539 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 417 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 472 HA SETTATO LA FERMATA A parkingArea_254756521#3_0_355 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 378 HA SETTATO LA FERMATA A parkingArea_28518571#0_0_827 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 401 HA SETTATO LA FERMATA A parkingArea_364480068#1_0_472 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 395 HA SETTATO LA FERMATA A parkingArea_254299142#3_0_508 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 482 HA SETTATO LA FERMATA A parkingArea_290080809#4_0_626 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 400 HA SETTATO LA FERMATA A parkingArea_27397937_0_384 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 417 HA SETTATO LA FERMATA A parkingArea_283516316#2_0_41 lungo la strada verso il più grande
+[INFO clear_others_stops()]: Il veicolo: 470 HA RIMOSSO: parkingArea_255168046#2_1_516 perchè HA SETTATO: parkingArea_255168046#2_1_516
+[INFO routine()]: Il veicolo 470 HA SETTATO LA FERMATA A parkingArea_255168046#2_1_516 nella strada di destinazione XML
+[INFO clear_others_stops()]: Il veicolo: 470 HA RIMOSSO: parkingArea_255168046#2_1_516 perchè HA SETTATO: parkingArea_255168046#2_1_516
+[INFO routine()]: Il veicolo 470 HA SETTATO LA FERMATA A parkingArea_255168046#2_1_516 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 398 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 411 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 455 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 476 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 409 HA SETTATO LA FERMATA A parkingArea_111319423_0_83 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 398 HA SETTATO LA FERMATA A parkingArea_364480068#1_0_472 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 388 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 432 HA SETTATO LA FERMATA A parkingArea_8919328#1_0_378 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 476 HA SETTATO LA FERMATA A parkingArea_287958607#4_0_329 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 455 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO routine()]: Il veicolo 455 curr_edgeID: -p4#0 last_edgeID: -p4#0
+[INFO set_route()]: Il veicolo 413 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 441 HA SETTATO LA FERMATA A parkingArea_24335490#0_0_439 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 407 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 471 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 436 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 481 HA SETTATO LA FERMATA A parkingArea_-254396709#1_0_358 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 427 HA SETTATO LA FERMATA A parkingArea_364480601#1_0_451 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 485 HA SETTATO LA FERMATA A parkingArea_27054213#2_0_344 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 488 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 420 HA SETTATO LA FERMATA A parkingArea_8916048_0_956 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 437 HA SETTATO LA FERMATA A parkingArea_225432462#0_0_60 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 425 HA SETTATO LA FERMATA A parkingArea_-254971064#1_0_426 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 436 HA SETTATO LA FERMATA A parkingArea_-p4#0_0_102 nella strada dove è stato indirizzato parkingArea_-p4#0_0_102
+[INFO routine()]: Il veicolo 436 curr_edgeID: -p4#0 last_edgeID: -p4#0
+[INFO routine()]: Il veicolo 446 HA SETTATO LA FERMATA A parkingArea_91181771#0_0_77 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 456 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 466 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 396 HA SETTATO LA FERMATA A parkingArea_-35675861#1_0_460 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 477 HA SETTATO LA FERMATA A parkingArea_24335489#0_0_305 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 419 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 451 HA SETTATO LA FERMATA A parkingArea_-35675861#1_0_460 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 466 HA SETTATO LA FERMATA A parkingArea_144489134#2_0_601 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 453 HA SETTATO LA FERMATA A parkingArea_-8916922#4_0_52 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 460 HA SETTATO LA FERMATA A parkingArea_224316514#0_0_570 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 463 HA SETTATO LA FERMATA A parkingArea_88463829#0_0_44 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 488 HA SETTATO LA FERMATA A parkingArea_224199018#1_0_319 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 498 HA SETTATO LA FERMATA A parkingArea_133733593#1_0_571 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 473 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 435 HA SETTATO LA FERMATA A parkingArea_35675861#1_0_461 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 461 HA SETTATO LA FERMATA A parkingArea_254396709#0_0_357 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 413 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada dove è stato indirizzato parkingArea_8918460#0_0_56
+[INFO routine()]: Il veicolo 413 curr_edgeID: 27397692 last_edgeID: 8918460#0
+[INFO set_route()]: Il veicolo 487 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 444 HA SETTATO LA FERMATA A parkingArea_364480601#0_0_449 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 474 HA SETTATO LA FERMATA A parkingArea_111049100#0_0_64 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 471 HA SETTATO LA FERMATA A parkingArea_144489134#2_0_601 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 424 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 459 HA SETTATO LA FERMATA A parkingArea_27397691_0_443 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 448 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 490 HA SETTATO LA FERMATA A parkingArea_8916867#2_0_325 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 410 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 456 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO routine()]: Il veicolo 456 curr_edgeID: -224384019#1 last_edgeID: -224384018
+[INFO set_parking()]: Il veicolo 419 HA SETTATO LA FERMATA A parkingArea_-133781759#1_0_681 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 439 HA SETTATO LA FERMATA A parkingArea_27397692_0_57 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 469 HA SETTATO LA FERMATA A parkingArea_8919179#0_0_356 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 487 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO routine()]: Il veicolo 487 curr_edgeID: -224384019#1 last_edgeID: -224384018
+[INFO set_route()]: Il veicolo 416 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 408 HA SETTATO LA FERMATA A parkingArea_-88466055#1_0_464 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 495 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 385 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 416 HA SETTATO LA FERMATA A parkingArea_262943781_0_356 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 449 HA SETTATO LA FERMATA A parkingArea_-254971064#1_0_426 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 483 HA SETTATO LA FERMATA A parkingArea_287958607#3_0_328 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 465 HA SETTATO LA FERMATA A parkingArea_-35675861#0_0_462 lungo la strada verso il più grande
+[INFO set_route()]: Il veicolo 442 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 430 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 433 HA SETTATO LA FERMATA A parkingArea_364480601#1_0_451 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 442 HA SETTATO LA FERMATA A parkingArea_364480068#1_0_472 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 414 HA SETTATO LA FERMATA A parkingArea_8915752_0_467 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 447 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 496 HA SETTATO LA FERMATA A parkingArea_-27397692_0_397 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 497 HA SETTATO LA FERMATA A parkingArea_27054213#4_0_345 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 493 HA SETTATO LA FERMATA A parkingArea_287958607#2_0_327 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 430 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 458 HA SETTATO LA FERMATA A parkingArea_24335489#0_0_305 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 428 HA SETTATO LA FERMATA A parkingArea_27397692_0_57 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 452 HA SETTATO LA FERMATA A parkingArea_8922307_0_62 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 393 HA SETTATO LA FERMATA A parkingArea_287958607#2_0_327 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 447 HA SETTATO LA FERMATA A parkingArea_283537552#1_0_458 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 450 HA SETTATO LA FERMATA A parkingArea_91181771#3_3_519 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 424 HA SETTATO LA FERMATA A parkingArea_254299118#0_0_1350 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 448 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 454 HA SETTATO LA FERMATA A parkingArea_242896157#1_0_435 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 494 HA SETTATO LA FERMATA A parkingArea_254756521#3_0_355 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 421 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_route()]: Il veicolo 457 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 429 HA SETTATO LA FERMATA A parkingArea_8919338_0_468 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 443 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 426 HA SETTATO LA FERMATA A parkingArea_120256350#8_0_45 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 499 HA SETTATO LA FERMATA A parkingArea_28843496_0_299 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 457 HA SETTATO LA FERMATA A parkingArea_-224384018_0_73 nella strada dove è stato indirizzato parkingArea_-224384018_0_73
+[INFO routine()]: Il veicolo 457 curr_edgeID: 224200967 last_edgeID: -224384018
+[INFO routine()]: Il veicolo 478 HA SETTATO LA FERMATA A parkingArea_-24310636#1_0_935 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 486 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 495 HA SETTATO LA FERMATA A parkingArea_27571801_0_414 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 479 HA SETTATO LA FERMATA A parkingArea_254466695#0_0_569 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 486 HA SETTATO LA FERMATA A parkingArea_8916867#2_0_325 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 491 HA SETTATO LA FERMATA A parkingArea_287958607#3_0_328 nella strada di destinazione XML
+[INFO routine()]: Il veicolo 443 HA SETTATO LA FERMATA A parkingArea_8918460#0_0_56 nella strada dove è stato indirizzato parkingArea_8918460#0_0_56
+[INFO routine()]: Il veicolo 443 curr_edgeID: 27397692 last_edgeID: 8918460#0
+[INFO routine()]: Il veicolo 462 HA SETTATO LA FERMATA A parkingArea_255330036#7_0_96 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 423 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 421 HA SETTATO LA FERMATA A parkingArea_8916215_0_789 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 489 HA SETTATO LA FERMATA A parkingArea_224199018#4_0_322 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 431 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO routine()]: Il veicolo 467 HA SETTATO LA FERMATA A parkingArea_254756525#3_0_567 nella strada di destinazione XML
+[INFO set_parking()]: Il veicolo 423 HA SETTATO LA FERMATA A parkingArea_-88597577#2_0_514 lungo la strada verso il più grande
+[INFO routine()]: Il veicolo 464 HA SETTATO LA FERMATA A parkingArea_8916922#3_0_423 nella strada di destinazione XML
+[INFO set_route()]: Il veicolo 468 SI STA DIRIGENDO VERSO IL PROSSIMO PIÙ GRANDE CON INDICE: 0
+[INFO set_parking()]: Il veicolo 468 HA SETTATO LA FERMATA A parkingArea_24245395#0_0_20 lungo la strada verso il più grande
+[INFO set_parking()]: Il veicolo 431 HA SETTATO LA FERMATA A parkingArea_88466052#1_0_438 lungo la strada verso il più grande
