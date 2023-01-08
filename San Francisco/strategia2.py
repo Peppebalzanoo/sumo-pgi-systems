@@ -6,7 +6,7 @@ from os.path import exists
 from sumolib import checkBinary
 import xml.etree.ElementTree as ElementTree
 
-AREA_INIT = 500
+LATO_INIT = 500
 
 # * ********************************************************************************************************************************************************************* * #
 # (vecID: parkingID)
@@ -271,13 +271,13 @@ def get_available_lanes(vecID):
         # Tutte le corsie che hanno un parcheggio
         list_lane_parking = list(lane_to_parking_dictionary.keys())
 
-        curr_area = AREA_INIT
+        curr_lato = LATO_INIT
         dest_lane_coordinateXY = vecID_to_dest_lane_position_dictionary.get(vecID)
 
-        limit_infX = dest_lane_coordinateXY[0] - curr_area / 2
-        limit_infY = dest_lane_coordinateXY[1] - curr_area / 2
-        limit_supX = dest_lane_coordinateXY[0] + curr_area / 2
-        limit_supY = dest_lane_coordinateXY[1] + curr_area / 2
+        limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
+        limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
+        limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
+        limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
 
         idx = 0
         while idx in range(0, len(list_lane_parking)):
@@ -291,16 +291,16 @@ def get_available_lanes(vecID):
 
             # Controllo se sto uscendo dal while e se non ho trovato nessuna lane con un parcheggio nell'area corrente di ricerca
             if idx >= len(list_lane_parking) and len(list_aviable_lane) == 0:
-                if curr_area < 4000:
+                if curr_lato < 4000:
                     fln = open("log_strategia2.txt", "a")
-                    print("[#CASO#]", vecID, "non ha trovato nessun parcheggio nell'area corrente di ricerca:", curr_area)
+                    print("[#CASO#]", vecID, "non ha trovato nessun parcheggio nell'area corrente di ricerca:", curr_lato)
                     fln.close()
-                    curr_area = curr_area * 2
+                    curr_lato = curr_lato * 2
                     # Devo aggiornare le coordinate del limite inferiore e superiore
-                    limit_infX = dest_lane_coordinateXY[0] - curr_area / 2
-                    limit_infY = dest_lane_coordinateXY[1] - curr_area / 2
-                    limit_supX = dest_lane_coordinateXY[0] + curr_area / 2
-                    limit_supY = dest_lane_coordinateXY[1] + curr_area / 2
+                    limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
+                    limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
+                    limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
+                    limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
                     idx = 0
 
         # Salvo le lanes calcolate
@@ -416,9 +416,9 @@ def set_parking_on_current_edge(vecID, curr_edgeID, curr_position, curr_lane_ind
 
                 try:
                     # (900sec == 10min, 10800sec == 3hrs)
-                    # ! random_parking_time = random.randint(900, 10800)
+                    random_parking_time = random.randint(900, 10800)
                     if check_stop_already_set(vecID, parkingID) is False:
-                        traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
+                        traci.vehicle.setParkingAreaStop(vecID, parkingID, random_parking_time)
 
                         # Controllo ed elimino le fermate settate prima di quest'ultima
                         clear_others_stops(vecID, parkingID)
@@ -475,9 +475,9 @@ def routine(vecID, curr_laneID, curr_edgeID, last_edgeID, expected_index):
 
                     try:
                         # (900sec == 10min, 10800sec == 3hrs)
-                        # ! random_parking_time = random.randint(900, 10800)
+                        random_parking_time = random.randint(900, 10800)
                         if check_stop_already_set(vecID, parkingID) is False:
-                            traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
+                            traci.vehicle.setParkingAreaStop(vecID, parkingID, random_parking_time)
 
                             # Controllo ed elimino le fermate settate prima di quest'ultima
                             clear_others_stops(vecID, parkingID)

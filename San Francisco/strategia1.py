@@ -5,7 +5,7 @@ import random
 from sumolib import checkBinary
 import xml.etree.ElementTree as ElementTree
 
-AREA_INIT = 500
+LATO_INIT = 500
 TIME = 600
 
 # * ********************************************************************************************************************************************************************* * #
@@ -238,23 +238,23 @@ def calculate_new_route(vecID, curr_edgeID, last_edgeID, random_edgeID):
 
 # * ********************************************************************************************************************************************************************* * #
 
-# (vecID: (area, counter) )
-vecID_to_dynamicarea_counter_dictionary = {}
+# (vecID: (lato, counter) )
+vecID_to_lato_counter_dictionary = {}
 
 
-def load_vecID_to_dynamicarea_counter_dictionary(val):
+def load_vecID_to_lato_counter_dictionary(val):
     for vecID in get_vehicle_from_xml():
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (val, 0)
+        vecID_to_lato_counter_dictionary[vecID] = (val, 0)
 
 
-def update_vecID_to_dynamicarea_counter_dictionary(vecID, area, counter):
-    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != area or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != counter:
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (area, counter)
+def update_vecID_to_lato_counter_dictionary(vecID, area, counter):
+    if vecID_to_lato_counter_dictionary.get(vecID)[0] != area or vecID_to_lato_counter_dictionary.get(vecID)[1] != counter:
+        vecID_to_lato_counter_dictionary[vecID] = (area, counter)
 
 
-def reset_vecID_to_dynamicarea_counter_dictionary(vecID):
-    if vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] != AREA_INIT or vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] != 0:
-        vecID_to_dynamicarea_counter_dictionary[vecID] = (AREA_INIT, 0)
+def reset_vecID_to_lato_counter_dictionary(vecID):
+    if vecID_to_lato_counter_dictionary.get(vecID)[0] != LATO_INIT or vecID_to_lato_counter_dictionary.get(vecID)[1] != 0:
+        vecID_to_lato_counter_dictionary[vecID] = (LATO_INIT, 0)
 
 
 
@@ -286,24 +286,24 @@ def reset_vec_to_searchtime_started_dictionary(vecID):
 
 def check_time(vecID, count):
     if count == TIME:
-        if vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3:
-            update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
+        if vecID_to_lato_counter_dictionary.get(vecID)[1] < 3:
+            update_vecID_to_lato_counter_dictionary(vecID, vecID_to_lato_counter_dictionary.get(vecID)[0] * 2, vecID_to_lato_counter_dictionary.get(vecID)[1] + 1)
             update_vec_to_searchtime_started_dictionary(vecID, 0, True)
         else:
             send_to_depart_xml(vecID)
-            reset_vecID_to_dynamicarea_counter_dictionary(vecID)
+            reset_vecID_to_lato_counter_dictionary(vecID)
             reset_vec_to_searchtime_started_dictionary(vecID)
 
 # * ********************************************************************************************************************************************************************* * #
 
 def get_available_edges(vecID, curr_edgeID, expected_index, last_edgeID, list_tuple_links):
-    tupla_dynamicarea_counter = vecID_to_dynamicarea_counter_dictionary.get(vecID)
-    curr_area = tupla_dynamicarea_counter[0]
+    tupla_lato_counter = vecID_to_lato_counter_dictionary.get(vecID)
+    curr_lato = tupla_lato_counter[0]
     dest_lane_positionXY = vecID_to_dest_lane_position_dictionary.get(vecID)
-    limit_infX = dest_lane_positionXY[0] - curr_area / 2
-    limit_infY = dest_lane_positionXY[1] - curr_area / 2
-    limit_supX = dest_lane_positionXY[0] + curr_area / 2
-    limit_supY = dest_lane_positionXY[1] + curr_area / 2
+    limit_infX = dest_lane_positionXY[0] - curr_lato / 2
+    limit_infY = dest_lane_positionXY[1] - curr_lato / 2
+    limit_supX = dest_lane_positionXY[0] + curr_lato / 2
+    limit_supY = dest_lane_positionXY[1] + curr_lato / 2
 
     list_available = []
     for i in range(0, len(list_tuple_links)):
@@ -331,7 +331,7 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
 
     if num_links >= 1:
         exit_cond = False
-        while vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] < 3 and exit_cond is False:
+        while vecID_to_lato_counter_dictionary.get(vecID)[1] < 3 and exit_cond is False:
             list_available_edgs = get_available_edges(vecID, curr_edgeID, expected_index, last_edgeID, list_tuple_links)
 
             if len(list_available_edgs) > 0:
@@ -353,13 +353,13 @@ def search_random_edge_for_parking(vecID, curr_edgeID, curr_laneID, expected_ind
                 exit_cond = True
 
             else:
-                update_vecID_to_dynamicarea_counter_dictionary(vecID, vecID_to_dynamicarea_counter_dictionary.get(vecID)[0] * 2, vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] + 1)
+                update_vecID_to_lato_counter_dictionary(vecID, vecID_to_lato_counter_dictionary.get(vecID)[0] * 2, vecID_to_lato_counter_dictionary.get(vecID)[1] + 1)
                 update_vec_to_searchtime_started_dictionary(vecID, 0, True)
 
         # Controllo se sono uscito perché ho aumentato la superficie di ricerca al massimo
-        if vecID_to_dynamicarea_counter_dictionary.get(vecID)[1] >= 3 and exit_cond is False:
+        if vecID_to_lato_counter_dictionary.get(vecID)[1] >= 3 and exit_cond is False:
             send_to_depart_xml(vecID)
-            reset_vecID_to_dynamicarea_counter_dictionary(vecID)
+            reset_vecID_to_lato_counter_dictionary(vecID)
             reset_vec_to_searchtime_started_dictionary(vecID)
     else:
         # Non c'è nessuna strada collegata a quella corrente
@@ -397,9 +397,9 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 
                     try:
                         # (900sec == 10min, 10800sec == 3hrs)
-                        # ! random_parking_time = random.randint(900, 10800)
+                        random_parking_time = random.randint(900, 10800)
                         if check_stop_already_set(vecID, parkingID) is False:
-                            traci.vehicle.setParkingAreaStop(vecID, parkingID, 100)
+                            traci.vehicle.setParkingAreaStop(vecID, parkingID, random_parking_time)
 
                             # Controllo ed elimino le fermate settate prima di quest'ultima
                             clear_others_stops(vecID, parkingID)
@@ -440,7 +440,7 @@ def routine(vecID, curr_edgeID, curr_laneID, last_edgeID, last_laneID_excpected,
 # * ********************************************************************************************************************************************************************* * #
 
 def run(strategia, scenario):
-    load_vecID_to_dynamicarea_counter_dictionary(AREA_INIT)
+    load_vecID_to_lato_counter_dictionary(LATO_INIT)
     set_lane_to_parking_dictionary()
     load_vec_to_searchtime_started_dictionary()
 
@@ -492,7 +492,7 @@ def run(strategia, scenario):
                 # Setto che il veicolo ha parcheggiato
                 vecID_to_parked_dictionary[vecID] = True
 
-                reset_vecID_to_dynamicarea_counter_dictionary(vecID)
+                reset_vecID_to_lato_counter_dictionary(vecID)
 
         traci.simulation.step()
         step = traci.simulation.getTime()  # step ++
