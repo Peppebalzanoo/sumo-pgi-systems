@@ -514,10 +514,10 @@ def main():
     fln.close()
 
     # STRATEGIA: strategia1, SCENARIO: 100%
-    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_100%.sumocfg", "--start"]
-    traci.start(sumoCmd)
-    run("strategia1", "100%")
-    traci.close()
+    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_100%.sumocfg", "--start"]
+    # traci.start(sumoCmd)
+    # run("strategia1", "100%")
+    # traci.close()
 
     # STRATEGIA: strategia1, SCENARIO: 75%
     # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_75%.sumocfg", "--start"]
@@ -526,10 +526,10 @@ def main():
     # traci.close()
 
     # STRATEGIA: strategia1, SCENARIO: 50%
-    # sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia1", "50%")
-    # traci.close()
+    sumoCmd = [sumoBinary, "-c", "./strategia1_config/san_francisco_strategia1_50%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run("strategia1", "50%")
+    traci.close()
 
 
 # * ********************************************************************************************************************************************************************* * #
