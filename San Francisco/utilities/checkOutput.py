@@ -123,15 +123,15 @@ def run(strategia, scenario):
 def main():
 
     run("strategia1", "100%")
-    # run("strategia1", "75%")
+    run("strategia1", "75%")
     # run("strategia1", "50%")
 
     run("strategia2", "100%")
-    # run("strategia2", "75%")
+    run("strategia2", "75%")
     # run("strategia2", "50%")
 
     run("strategia3", "100%")
-    # run("strategia3", "75%")
+    run("strategia3", "75%")
     # run("strategia3", "50%")
 
     # get_num_parking_for_edge()
