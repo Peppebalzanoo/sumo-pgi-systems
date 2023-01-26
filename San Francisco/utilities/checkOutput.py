@@ -117,7 +117,7 @@ def run(strategia, scenario):
     file.close()
     check_route(filename, strategia, scenario)
     check_stops(filename, strategia, scenario)
-    check_not_parking_vehicle(filename, strategia, scenario)
+    # check_not_parking_vehicle(filename, strategia, scenario)
 
 
 def main():

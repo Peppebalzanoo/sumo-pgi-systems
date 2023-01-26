@@ -2,6 +2,7 @@ import os
 import random
 import sys
 import traci
+from os.path import exists
 from sumolib import checkBinary
 import xml.etree.ElementTree as ElementTree
 
@@ -39,14 +40,13 @@ def get_parkings_and_index_from_edge(edgeID):
             list_of_tuple_parkID_index.append((parkID, park_index))
     return list_of_tuple_parkID_index
 
-
 def sort_parking_by_distance_current(list_of_tuple_parkID_index, curr_edgeID, vec_position):
     list_of_tuple_parkID_index_dist = []
     for curr_tuple in list_of_tuple_parkID_index:
         parkID = curr_tuple[0]
         park_index = curr_tuple[1]
         start_parkID = traci.parkingarea.getStartPos(parkID)
-        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, curr_edgeID, start_parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, curr_edgeID, start_parkID, True)
         list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
     return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
 
@@ -57,7 +57,7 @@ def sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, ve
         parkID = curr_tuple[0]
         park_index = traci.parkingarea.getStartPos(parkID)
         start_parkID = traci.parkingarea.getStartPos(parkID)
-        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID, True)
         list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
     return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
 # * ********************************************************************************************************************************************************************* * #
@@ -266,50 +266,65 @@ vecID_to_available_lanes = {}
 def get_available_lanes(vecID):
     list_aviable_lane = []
 
+    # Controllo se non ho già settato le lanes disponibli per questo veicolo
     if vecID_to_available_lanes.get(vecID) is None:
-        # Tutte le corsie che hanno un parcheggio
-        list_lane_parking = list(lane_to_parking_dictionary.keys())
+        # Controllo se le lanse sono già state calcolate e salvate in un file
+        if exists("./strategia3_config/aviablelanes/lanes" + vecID + ".txt"):
+            # Recupero i parcheggi
+            with open("./strategia3_config/aviablelanes/lanes" + vecID + ".txt") as f:
+                for line in f:
+                    list_aviable_lane.append(line.strip())
+            # Setto le lanes nel dizionario
+            vecID_to_available_lanes[vecID] = (list_aviable_lane, 0)
 
-        curr_lato = LATO_INIT
-        dest_lane_coordinateXY = vecID_to_dest_lane_position_dictionary.get(vecID)
+        else:
+            # Procedo al calcolo delle lanes
+            # Tutte le corsie che hanno un parcheggio
+            list_lane_parking = list(lane_to_parking_dictionary.keys())
+            curr_lato = LATO_INIT
+            dest_lane_coordinateXY = vecID_to_dest_lane_position_dictionary.get(vecID)
+            limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
+            limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
+            limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
+            limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
 
-        limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
-        limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
-        limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
-        limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
+            idx = 0
+            while idx in range(0, len(list_lane_parking)):
+                temp_lane = list_lane_parking[idx]
+                temp_edge = traci.lane.getEdgeID(temp_lane)
+                temp_index = get_index_xml_of_lane_from_edge_and_lane(temp_edge, temp_lane)
+                temp_coordinateXY = get_start_coordinateXY_from_lane(temp_edge, temp_index)
+                if limit_infX <= temp_coordinateXY[0] <= limit_supX and limit_infY <= temp_coordinateXY[1] <= limit_supY:
+                    list_aviable_lane.append(temp_lane)
+                idx += 1
+                # Controllo se sto uscendo dal while e se non ho trovato nessuna lane con un parcheggio nell'area corrente di ricerca
+                if idx >= len(list_lane_parking) and len(list_aviable_lane) == 0:
+                    if curr_lato < 4000:
+                        fln = open("log_strategia3.txt", "a")
+                        print("[#CASO#]", vecID, "non ha trovato nessun parcheggio nell'area corrente di ricerca:", curr_lato)
+                        fln.close()
+                        curr_lato = curr_lato * 2
+                        # Devo aggiornare le coordinate del limite inferiore e superiore
+                        limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
+                        limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
+                        limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
+                        limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
+                        idx = 0
 
-        idx = 0
-        while idx in range(0, len(list_lane_parking)):
-            temp_lane = list_lane_parking[idx]
-            temp_edge = traci.lane.getEdgeID(temp_lane)
-            temp_index = get_index_xml_of_lane_from_edge_and_lane(temp_edge, temp_lane)
-            temp_coordinateXY = get_start_coordinateXY_from_lane(temp_edge, temp_index)
-            if limit_infX <= temp_coordinateXY[0] <= limit_supX and limit_infY <= temp_coordinateXY[1] <= limit_supY:
-                list_aviable_lane.append(temp_lane)
-            idx += 1
+            # Setto le lanes calcolate nel dizionario
+            vecID_to_available_lanes[vecID] = list_aviable_lane
 
-            # Controllo se sto uscendo dal while e se non ho trovato nessuna lane con un parcheggio nell'area corrente di ricerca
-            if idx >= len(list_lane_parking) and len(list_aviable_lane) == 0:
-                if curr_lato < 4000:
-                    fln = open("log_strategia3.txt", "a")
-                    print("[#CASO#]", vecID, "non ha trovato nessun parcheggio nell'area corrente di ricerca:", curr_lato)
-                    fln.close()
-                    curr_lato = curr_lato * 2
-                    # Devo aggiornare le coordinate del limite inferiore e superiore
-                    limit_infX = dest_lane_coordinateXY[0] - curr_lato / 2
-                    limit_infY = dest_lane_coordinateXY[1] - curr_lato / 2
-                    limit_supX = dest_lane_coordinateXY[0] + curr_lato / 2
-                    limit_supY = dest_lane_coordinateXY[1] + curr_lato / 2
-                    idx = 0
+            # Salvo le lanes nel file
+            fln = open("./strategia3_config/aviablelanes/lanes" + vecID + ".txt", "w")
+            for elem in list_aviable_lane:
+                print(elem, file=fln)
+            fln.close()
 
-        # Salvo le lanes calcolate
-        vecID_to_available_lanes[vecID] = list_aviable_lane
     else:
-        # Se ho già calcolato le lanes disponibili
+        # Se ho già settato le lanes disponibili
         list_aviable_lane = vecID_to_available_lanes.get(vecID)
 
     return list_aviable_lane
-
 # * ********************************************************************************************************************************************************************* * #
 
 # (vecID : (list_ordred_parking[...])))

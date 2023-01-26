@@ -48,7 +48,7 @@ def sort_parking_by_distance_routine(list_of_tuple_parkID_index, curr_edgeID, ve
         parkID = curr_tuple[0]
         park_index = traci.parkingarea.getStartPos(parkID)
         start_parkID = traci.parkingarea.getStartPos(parkID)
-        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID)
+        dist = traci.simulation.getDistanceRoad(curr_edgeID, vec_position, last_edgeID, start_parkID, True)
         list_of_tuple_parkID_index_dist.append((parkID, park_index, dist))
     return sorted(list_of_tuple_parkID_index_dist, key=lambda tupl: tupl[2])
 # * ********************************************************************************************************************************************************************* * #

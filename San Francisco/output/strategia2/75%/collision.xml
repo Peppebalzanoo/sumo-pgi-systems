@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-01-10 07:31:58 by Eclipse SUMO sumo Version 1.14.1
+<!-- generated on 2023-01-20 11:53:07 by Eclipse SUMO sumo Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
         <net-file value="./strategia2_config/../san_francisco.net.xml"/>
         <route-files value="./strategia2_config/../san_francisco.rou.xml"/>
-        <additional-files value="./strategia2_config/../san_francisco.poly.xml,./strategia2_config/../parking_capacity_100%25/off_parking_100%25.add.xml,./strategia2_config/../parking_capacity_100%25/on_parking_100%25.add.xml"/>
+        <additional-files value="./strategia2_config/../san_francisco.poly.xml,./strategia2_config/../parking_capacity_75%25/off_parking_75%25.add.xml,./strategia2_config/../parking_capacity_75%25/on_parking_75%25.add.xml"/>
     </input>
 
     <output>
-        <emission-output value="./strategia2_config/../output/strategia2/100%25/emissions.xml"/>
-        <tripinfo-output value="./strategia2_config/../output/strategia2/100%25/tripinfo.xml"/>
-        <vehroute-output value="./strategia2_config/../output/strategia2/100%25/vehroute.xml"/>
-        <stop-output value="./strategia2_config/../output/strategia2/100%25/stops.xml"/>
-        <collision-output value="./strategia2_config/../output/strategia2/100%25/collision.xml"/>
-        <statistic-output value="./strategia2_config/../output/strategia2/100%25/statistic.xml"/>
+        <emission-output value="./strategia2_config/../output/strategia2/75%25/emissions.xml"/>
+        <tripinfo-output value="./strategia2_config/../output/strategia2/75%25/tripinfo.xml"/>
+        <vehroute-output value="./strategia2_config/../output/strategia2/75%25/vehroute.xml"/>
+        <stop-output value="./strategia2_config/../output/strategia2/75%25/stops.xml"/>
+        <collision-output value="./strategia2_config/../output/strategia2/75%25/collision.xml"/>
+        <statistic-output value="./strategia2_config/../output/strategia2/75%25/statistic.xml"/>
     </output>
 
     <time>
@@ -32,7 +32,7 @@
     </report>
 
     <traci_server>
-        <remote-port value="49870"/>
+        <remote-port value="55586"/>
     </traci_server>
 
     <gui_only>
