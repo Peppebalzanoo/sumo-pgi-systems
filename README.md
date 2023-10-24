@@ -1,4 +1,4 @@
-# Sumo-PGI Systems
+# Sumo PGI Systems
 In recent years, the improvement of global living standards, rapid economic growth, and accelerated urbanization have led cities worldwide to experience a dramatic increase in the number of automobiles and a substantial growth in parking demand.
 
 The high demand for parking has become a serious problem in both developed and developing countries. Many cities suffer from a severe shortage of parking spaces, and the imbalance between demand, i.e., the number of cars needing parking, and supply, i.e., the number of available parking spaces, is constantly on the rise.
