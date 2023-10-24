@@ -40,8 +40,9 @@ Over the years, PGI Systems have evolved significantly, increasingly becoming a 
 These four components work together to create a comprehensive and intelligent parking guidance and information system, offering drivers valuable real-time information to help them locate available parking spaces while optimizing the use of parking resources within a city or controlled area
 
 <p align="center">
-<img src="https://github.com/Peppebalzanoo/Sumo-Projects/assets/59487799/f6ffac15-b6cc-4a9e-8d0c-19b5b283f16a" width="25%" height="25%"/>
+<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/40c6df44-f320-476e-a3ee-2b6eb9fa19f1" width="25%" height="25%"/>
 </p>
+
 
 A PGI System offers multiple benefits; however, their widespread adoption is limited by both the installation and maintenance costs of the system and the challenge of collecting detailed information. Numerous studies assert that the use of PGI Systems significantly increases the likelihood of finding available parking spaces, while search times have been drastically reduced.
 
@@ -89,7 +90,7 @@ Once the vehicle reaches its destination, the operation of the strategy is as fo
 The time limit assigned to the vehicle for finding an available parking spot is 10 minutes (600 seconds ≈ 600 simulation steps). The duration of the parking stop is generated randomly, ranging from 10 minutes to 3 hours.
 
 <p align="center">
-<img src="https://github.com/Peppebalzanoo/Sumo-Projects/assets/59487799/3d66f3b6-0f09-4400-aa89-af69fe8d8d84" width="35%" height="35%"/>
+<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/5e5bfed4-35e8-4c35-a174-4395b168c094" width="35%" height="35%"/>
 </p>
 
 ## Strategy 2
@@ -106,7 +107,7 @@ Once the vehicle reaches its destination, the operation of the strategy is as fo
 There is no longer a concept of a time limit, and the duration of the parking stop, like in the Uninformed Strategy, is generated randomly, ranging from 10 minutes to 3 hours.
 
 <p align="center">
-<img src="https://github.com/Peppebalzanoo/Sumo-Projects/assets/59487799/be7dc10a-eca8-4f12-930d-bc305a9daf08" width="35%" height="35%"/>
+<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/14ca29aa-06b6-4193-a097-950417a9e07a" width="35%" height="35%"/>
 </p>
 
 ## Strategy 3
@@ -123,7 +124,7 @@ Once the vehicle reaches its destination, the operation of the strategy is as fo
 There is no longer a concept of a time limit, and the duration of the parking stop, like in the Static Information Strategy, is generated randomly, ranging from 10 minutes to 3 hours.
 
 <p align="center">
-<img src="https://github.com/Peppebalzanoo/Sumo-Projects/assets/59487799/39b696c0-3576-432a-b8d1-4fe7a1d697af" width="35%" height="35%"/>
+<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/56cb7b43-a1f2-4120-ae99-a7186b621040" width="35%" height="35%"/>
 </p>
 
 ## Results Analysis
