@@ -577,16 +577,16 @@ def main():
     fln.close()
 
     # STRATEGIA: strategia3, SCENARIO: 100%
-    # sumoCmd = [sumoBinary, "-c", "./strategia3_config/san_francisco_strategia3_100%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia3", "100%")
-    # traci.close()
+    sumoCmd = [sumoBinary, "-c", "./strategia3_config/san_francisco_strategia3_100%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run("strategia3", "100%")
+    traci.close()
 
     # STRATEGIA: strategia3, SCENARIO: 75%
-    # sumoCmd = [sumoBinary, "-c", "./strategia3_config/san_francisco_strategia3_75%.sumocfg", "--start"]
-    # traci.start(sumoCmd)
-    # run("strategia3", "75%")
-    # traci.close()
+    sumoCmd = [sumoBinary, "-c", "./strategia3_config/san_francisco_strategia3_75%.sumocfg", "--start"]
+    traci.start(sumoCmd)
+    run("strategia3", "75%")
+    traci.close()
 
     # STRATEGIA: strategia3, SCENARIO: 50%
     sumoCmd = [sumoBinary, "-c", "./strategia3_config/san_francisco_strategia3_50%.sumocfg", "--start"]
