@@ -106,3 +106,42 @@ There is no longer a concept of a time limit, and the duration of the parking st
 <img src="https://github.com/Peppebalzanoo/Sumo-Projects/assets/59487799/39b696c0-3576-432a-b8d1-4fe7a1d697af" width="35%" height="35%"/>
 </p>
 
+## Results Analysis
+### Strategy 1
+  - 100% Scenario:
+     - Average distance to find parking: 401 m
+     - Total CO2 emissions: 43.31 kg
+  - 75% Scenario:
+     - Average distance to find parking: 653 m
+     - Total CO2 emissions: 70.52 kg
+  - 50% Scenario:
+     - Average distance to find parking: 716 m
+     - Total CO2 emissions: 77.33 kg
+       
+### Strategy 2
+  - 100% Scenario:
+     - Average distance to find parking: 331 m
+     - Total CO2 emissions: 35.75 kg
+  - 75% Scenario:
+     - Average distance to find parking: 337 m
+     - Total CO2 emissions: 36.40 kg
+  - 50% Scenario:
+     - Average distance to find parking: 391 m
+     - Total CO2 emissions: 42.23 kg
+
+  ### Strategy 3
+  - 100% Scenario:
+     - Average distance to find parking: 330 m
+     - Total CO2 emissions: 35.64 kg
+  - 75% Scenario:
+     - Average distance to find parking: 332 m
+     - Total CO2 emissions: 35.86 kg
+  - 50% Scenario:
+     - Average distance to find parking: 382 m
+     - Total CO2 emissions: 41.26 kg
+
+At this point, there is nothing left but to draw the final conclusions. It can be easily inferred that there have been substantial differences among the three considered strategies.
+
+In particular, the strategy that proved to be the best, yielding more advantageous results, is the "Dynamic Information Strategy" (Strategy 3). The strategy that, on the other hand, obtained the poorest results is the "Uninformed Strategy" (Strategy 1).
+
+Furthermore, the "Static Information Strategy" (Strategy 2) achieved results very similar to the best strategy but, in any case, consistently less advantageous
