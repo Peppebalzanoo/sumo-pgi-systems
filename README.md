@@ -59,7 +59,23 @@ The primary reason for developing a suite for microscopic road traffic simulatio
 
 SUMO includes a multitude of supporting tools that help automate the primary tasks involved in creating, running, and evaluating simulations. Furthermore, it offers various APIs for remote simulation control.
 
+## Dataset
+The dataset used pertains to travel activities within the Central Business District of San Francisco, utilizing the "MATsim" model developed and calibrated with the official model (MTC-ABM) of the San Francisco Bay Area Metropolitan Transportation Commission.
+
+The dataset comprises approximately 900,000 trips and 1,600 parking facilities (divided into on-street and off-street parking) with a total of approximately 86,000 parking spaces. 
+
+In this study, only a portion of the dataset has been used. Specifically, 1000 vehicles were considered, while the entire set of parking facilities was made available for analysis.
+
+## Simulation scenarios
+The study will analyze different scenarios in which there are fewer available parking spaces and increased competitiveness among vehicles.
+In particular, the following study will analyze the following scenarios for each strategy:
+- Parking capacity at 100% (total capacity)
+- Parking capacity at 75% of total capacity
+- Parking capacity at 50% of total capacity
+
 ## Strategy 1
+Describe a completely uninformed strategy that simulates scenarios in which no PGI Systems are used. Specifically, vehicle drivers have no information about the location, capacity, availability, and distance from parking areas within their "search area". Essentially, vehicles will randomly navigate the city's streets in search of an available parking space that is not too far from their destination. 
+
 This strategy does not utilize any type of PGI Systems. In other words, vehicle drivers have no information regarding the location, capacity, availability, and distance from parking areas within their "search area," and upon arrival, they will randomly choose streets to navigate in search of an available parking spot.
 
 Once the vehicle reaches its destination, the operation of the strategy is as follows:
@@ -77,6 +93,8 @@ The time limit assigned to the vehicle for finding an available parking spot is 
 </p>
 
 ## Strategy 2
+Describe a static information strategy that simulates scenarios in which PGI Systems providing static information are used. Specifically, vehicle drivers have information about the location and physical capacity of parking facilities within their "search area." Essentially, vehicles will be directed, in the search for an available parking space, towards parking facilities with the largest physical capacity that are not too far from their destination.
+
 This strategy uses PGI Systems that provide static information. In other words, vehicle drivers will be directed to parking lots with the largest physical capacity within their "search area."
 
 Once the vehicle reaches its destination, the operation of the strategy is as follows:
@@ -92,6 +110,8 @@ There is no longer a concept of a time limit, and the duration of the parking st
 </p>
 
 ## Strategy 3
+Describe a dynamic information strategy that simulates scenarios in which advanced PGI Systems are used, capable of providing real-time information. Specifically, vehicle drivers have real-time information about both the location of parking facilities within their "search area" and their actual availability of free spaces. Such a scenario involves the installation of sensors and cameras to ensure the retrieval of high-quality information. Essentially, vehicles will be directed to the parking facility with the highest availability of free spaces at that specific moment in time, and not too far from their destination.
+
 This strategy utilizes PGI Systems that provide dynamic information. In other words, vehicle drivers will be directed to parking lots with the largest availability of free spaces within their "search area."
 
 Once the vehicle reaches its destination, the operation of the strategy is as follows:
