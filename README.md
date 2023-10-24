@@ -40,7 +40,7 @@ Over the years, PGI Systems have evolved significantly, increasingly becoming a 
 These four components work together to create a comprehensive and intelligent parking guidance and information system, offering drivers valuable real-time information to help them locate available parking spaces while optimizing the use of parking resources within a city or controlled area
 
 <p align="center">
-<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/40c6df44-f320-476e-a3ee-2b6eb9fa19f1" width="28%" height="28%"/>
+<img src="https://github.com/Peppebalzanoo/sumo-pgi-systems/assets/59487799/40c6df44-f320-476e-a3ee-2b6eb9fa19f1" width="30%" height="30%"/>
 </p>
 
 
